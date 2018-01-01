@@ -1,0 +1,265 @@
+/* GLOBAL */
+
+*{
+
+	box-sizing: border-box;
+
+}
+
+body{
+	
+	font-family: 'Open Sans', sans-serif;
+	line-height: 1.5;
+	list-style: none;
+	margin: auto;
+	text-decoration: none;
+
+}
+
+ul{
+
+	margin: 0;
+	padding: 0;
+}
+
+main{
+
+	background: url(../img/startbild.jpg) no-repeat center center;
+	background-size: 100% 100%;
+	display: flex;
+	flex-flow: row wrap;
+	min-height: 100vh;
+
+}
+
+header{
+
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	max-height: 5rem;	
+	width: 100%;
+}
+
+header img{
+
+	margin: 1rem;
+	padding: 1rem;
+}
+
+
+.navbar{
+
+	margin: 2rem;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.navbar li{
+
+	display: inline;
+	margin: 1rem;
+
+}
+
+.navbar a{
+	
+	color: black;
+	font-size: 16px;
+	font-style: italic;
+	font-weight: bold;
+	text-decoration: none;
+
+
+}
+
+.navbar li>.current a , .navbar a:hover{
+
+	border-bottom: 3px solid black;
+	padding-bottom: 2px; 
+
+}
+
+.mobile-nav, span{
+
+	display: none;
+}
+
+.slogan{
+	
+	width: 100%;
+}
+
+
+.slogan h1{
+
+	margin: auto;
+	text-align: center;
+	font-size: 6rem;
+	color: orange;
+	font-family: 'Lobster', cursive;
+  	animation: jackInTheBox 2s;
+}
+
+
+footer{
+
+	background-color: #d6c5b7;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	min-height: 9rem;
+}
+
+.adress{
+
+	list-style: none;
+	margin: 1rem;
+}
+
+.adress li{
+
+	margin: 0.5rem;
+}
+
+.media-icons{
+
+	padding: 2.5rem;
+
+}
+
+.media-icons li{
+
+	display: inline;
+	margin: 1rem;
+
+}
+
+
+@keyframes jackInTheBox {
+  from {
+    opacity: 0;
+    transform: scale(0.1) rotate(30deg);
+    transform-origin: center bottom;
+  }
+
+  50% {
+    transform: rotate(-10deg);
+  }
+
+  70% {
+    transform: rotate(3deg);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+@media screen and (max-width: 650px){
+
+	.navbar{
+		display: none;
+	}
+
+	.slogan h1{
+
+		font-size: 5rem;
+		padding: 0.5rem;
+	}	
+	
+	span{
+		
+		margin: 1.2rem;
+		font-size: 2rem;	
+	}
+
+
+	.mobile-nav, span{
+
+		display: block;
+		cursor: pointer;
+
+	}
+
+	.mobile-nav {
+		height: 100%;
+		width: 0;
+		position: absolute;
+		z-index: 1;
+		top: 0;
+		right: 0;
+		background-color: black;
+		opacity: 0.4;
+		overflow-x: hidden;
+		transition: 0.5s;
+		text-align: center;
+		padding-top: 1rem;
+		cursor: default;
+
+
+	}
+
+	.mobile-nav a {
+		padding: 0.8rem;
+		text-decoration: none;
+		font-size: 20px;
+		color: #ccccff;
+		display: block;
+		transition: 0.3s;
+		border-bottom: 1px solid gray;
+		cursor: pointer;
+		text-transform: uppercase;
+	}
+
+	.nav-item a:hover{
+		
+		font-size: 21px;
+		font-weight: bold;
+		
+	}
+
+	.mobile-nav .closebtn {
+		position: absolute;
+		top: 0;
+		left: 0;
+		font-size: 37px;
+		border: none;
+	}
+	
+	footer{		
+		justify-content: center;		
+	}
+	
+	.adress {
+
+		margin: 0;
+		padding: 0.5rem;
+		
+	}
+	
+	.adress li{
+
+		margin: 1rem;
+	}
+	
+	
+	.media-icons{
+		
+		padding: 1rem;
+	}
+	.media-icons li{
+		margin: 1rem;
+	}
+
+}
+
+@media screen and (max-width: 440px) {
+	
+	.slogan h1{
+
+		font-size: 2.5rem;
+	}
+}
