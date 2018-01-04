@@ -22,6 +22,8 @@ ul{
 	padding: 0;
 }
 
+ /* HOMEPAGE */
+
 main{
 
 	background: url(../img/startbild.jpg) no-repeat center center;
@@ -31,6 +33,65 @@ main{
 	min-height: 100vh;
 
 }
+ 
+ /* UPPDRAG */
+
+.uppdrag{
+
+	min-height: 100vh;
+}
+
+
+.wrapper{
+	
+ 	background-color: #333;
+ 	border: 2px solid black;
+ 	box-shadow: 5px 10px 22px #0d0d0d;
+ 	color: #fff;
+ 	flex-basis: 30%;
+ 	flex-wrap: wrap;
+ 	margin: 4rem 0 6rem 0;
+ 	opacity: 0.9;
+ 	padding: 5rem;
+}
+
+.framtiden{
+
+	background: url(../img/framtiden.png) no-repeat center center;
+	background-size: 100% 100%;
+}
+
+.loxy{
+
+	background: url(../img/loxy.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+.skane{
+
+	background: url(../img/skanetrafiken.png) no-repeat center center;
+	background-size: 100% 100%;	
+}
+
+.mq{
+
+	background: url(../img/mq.png) no-repeat center center;
+	background-size: cover;	
+}
+
+.gevalia{
+
+	background: url(../img/gevalia.png) no-repeat center center;
+	background-size: cover;	
+}
+
+.tele2{
+
+	background: url(../img/tele2.jpg) no-repeat center center;
+	background-size: cover;	
+}
+
+ /* HEADER */
 
 header{
 
@@ -46,6 +107,8 @@ header img{
 	margin: 1rem;
 	padding: 1rem;
 }
+
+ /* NAVBAR */
 
 
 .navbar{
@@ -85,6 +148,16 @@ header img{
 	display: none;
 }
 
+.active{
+	
+	border-bottom: 3px solid black;
+	padding-bottom: 2px; 
+
+
+}
+
+/* HOMEPAGE SLOGAN */
+
 .slogan{
 	
 	width: 100%;
@@ -100,6 +173,8 @@ header img{
 	font-family: 'Lobster', cursive;
   	animation: jackInTheBox 2s;
 }
+
+/* FOOTER */
 
 
 footer{
@@ -157,6 +232,28 @@ footer{
   }
 }
 
+@media all and (min-width: 1025px){
+	.container{
+
+		display: -webkit-box;
+
+		display: -ms-flexbox;
+
+		display: flex;
+		-ms-flex-pack: distribute;
+		justify-content: space-around;
+		flex-flow: wrap;
+	}
+}
+
+ @media screen and (max-width: 1024px) {
+	.container{
+
+		padding: 0 1.5rem;
+
+	}
+
+}
 
 @media screen and (max-width: 650px){
 
@@ -181,22 +278,26 @@ footer{
 
 		display: block;
 		cursor: pointer;
+		position: fixed;
+		top: 0;
+		right: 0;
+		z-index: 1;
 
 	}
 
 	.mobile-nav {
-		height: 100%;
+		height: 100vh;
 		width: 0;
-		position: absolute;
-		z-index: 1;
+		position: fixed;
+		z-index: 2;
 		top: 0;
 		right: 0;
 		background-color: black;
-		opacity: 0.4;
+		opacity: 0.7;
 		overflow-x: hidden;
 		transition: 0.5s;
 		text-align: center;
-		padding-top: 1rem;
+		padding-top: 2.5rem;
 		cursor: default;
 
 
@@ -205,8 +306,8 @@ footer{
 	.mobile-nav a {
 		padding: 0.8rem;
 		text-decoration: none;
-		font-size: 20px;
-		color: #ccccff;
+		font-size: 16px;
+		color: #ffffff;
 		display: block;
 		transition: 0.3s;
 		border-bottom: 1px solid gray;
@@ -216,7 +317,7 @@ footer{
 
 	.nav-item a:hover{
 		
-		font-size: 21px;
+		font-size: 18px;
 		font-weight: bold;
 		
 	}
