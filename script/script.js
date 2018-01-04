@@ -1,3 +1,5 @@
+/* @flow */
+
 function openNav() {
     document.getElementById("mySidenav").style.width = "50%";
 }
@@ -8,6 +10,7 @@ function closeNav() {
 
 function framtiden(){
 
-		window.location.href = "http://framtiden.se";
+	window.location.href = "http://framtiden.se";
 
 }
+

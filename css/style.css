@@ -6,7 +6,7 @@
 
 }
 
-body{
+body,html{
 	
 	font-family: 'Open Sans', sans-serif;
 	line-height: 1.5;
@@ -22,74 +22,11 @@ ul{
 	padding: 0;
 }
 
- /* HOMEPAGE */
-
-main{
-
-	background: url(../img/startbild.jpg) no-repeat center center;
-	background-size: 100% 100%;
-	display: flex;
-	flex-flow: row wrap;
-	min-height: 100vh;
-
-}
- 
- /* UPPDRAG */
-
-.uppdrag{
+main,.uppdrag,.omoss,.tjänster,.kontakt{
 
 	min-height: 100vh;
 }
 
-
-.wrapper{
-	
- 	background-color: #333;
- 	border: 2px solid black;
- 	box-shadow: 5px 10px 22px #0d0d0d;
- 	color: #fff;
- 	flex-basis: 30%;
- 	flex-wrap: wrap;
- 	margin: 4rem 0 6rem 0;
- 	opacity: 0.9;
- 	padding: 5rem;
-}
-
-.framtiden{
-
-	background: url(../img/framtiden.png) no-repeat center center;
-	background-size: 100% 100%;
-}
-
-.loxy{
-
-	background: url(../img/loxy.jpg) no-repeat center center;
-	background-size: cover;
-}
-
-.skane{
-
-	background: url(../img/skanetrafiken.png) no-repeat center center;
-	background-size: 100% 100%;	
-}
-
-.mq{
-
-	background: url(../img/mq.png) no-repeat center center;
-	background-size: cover;	
-}
-
-.gevalia{
-
-	background: url(../img/gevalia.png) no-repeat center center;
-	background-size: cover;	
-}
-
-.tele2{
-
-	background: url(../img/tele2.jpg) no-repeat center center;
-	background-size: cover;	
-}
 
  /* HEADER */
 
@@ -156,8 +93,17 @@ header img{
 
 }
 
-/* HOMEPAGE SLOGAN */
+ /* HOMEPAGE */
 
+main{
+
+	background: url(../img/startbild.jpg) no-repeat center center;
+	background-size: 100% 100%;
+	display: flex;
+	flex-flow: row wrap;
+
+}
+ 
 .slogan{
 	
 	width: 100%;
@@ -173,6 +119,40 @@ header img{
 	font-family: 'Lobster', cursive;
   	animation: jackInTheBox 2s;
 }
+
+ /* OM OSS */
+
+
+ /* UPPDRAG */
+
+.container{
+
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: distribute;
+	justify-content: space-around;
+	flex-flow: wrap;
+}
+
+
+.wrapper{
+	
+ 	background-color: #fff;
+ 	color: #000;
+ 	flex-basis: 30%;
+ 	flex-wrap: wrap;
+	margin-top: 5rem;
+	text-align: center;
+	font-weight: bold;
+
+}
+
+.wrapper img{
+	
+	cursor: pointer;
+}
+
 
 /* FOOTER */
 
@@ -210,6 +190,7 @@ footer{
 
 }
 
+/* ANIMATIONS */
 
 @keyframes jackInTheBox {
   from {
@@ -232,28 +213,7 @@ footer{
   }
 }
 
-@media all and (min-width: 1025px){
-	.container{
-
-		display: -webkit-box;
-
-		display: -ms-flexbox;
-
-		display: flex;
-		-ms-flex-pack: distribute;
-		justify-content: space-around;
-		flex-flow: wrap;
-	}
-}
-
- @media screen and (max-width: 1024px) {
-	.container{
-
-		padding: 0 1.5rem;
-
-	}
-
-}
+/* MEDIA QUERIES */
 
 @media screen and (max-width: 650px){
 
@@ -351,6 +311,7 @@ footer{
 		
 		padding: 1rem;
 	}
+
 	.media-icons li{
 		margin: 1rem;
 	}
@@ -362,5 +323,15 @@ footer{
 	.slogan h1{
 
 		font-size: 2.5rem;
+	}
+
+	.wrapper{
+
+		margin-top: 6.5rem;
+	}	
+    
+	.wrapper img{
+		
+		width: 280px;		
 	}
 }
