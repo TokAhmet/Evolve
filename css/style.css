@@ -345,7 +345,8 @@ footer{
 	.wrapper{
 
 		margin-top: 6.5rem;
-		display: block;
+		display: flex;
+		flex-direction: column;
 
 	}	
 }
