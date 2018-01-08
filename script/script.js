@@ -14,3 +14,23 @@ function framtiden(){
 
 }
 
+function evolveText () {
+
+	var evolve = document.getElementById("text").className = "omosstext";
+	var vision = document.getElementById("text2").className = "hide";
+	var plattform = document.getElementById("text3").className = "hide";
+}
+
+function visionText () {
+
+	var evolve = document.getElementById("text").className = "hide";
+	var vision = document.getElementById("text2").className = "omosstext";
+	var plattform = document.getElementById("text3").className = "hide";
+}
+
+function plattformText () {
+
+	var evolve = document.getElementById("text").className = "hide";
+	var vision = document.getElementById("text2").className = "hide";
+	var plattform = document.getElementById("text3").className = "omosstext ";
+}
