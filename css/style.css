@@ -438,7 +438,7 @@ footer{
 	.wrapper img{
 
 		margin: 0;
-		width: 300px;
+		width: 280px;
 	}
 
 	.omossnav{
@@ -455,6 +455,7 @@ footer{
 	.wrapper p{
 
 		font-size: 12px;
+		padding: 1rem;
 	}
 
 	.omosstext h1{
