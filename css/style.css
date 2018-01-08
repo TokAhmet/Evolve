@@ -98,7 +98,6 @@ header img{
 main{
 
 	background: url(../img/startbild.jpg) no-repeat center center;
-	background-attachment: fixed;
 	background-size: 100% 100%;
 	display: flex;
 	flex-flow: row wrap;
@@ -438,7 +437,7 @@ footer{
 	.wrapper img{
 
 		margin: 0;
-		width: 280px;
+		width: 290px;
 	}
 
 	.omossnav{
