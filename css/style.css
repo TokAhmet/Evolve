@@ -10,6 +10,7 @@
 
 body,html{
 	
+	background-color: #e6e6e6;
 	font-family: 'Open Sans', sans-serif;
 	line-height: 1.5;
 	margin: auto;
@@ -196,7 +197,7 @@ main{
 	-ms-flex-pack: distribute;
 	justify-content: space-around;
 	flex-flow: row wrap;
-	margin: 1rem 0;
+	margin: 1rem auto auto;
 }
 
 
@@ -298,12 +299,11 @@ footer{
 
 @media screen and (max-width: 1024px){
 		
-		.wrapper img{
-		
-			margin: 10px;
-			width: auto;
-		}
+		.wrapper{
 
+			margin: 3rem;
+		}
+	
 		.omosstext{
 
 			padding: 2rem;		
@@ -430,14 +430,9 @@ footer{
 
 	.wrapper{
 
-		margin-top: 6.5rem;;
+		margin: 6.5rem auto;
+		width: 90%;
 
-	}
-
-	.wrapper img{
-
-		margin: 0;
-		width: 290px;
 	}
 
 	.omossnav{
@@ -450,6 +445,13 @@ footer{
 }
 
 @media screen and (max-width: 440px){
+
+	.slogan h1{
+
+		font-size: 3rem;
+		padding: 10px;
+
+	}
 
 	.wrapper p{
 
