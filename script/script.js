@@ -14,6 +14,36 @@ function framtiden(){
 
 }
 
+function loxy(){
+
+	window.location.href = "http://loxy.no";
+
+}
+
+function skane(){
+
+	window.location.href = "http://skanetrafiken.se";
+
+}
+
+function mq(){
+
+	window.location.href = "http://mq.se";
+
+}
+
+function gevalia(){
+
+	window.location.href = "http://gevalia.se";
+
+}
+
+function tele2(){
+
+	window.location.href = "http://tele2.se";
+
+}
+
 function evolveText () {
 
 	var evolve = document.getElementById("text").className = "omosstext";
