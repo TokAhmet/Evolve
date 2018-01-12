@@ -10,7 +10,10 @@
 
 body,html{
 	
-	background-color: #e6e6e6;
+
+ /* ABOUT */
+
+ 	background: -webkit-linear-gradient(-45deg, rgba(246,248,249,1) 35%,rgba(215,222,227,1) 65%,rgba(215,222,227,1) 70%,rgba(215,222,227,1) 70%,rgba(215,222,227,1) 75%,rgba(215,222,227,1) 77%,rgba(215,222,227,1) 79%,rgba(215,222,227,1) 90%,rgba(215,222,227,1) 95%,rgba(215,222,227,1) 99%,rgba(215,222,227,1) 100%,rgba(245,247,249,1) 100%);
 	font-family: 'Open Sans', sans-serif;
 	line-height: 1.5;
 	margin: auto;
@@ -38,12 +41,12 @@ header{
 	justify-content: space-between;
 	max-height: 5rem;	
 	width: 100%;
+	text-shadow: 5px 10px 10px #0d0d0d;
 }
 
 header img{
 
-	margin: 1rem;
-	padding: 1rem;
+	width: 120px;
 }
 
  /* NAVBAR */
@@ -179,12 +182,16 @@ main{
 
 	font-size: 3rem;
 	border-bottom: 3px solid black;
+	letter-spacing: 2px;
+	text-shadow: 5px 10px 10px #0d0d0d;
 }
 
 .hide{
 
 	display: none;
 }
+
+ /* TJÄNSTER */
 
 
  /* UPPDRAG */
@@ -236,9 +243,9 @@ main{
 	box-shadow: 5px 10px 22px #0d0d0d;
 	color: #000;
 	max-width: 40rem;
-	margin: 5rem 8rem;
+	margin: 5rem auto;
 	font-weight: bold;
-	flex: 2;
+	flex: 1;
 
 }
 
@@ -247,6 +254,7 @@ main{
 	font-size: 2rem;		
 	text-align: center;
 	text-decoration: underline;
+	letter-spacing: 2px;
 	padding: 0.5rem;
 }
 
@@ -286,8 +294,8 @@ main{
 .contact img{
 
 	height: 20rem;
-	margin: 10rem 4rem 0 auto;
-	padding: 1rem;
+	margin: 10rem auto 2rem auto;
+	padding: 2rem;
 	flex-direction: column;
 }
 
@@ -299,7 +307,7 @@ main{
 	box-shadow: 5px 10px 22px #0d0d0d;
 	font-weight: bold;
 	width: 70%;
-	margin: 5rem auto;
+	margin: auto;
 }
 
 
@@ -534,6 +542,7 @@ footer{
 	}
 
 	.media-icons li{
+		
 		margin: 1rem;
 	}
 	
@@ -562,7 +571,7 @@ footer{
 	
 	.contact form{
 			
-		margin: 7rem auto 5rem auto;
+		margin: 7rem auto 3rem auto;
 		max-width: 90%;
 	}
 
@@ -584,8 +593,8 @@ footer{
 
 	.slogan h1{
 
-		font-size: 3rem;
-		padding: 10px;
+		font-size: 2rem;
+		padding: 8px;
 
 	}
 
