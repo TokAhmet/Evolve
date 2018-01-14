@@ -1,32 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Evole - Kontakt</title>
+	<title>Evolve-Kontakt</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
 	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 
-	<script src="script/script.js" ></script>
-	<script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>						
-	<script>
-		function initMap() {
-			  var uluru = {lat: 59.345283, lng: 18.0223358};
-			  var map = new google.maps.Map(document.getElementById('map'), {
-				zoom: 17,
-				center: uluru
-			  });
-			  var marker = new google.maps.Marker({
-				position: uluru,
-				map: map
-			  });
-			}
-		  </script>
-		  <script async defer
-		  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQ-XlIrGybbCbvi4rf5qybvHalWCxDEyY&callback=initMap">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+	<script async defer
+	 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQ-XlIrGybbCbvi4rf5qybvHalWCxDEyY&callback=initMap">
 	</script>
-
+	<script src="script/script.js" ></script>
 </head>
 <body>
 	<section class="kontakt">
@@ -55,7 +41,7 @@
 		<div class="contact">
 			<form>
 				<ul>
-					<h1>Kontakta Oss</h1>
+						<h1>Kontakta Oss</h1>
 					<li class="li-forms">
 						<label>Namn</label>
 						<input type="text" name="name" placeholder="Namn..">
@@ -81,7 +67,7 @@
 					</li>
 				</ul>
 			</form>
-				<div>
+				<div class="contact-wrapper">
 					<div id="map"></div>
 					<ul class="contact-adress">
 					<li class="border-li"><i class="fas fa-home"></i> Tomtebodavägen 3A</li>

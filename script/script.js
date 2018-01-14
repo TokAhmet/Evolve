@@ -1,4 +1,3 @@
-/* @flow */
 
 function openNav() {
     document.getElementById("mySidenav").style.width = "50%";
@@ -63,4 +62,16 @@ function plattformText () {
 	var evolve = document.getElementById("text").className = "hide";
 	var vision = document.getElementById("text2").className = "hide";
 	var plattform = document.getElementById("text3").className = "omosstext ";
+}
+
+function initMap() {
+	  var uluru = {lat: 59.345283, lng: 18.0223358};
+	  var map = new google.maps.Map(document.getElementById('map'), {
+		zoom: 17,
+		center: uluru
+	  });
+	  var marker = new google.maps.Marker({
+		position: uluru,
+		map: map
+	  });
 }

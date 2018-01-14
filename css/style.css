@@ -288,21 +288,20 @@ main{
 .li-forms button:hover{
 
 	cursor: pointer;
-	box-shadow: 5px 10px 11px #0d0d0d;
 }
 
-.contact img{
+.contact-wrapper{
+
+	margin: 2rem;
+}
+
+
+#map{
 
 	height: 20rem;
-	margin: 10rem auto 2rem auto;
+	width: 40rem;
+	margin: 10rem auto 5rem auto;
 	padding: 2rem;
-	flex-direction: column;
-}
-
-#map
-{
-	width: 400px;
-	height: 400px;
 }
 
 
@@ -314,6 +313,7 @@ main{
 	font-weight: bold;
 	width: 70%;
 	margin: auto;
+
 }
 
 
@@ -419,21 +419,22 @@ footer{
 
 		.contact form{
 
-			margin: 3rem 2rem;
+			margin: 3rem;
 			width: 60%;
 
-	}
-		.contact img{
+		}
+		#map{
 
-			width: 100%;
-			margin: 3rem auto;
-			padding: 4rem;
+			width: 20rem;
+			margin: 3rem auto 5rem auto;
+			padding: 2rem;
 		}
 	
 
 		.contact-adress{
 
-			margin: auto;
+			margin:auto;
+			width: 100%;
 		}
 
 
@@ -577,15 +578,19 @@ footer{
 	
 	.contact form{
 			
-		margin: 7rem auto 3rem auto;
+		margin: 5rem auto 3rem auto;
 		max-width: 90%;
 	}
 
-	.contact img{
-
-		width: 100%;
+	.contact #map{
+		
+		width: 81vw;
 		margin: auto;
-		padding: 1.5rem;
+	}
+
+	#map span{
+
+		display: none;
 	}
 
 	.contact-adress{
