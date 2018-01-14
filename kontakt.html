@@ -9,7 +9,24 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
 	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> 
 	<script src="script/script.js" ></script>
-	<script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>						
+	<script>
+		function initMap() {
+			  var uluru = {lat: 59.345283, lng: 18.0223358};
+			  var map = new google.maps.Map(document.getElementById('map'), {
+				zoom: 17,
+				center: uluru
+			  });
+			  var marker = new google.maps.Marker({
+				position: uluru,
+				map: map
+			  });
+			}
+		  </script>
+		  <script async defer
+		  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQ-XlIrGybbCbvi4rf5qybvHalWCxDEyY&callback=initMap">
+	</script>
+
 </head>
 <body>
 	<section class="kontakt">
@@ -38,7 +55,7 @@
 		<div class="contact">
 			<form>
 				<ul>
-						<h1>Kontakta Oss</h1>
+					<h1>Kontakta Oss</h1>
 					<li class="li-forms">
 						<label>Namn</label>
 						<input type="text" name="name" placeholder="Namn..">
@@ -65,7 +82,7 @@
 				</ul>
 			</form>
 				<div>
-				<img src="img/google.jpg">
+					<div id="map"></div>
 					<ul class="contact-adress">
 					<li class="border-li"><i class="fas fa-home"></i> Tomtebodavägen 3A</li>
 					<li class="border-li">171 65 Solna</li>

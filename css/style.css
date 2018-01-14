@@ -299,6 +299,12 @@ main{
 	flex-direction: column;
 }
 
+#map
+{
+	width: 400px;
+	height: 400px;
+}
+
 
 .contact-adress{
 
