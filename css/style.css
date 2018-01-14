@@ -47,6 +47,7 @@ header{
 header img{
 
 	width: 200px;
+	padding: 1rem;
 }
 
  /* NAVBAR */
@@ -403,10 +404,14 @@ footer{
 
 			margin: 3rem;
 		}
+
+		.wrapper p{
+
+			padding: 0 1rem;
+		}
 		
 		.omossnav{
-		
-			
+					
 			width: 60%;
 			margin: 5rem auto;
 			padding: 0.5rem;
@@ -414,7 +419,7 @@ footer{
 
 		.omosstext{
 
-			padding: 0 10rem;		
+			padding: 0 10rem 2rem 10rem;		
 		}
 
 		.contact form{
