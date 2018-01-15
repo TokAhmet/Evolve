@@ -10,7 +10,6 @@
 body,html{
 	
 
- /* ABOUT */
 	animation: fadein 1.5s;
  	background: -webkit-linear-gradient(-45deg, rgba(246,248,249,1) 35%,rgba(215,222,227,1) 65%,rgba(215,222,227,1) 70%,rgba(215,222,227,1) 70%,rgba(215,222,227,1) 75%,rgba(215,222,227,1) 77%,rgba(215,222,227,1) 79%,rgba(215,222,227,1) 90%,rgba(215,222,227,1) 95%,rgba(215,222,227,1) 99%,rgba(215,222,227,1) 100%,rgba(245,247,249,1) 100%);
 	font-family: 'Open Sans', sans-serif;
@@ -51,6 +50,10 @@ header img{
 
  /* NAVBAR */
 
+.zoom-nav{
+
+	animation: zoomIn 1s;
+}
 
 .navbar{
 
@@ -166,7 +169,8 @@ main{
 }
 
 .omosstext{
-
+	
+	animation: fadein 1s;
 	flex: 1;
 	padding: 8rem;
 	margin: auto;
@@ -183,7 +187,6 @@ main{
 	font-size: 3rem;
 	border-bottom: 3px solid black;
 	letter-spacing: 2px;
-	text-shadow: 5px 10px 10px #0d0d0d;
 }
 
 .hide{
@@ -225,6 +228,14 @@ main{
 	
 	cursor: pointer;
 	width: 100%;
+	filter: grayscale(100%);
+	transition: 0.5s ease-in-out;
+}
+
+.wrapper img:hover{
+	
+	filter: grayscale(0%);
+	transition: 0.5s ease-in-out;	
 }
 
 /* KONTAKT */
@@ -254,7 +265,7 @@ main{
 	font-size: 2rem;		
 	text-align: center;
 	text-decoration: underline;
-	letter-spacing: 2px;
+	letter-spacing: 1px;
 	padding: 0.5rem;
 }
 
@@ -278,16 +289,24 @@ main{
 
 .li-forms button {
 	
+	box-shadow: 0 8px #666;
 	background-color: #fff;
 	border: 0;
-	border-radius: 10px;
+	border-radius: 20px;
 	font-weight: bold;
-	width: 100%;
+	width: 50%;
+	margin: auto;
 }
 
 .li-forms button:hover{
 
 	cursor: pointer;
+}
+
+.li-forms button:active {
+
+  box-shadow: 0 5px #666;
+  transform: translateY(2px);
 }
 
 .contact-wrapper{
@@ -297,7 +316,8 @@ main{
 
 
 #map{
-
+	
+	box-shadow: 5px 10px 22px #0d0d0d;
 	height: 20rem;
 	width: 40rem;
 	margin: 10rem auto 5rem auto;
@@ -371,6 +391,18 @@ footer{
 	}	  
 }
 
+@keyframes zoomIn {
+	from {
+		opacity: 0;
+		-webkit-transform: scale3d(.3, .3, .3);
+		transform: scale3d(.3, .3, .3);
+	}
+
+	50% {
+		opacity: 1;
+	}
+}
+
 @keyframes jackInTheBox {
   from {
     opacity: 0;
@@ -414,9 +446,14 @@ footer{
 			margin: 3rem;
 		}
 
+		.wrapper img{
+
+			filter: grayscale(0%);
+		}
+
 		.wrapper p{
 
-			padding: 0 1rem;
+			padding: 0.5rem;
 		}
 		
 		.omossnav{
@@ -594,6 +631,10 @@ footer{
 			
 		margin: 5rem auto 3rem auto;
 		max-width: 90%;
+	}
+
+	.contact button{
+		width: 100%;
 	}
 
 	.contact #map{
