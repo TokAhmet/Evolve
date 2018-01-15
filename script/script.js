@@ -75,3 +75,62 @@ function initMap() {
 		map: map
 	  });
 }
+
+var modal = document.getElementById('myModal');
+var modal2 = document.getElementById('myModal2');
+var modal3 = document.getElementById('myModal3');
+var modal4 = document.getElementById('myModal4');
+var modal5 = document.getElementById('myModal5');
+var modal6 = document.getElementById('myModal6');
+
+var popup1 = document.getElementById("framtiden");
+var popup2 = document.getElementById("loxy");
+var popup3 = document.getElementById("skane");
+var popup4 = document.getElementById("mq");
+var popup5 = document.getElementById("gevalia");
+var popup6 = document.getElementById("tele2");
+ 
+popup1.onclick = function() {
+    modal.style.display = "block";
+};
+popup2.onclick = function() {
+    modal2.style.display = "block";
+};
+popup3.onclick = function() {
+    modal3.style.display = "block";
+};
+popup4.onclick = function() {
+    modal4.style.display = "block";
+};
+popup5.onclick = function() {
+    modal5.style.display = "block";
+};
+popup6.onclick = function() {
+    modal6.style.display = "block";
+};
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+
+    if (event.target == modal2) {
+        modal2.style.display = "none";
+    }
+
+    if (event.target == modal3) {
+    	modal3.style.display = "none";
+    }
+
+    if (event.target == modal4) {
+    	modal4.style.display = "none";
+    }
+
+    if (event.target == modal5) {
+    	modal5.style.display = "none";
+    }
+
+    if (event.target == modal6) {
+   	 	modal6.style.display = "none";
+    }
+};
