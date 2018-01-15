@@ -1,0 +1,101 @@
+main{
+
+ 	background: url(../img/startbild.jpg) no-repeat center center;
+ 	background-size: 100% 100%;
+ 	display: -webkit-box;
+ 	display: -ms-flexbox;
+ 	display: flex;
+ 	-webkit-box-orient: horizontal;
+ 	-webkit-box-direction: normal;
+ 	-ms-flex-flow: row wrap;
+ 	flex-flow: row wrap;
+
+ }
+ 
+ .slogan{
+ 	
+ 	width: 100%;
+ }
+
+
+ .slogan h1{
+
+ 	margin: auto;
+ 	text-align: center;
+ 	font-size: 6rem;
+ 	color: $slogan;
+ 	font-family: 'Lobster', cursive;
+ 	-webkit-animation: jackInTheBox 2s;
+ 	animation: jackInTheBox 2s;
+ }
+
+ /* OM OSS */
+
+ .omossnav{
+
+ 	-webkit-box-shadow: 5px 10px 11px $farg-black;
+
+ 	box-shadow: 5px 10px 11px $farg-black;
+ 	background-color: $majorcolor;
+ 	margin: 5rem;
+ 	min-width: 35%;
+ 	height: 10%;
+
+
+ }
+
+ .omossnav li{
+
+ 	padding: 0.5rem;
+ 	margin: 1rem;
+ }
+
+ .omossnav li:before{
+
+ 	content: "> "
+ }
+
+ .omossnav a{
+ 	
+ 	color: $farg-black;
+ 	font-size: 16px;
+ 	font-weight: bold;
+ 	text-decoration: none;
+ }
+
+ .omossnav a:hover{
+
+ 	text-decoration: underline;
+ }
+
+ .border-li{
+ 	border-bottom: 10px solid $farg-white;
+ }
+
+ .omosstext{
+
+ 	-webkit-box-flex: 1;
+ 	-ms-flex: 1;
+ 	flex: 1;
+ 	padding: 8rem;
+ 	margin: auto;
+ }
+
+ .omosstext p{
+
+ 	font-weight: bold;
+ 	line-height: 1.5;
+ }
+
+ .omosstext h1{
+
+ 	font-size: 3rem;
+ 	$border-bott
+ 	letter-spacing: 2px;
+
+ }
+
+ .hide{
+
+ 	display: none;
+ }

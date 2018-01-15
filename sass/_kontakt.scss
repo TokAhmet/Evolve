@@ -1,0 +1,112 @@
+.contact{
+
+	display: -webkit-box;
+
+	display: -ms-flexbox;
+
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-flow: row wrap;
+	flex-flow: row wrap;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+.contact form{
+
+	background-color: $majorcolor;
+	border-radius: 1rem;
+	-webkit-box-shadow: 5px 10px 22px $farg-black;
+	box-shadow: 5px 10px 22px $farg-black;
+	color: $farg-black;
+	max-width: 40rem;
+	margin: 5rem auto;
+	font-weight: bold;
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+
+}
+
+.contact h1{
+	
+	font-size: 2rem;		
+	text-align: center;
+	text-decoration: underline;
+	letter-spacing: 2px;
+	padding: 0.5rem;
+}
+
+.li-forms {
+
+	display: -webkit-box;
+
+	display: -ms-flexbox;
+
+	display: flex;
+	-ms-flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	flex-direction: column;
+	margin: auto;
+	padding: 0.7rem;
+}
+
+.li-forms input, button, label {
+	padding: 0.6rem;
+}
+
+.li-forms input:focus, textarea:focus{
+
+	outline: 2px solid $farg-black;
+}
+
+.li-forms button {
+	
+	background-color: $farg-white;
+	border: 0;
+	border-radius: 10px;
+	font-weight: bold;
+	width: 100%;
+}
+
+.li-forms button:hover{
+
+	cursor: pointer;
+}
+
+.contact-wrapper{
+
+	margin: 2rem;
+}
+
+
+#map{
+
+	height: 20rem;
+	width: 40rem;
+	margin: 10rem auto 5rem auto;
+	padding: 2rem;
+}
+
+
+.contact-adress{
+
+	background-color: $majorcolor;
+	border-radius: 1rem;
+	-webkit-box-shadow: 5px 10px 22px $farg-black;
+	box-shadow: 5px 10px 22px $farg-black;
+	font-weight: bold;
+	width: 70%;
+	margin: auto;
+
+}
+
+
+.contact-adress li{
+
+	padding: 1rem;
+	margin: 1rem;
+}

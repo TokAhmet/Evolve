@@ -1,0 +1,39 @@
+footer{
+
+	background-color: $majorcolor;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-flow: row wrap;
+	flex-flow: row wrap;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	min-height: 9rem;
+}
+
+.adress{
+
+	list-style: none;
+	margin: 1rem;
+}
+
+.adress li{
+
+	margin: 0.5rem;
+}
+
+.media-icons{
+
+	padding: 2.5rem;
+
+}
+
+.media-icons li{
+
+	display: inline;
+	margin: 1rem;
+
+}

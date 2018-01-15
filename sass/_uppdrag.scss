@@ -1,0 +1,37 @@
+.uppdrag-container{
+
+ 	display: -webkit-box;
+ 	display: -ms-flexbox;
+ 	display: flex;
+ 	-ms-flex-pack: distribute;
+ 	justify-content: space-around;
+ 	-webkit-box-orient: horizontal;
+ 	-webkit-box-direction: normal;
+ 	-ms-flex-flow: row wrap;
+ 	flex-flow: row wrap;
+ 	margin: 1rem auto auto;
+ }
+
+
+ .wrapper{
+ 	
+ 	-webkit-box-shadow: 5px 10px 11px $farg-black;
+ 	
+ 	box-shadow: 5px 10px 11px $farg-black;
+ 	background-color: $border-li;
+ 	color: #000;
+ 	-ms-flex-preferred-size: 30%;
+ 	flex-basis: 30%;
+ 	-ms-flex-wrap: wrap;
+ 	flex-wrap: wrap;
+ 	margin: 2rem 0;
+ 	text-align: center;
+ 	font-weight: bold;
+
+ }
+
+ .wrapper img{
+ 	
+ 	cursor: pointer;
+ 	width: 100%;
+ }
