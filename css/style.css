@@ -11,7 +11,7 @@ body,html{
 	
 
 	animation: fadein 1.5s;
- 	background: -webkit-linear-gradient(-45deg, rgba(246,248,249,1) 35%,rgba(215,222,227,1) 65%,rgba(215,222,227,1) 70%,rgba(215,222,227,1) 70%,rgba(215,222,227,1) 75%,rgba(215,222,227,1) 77%,rgba(215,222,227,1) 79%,rgba(215,222,227,1) 90%,rgba(215,222,227,1) 95%,rgba(215,222,227,1) 99%,rgba(215,222,227,1) 100%,rgba(245,247,249,1) 100%);
+	background: -webkit-linear-gradient(-45deg, rgba(246,248,249,1) 35%,rgba(215,222,227,1) 65%,rgba(215,222,227,1) 70%,rgba(215,222,227,1) 70%,rgba(215,222,227,1) 75%,rgba(215,222,227,1) 77%,rgba(215,222,227,1) 79%,rgba(215,222,227,1) 90%,rgba(215,222,227,1) 95%,rgba(215,222,227,1) 99%,rgba(215,222,227,1) 100%,rgba(245,247,249,1) 100%);
 	font-family: 'Open Sans', sans-serif;
 	line-height: 1.5;
 	margin: auto;
@@ -30,7 +30,7 @@ main,.uppdrag,.omoss,.tjänster,.kontakt{
 }
 
 
- /* HEADER */
+/* HEADER */
 
 header{
 
@@ -48,7 +48,7 @@ header img{
 	padding: 1rem;
 }
 
- /* NAVBAR */
+/* NAVBAR */
 
 .zoom-nav{
 
@@ -87,7 +87,7 @@ header img{
 
 }
 
-.mobile-nav, span{
+.mobile-nav, #nav-span{
 
 	display: none;
 }
@@ -100,7 +100,7 @@ header img{
 
 }
 
- /* HOMEPAGE */
+/* HOMEPAGE */
 
 main{
 
@@ -110,7 +110,7 @@ main{
 	flex-flow: row wrap;
 
 }
- 
+
 .slogan{
 	
 	width: 100%;
@@ -124,10 +124,10 @@ main{
 	font-size: 6rem;
 	color: orange;
 	font-family: 'Lobster', cursive;
-  	animation: jackInTheBox 2s;
+	animation: jackInTheBox 2s;
 }
 
- /* OM OSS */
+/* OM OSS */
 
 .omossnav{
 
@@ -186,7 +186,6 @@ main{
 
 	font-size: 3rem;
 	border-bottom: 3px solid black;
-	letter-spacing: 2px;
 }
 
 .hide{
@@ -194,10 +193,10 @@ main{
 	display: none;
 }
 
- /* TJÄNSTER */
+/* TJÄNSTER */
 
 
- /* UPPDRAG */
+/* UPPDRAG */
 
 .uppdrag-container{
 
@@ -213,11 +212,11 @@ main{
 
 .wrapper{
 	
- 	box-shadow: 5px 10px 11px #0d0d0d;
- 	background-color: #fff;
- 	color: #000;
- 	flex-basis: 30%;
- 	flex-wrap: wrap;
+	box-shadow: 5px 10px 11px #0d0d0d;
+	background-color: #fff;
+	color: #000;
+	flex-basis: 30%;
+	flex-wrap: wrap;
 	margin: 3rem 0;
 	font-weight: bold;
 
@@ -239,54 +238,59 @@ main{
 }
 
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 100px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
 .modal-content {
-    position: relative;
-    background-color: #fefefe;
-    margin: auto;
-    padding: 0;
-    width: 50%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-    animation-name: animatetop;
-    animation-duration: 0.4s
+	position: relative;
+	background-color: #fefefe;
+	margin: auto;
+	padding: 0;
+	width: 50%;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+	animation-name: animatetop;
+	animation-duration: 0.4s
 }
 
-.close:hover,
-.close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
+#modal-span{
+
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+#modal-span:hover,#modal-span:focus{
+
+	cursor: pointer;
 }
 
 .modal-header {
-    padding: 2px 16px;
-    background-color: #d6c5b7;
-    color: #000;
+	padding: 2px 16px;
+	min-height: 3rem;
+	background-color: #d6c5b7;
+	color: #000;
 }
 
 .modal-body {
 
 	padding: 2px 16px;
 	text-align: center;
-	text-decoration: underline;
 }
 
 .modal-footer {
-    padding: 2px 16px;
-    color: white;
-    min-height: 3rem;
+	padding: 2px 16px;
+	color: white;
+	min-height: 3rem;
 }
 
 .modal-footer button{
@@ -306,8 +310,8 @@ main{
 
 .modal-footer button:active {
 
-  box-shadow: 0 5px #666;
-  transform: translateY(2px);
+	box-shadow: 0 5px #666;
+	transform: translateY(2px);
 }
 
 /* KONTAKT */
@@ -377,8 +381,8 @@ main{
 
 .li-forms button:active {
 
-  box-shadow: 0 5px #666;
-  transform: translateY(2px);
+	box-shadow: 0 5px #666;
+	transform: translateY(2px);
 }
 
 .contact-wrapper{
@@ -476,94 +480,94 @@ footer{
 }
 
 @keyframes animatetop {
-    from {top:-500px; opacity:0}
-    to {top:0; opacity:1}
+	from {top:-500px; opacity:0}
+	to {top:0; opacity:1}
 }
 
 @keyframes jackInTheBox {
-  from {
-    opacity: 0;
-    transform: scale(0.1) rotate(30deg);
-    transform-origin: center bottom;
-  }
+	from {
+		opacity: 0;
+		transform: scale(0.1) rotate(30deg);
+		transform-origin: center bottom;
+	}
 
-  50% {
-    transform: rotate(-10deg);
-  }
+	50% {
+		transform: rotate(-10deg);
+	}
 
-  70% {
-    transform: rotate(3deg);
-  }
+	70% {
+		transform: rotate(3deg);
+	}
 
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
+	to {
+		opacity: 1;
+		transform: scale(1);
+	}
 }
 
 /* MEDIA QUERIES */
 
 @media screen and (min-width: 1025px){
 
-		.omoss-container{
+	.omoss-container{
 
-		 	display: -webkit-box;
-			display: flex;
-			justify-content: space-around;
-			flex-flow: row wrap;
+		display: -webkit-box;
+		display: flex;
+		justify-content: space-around;
+		flex-flow: row wrap;
 
-		}
+	}
 
 }
 
 @media screen and (max-width: 1024px){
-		
-		.wrapper{
 
-			margin: 3rem;
-		}
+	.wrapper{
 
-		.wrapper img{
+		margin: 3rem;
+	}
 
-			filter: grayscale(0%);
-		}
+	.wrapper img{
 
-		.wrapper p{
+		filter: grayscale(0%);
+	}
 
-			padding: 0.5rem;
-		}
-		
-		.omossnav{
-					
-			width: 60%;
-			margin: 5rem auto;
-			padding: 0.5rem;
-		}
+	.wrapper p{
 
-		.omosstext{
+		padding: 0.5rem;
+	}
 
-			padding: 0 10rem 2rem 10rem;		
-		}
+	.omossnav{
 
-		.contact form{
+		width: 60%;
+		margin: 5rem auto;
+		padding: 0.5rem;
+	}
 
-			margin: 3rem;
-			width: 60%;
+	.omosstext{
 
-		}
-		#map{
+		padding: 0 10rem 2rem 10rem;		
+	}
 
-			width: 20rem;
-			margin: 3rem auto 5rem auto;
-			padding: 2rem;
-		}
+	.contact form{
+
+		margin: 3rem;
+		width: 60%;
+
+	}
+	#map{
+
+		width: 20rem;
+		margin: 3rem auto 5rem auto;
+		padding: 2rem;
+	}
 	
 
-		.contact-adress{
+	.contact-adress{
 
-			margin:auto;
-			width: 100%;
-		}
+		margin:auto;
+		width: 100%;
+	}
 
 
 }
@@ -582,14 +586,15 @@ footer{
 		padding: 0.5rem;
 	}	
 	
-	span{
+	#nav-span{
 		
 		margin: 1.2rem;
-		font-size: 2rem;	
+		font-size: 2rem;
+		cursor: pointer;	
 	}
 
 
-	.mobile-nav, span{
+	.mobile-nav, #nav-span{
 
 		display: block;
 		cursor: pointer;
@@ -684,6 +689,7 @@ footer{
 	.uppdrag-container{
 
 		flex-direction: column;
+		margin-bottom: 2rem;
 	}
 
 	.wrapper{
@@ -710,7 +716,7 @@ footer{
 	}
 	
 	.contact form{
-			
+
 		margin: 5rem auto 3rem auto;
 		max-width: 90%;
 	}
@@ -750,6 +756,7 @@ footer{
 
 		font-size: 12px;
 		padding: 1rem;
+
 	}
 
 	.omosstext h1{

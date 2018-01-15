@@ -76,6 +76,15 @@ function initMap() {
 	  });
 }
 
+function closeModal () {
+	modal.style.display = "none";
+	modal2.style.display = "none";
+	modal3.style.display = "none";
+	modal4.style.display = "none";
+	modal5.style.display = "none";
+	modal6.style.display = "none";
+}
+
 var modal = document.getElementById('myModal');
 var modal2 = document.getElementById('myModal2');
 var modal3 = document.getElementById('myModal3');
