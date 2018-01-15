@@ -688,8 +688,7 @@ footer{
 	
 	.uppdrag-container{
 
-		flex-direction: column;
-		margin-bottom: 2rem;
+		display: block;
 	}
 
 	.wrapper{
