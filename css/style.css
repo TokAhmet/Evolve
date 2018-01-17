@@ -226,6 +226,19 @@ main{
 
 /* UPPDRAG */
 
+.uppdrag-text{
+
+	padding: 0 1rem;
+	text-align: center;
+}
+
+.uppdrag-text h1{
+
+	font-size: 3rem;
+	margin: 2rem;
+}
+
+
 .uppdrag-container{
 
 	display: -webkit-box;
@@ -294,11 +307,14 @@ main{
 }
 
 .modal-content {
+
+	background: -webkit-linear-gradient(-45deg, rgba(246,248,249,1) 35%,rgba(215,222,227,1) 65%,rgba(215,222,227,1) 70%,rgba(215,222,227,1) 70%,rgba(215,222,227,1) 75%,rgba(215,222,227,1) 77%,rgba(215,222,227,1) 79%,rgba(215,222,227,1) 90%,rgba(215,222,227,1) 95%,rgba(215,222,227,1) 99%,rgba(215,222,227,1) 100%,rgba(245,247,249,1) 100%);
 	position: relative;
 	background-color: #fefefe;
 	margin: auto;
 	padding: 0;
 	width: 50%;
+	border: 3px solid black;
 	-webkit-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 	        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 	-webkit-animation: fadein 0.8s;
@@ -321,11 +337,12 @@ main{
 	padding: 2px 16px;
 	min-height: 3rem;
 	background-color: #d6c5b7;
+	border-bottom: 1px solid black;
 	color: #000;
 }
 
 .modal-body {
-
+	
 	padding: 2px 16px;
 	text-align: center;
 }
@@ -343,7 +360,7 @@ main{
 	background-color: #000;
 	color: #fff;
 	border: 0;
-	border-radius: 20px;
+	border-radius: 10px;
 	font-weight: bold;
 }
 
@@ -388,7 +405,7 @@ main{
 	        box-shadow: 5px 10px 22px #0d0d0d;
 	color: #000;
 	max-width: 40rem;
-	margin: 5rem auto;
+	margin: 5rem 3rem;
 	font-weight: bold;
 	-webkit-box-flex: 1;
 	    -ms-flex: 1;
@@ -905,16 +922,16 @@ footer{
 
 @media screen and (max-width: 440px){
 
-	.slogan h1{
+	.slogan h1,.uppdrag-text h1{
 
 		font-size: 2rem;
 		padding: 8px;
 
 	}
 
-	.wrapper p{
+	.wrapper p ,.uppdrag-text p{
 
-		font-size: 12px;
+		font-size: 14px;
 		padding: 1rem;
 
 	}
