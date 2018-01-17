@@ -840,25 +840,7 @@ footer{
 		
 		margin: 1rem;
 	}
-	
-	.uppdrag-container{
 
-		-webkit-box-orient: vertical;
-
-		-webkit-box-direction: normal;
-
-		    -ms-flex-direction: column;
-
-		        flex-direction: column;
-		        margin-bottom: 1rem;
-	}
-
-	.wrapper{
-
-		margin: 4rem  auto;
-		width: 90%;
-
-	}
 
 	.modal-content{
 
@@ -872,8 +854,14 @@ footer{
 	}
 
 	.omosstext{
-
+		
 		padding: 2rem;
+	}
+	
+	.wrapper{
+		
+		flex-basis: 90%;
+		margin: 3rem 1rem;
 	}
 	
 	.contact form{
@@ -901,6 +889,7 @@ footer{
 
 		display: none;
 	}	
+ 
 	
 }
 
