@@ -860,7 +860,8 @@ footer{
 	
 	.wrapper{
 		
-		flex-basis: 90%;
+		-ms-flex-preferred-size: 90%;	
+	    flex-basis: 90%;
 		margin: 3rem 1rem;
 	}
 	
