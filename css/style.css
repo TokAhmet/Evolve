@@ -404,12 +404,9 @@ main{
 	-webkit-box-shadow: 5px 10px 22px #0d0d0d;
 	        box-shadow: 5px 10px 22px #0d0d0d;
 	color: #000;
-	max-width: 40rem;
-	margin: 5rem 3rem;
+	min-width: 40vw;
+	margin: 5rem 1rem 5rem 5rem;
 	font-weight: bold;
-	-webkit-box-flex: 1;
-	    -ms-flex: 1;
-	        flex: 1;
 
 }
 
@@ -487,8 +484,8 @@ main{
 	
 	        box-shadow: 5px 10px 22px #0d0d0d;
 	height: 20rem;
-	width: 40rem;
-	margin: 10rem auto 5rem auto;
+	width: 40vw;
+	margin: 5rem auto 5rem auto;
 	padding: 2rem;
 }
 
@@ -725,12 +722,11 @@ footer{
 	.contact form{
 
 		margin: 3rem;
-		width: 60%;
 
 	}
 	#map{
 
-		width: 20rem;
+		width: 40vw;
 		margin: 3rem auto 5rem auto;
 		padding: 2rem;
 	}
@@ -894,7 +890,7 @@ footer{
 	.contact form{
 
 		margin: 5rem auto 3rem auto;
-		max-width: 90%;
+		width: 90%;
 	}
 
 	.contact button{
