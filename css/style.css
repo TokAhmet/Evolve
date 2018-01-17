@@ -720,7 +720,7 @@ footer{
 }
 
 
-@media screen and (max-width: 650px){
+@media screen and (max-width: 710px){
 
 	.navbar{
 
@@ -856,6 +856,17 @@ footer{
 	.omosstext{
 		
 		padding: 2rem;
+	}
+
+	.uppdrag-container{
+
+		-webkit-box-orient: vertical;
+
+		-webkit-box-direction: normal;
+
+		    -ms-flex-direction: column;
+
+		        flex-direction: column;
 	}
 	
 	.wrapper{
