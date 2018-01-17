@@ -3,25 +3,25 @@
  	margin: 2rem;
  	text-align: center;
  	text-transform: uppercase;
+ 	& li{
+
+ 		display: inline;
+ 		margin: 1rem;
+
+ 	}
+ 	& a{
+ 		
+ 		color: $farg-black;
+ 		font-size: 16px;
+ 		font-style: italic;
+ 		font-weight: bold;
+ 		text-decoration: none;
+
+
+ 	}
  }
 
- .navbar li{
 
- 	display: inline;
- 	margin: 1rem;
-
- }
-
- .navbar a{
- 	
- 	color: $farg-black;
- 	font-size: 16px;
- 	font-style: italic;
- 	font-weight: bold;
- 	text-decoration: none;
-
-
- }
 
  .current a , .navbar a:hover{
 

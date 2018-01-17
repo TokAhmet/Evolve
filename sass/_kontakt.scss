@@ -12,39 +12,37 @@
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
+	& form{
+
+		background-color: $majorcolor;
+		border-radius: 1rem;
+		-webkit-box-shadow: 5px 10px 22px $farg-black;
+		box-shadow: 5px 10px 22px $farg-black;
+		color: $farg-black;
+		max-width: 40rem;
+		margin: 5rem auto;
+		font-weight: bold;
+		-webkit-box-flex: 1;
+		-ms-flex: 1;
+		flex: 1;
+
+	}
+	& h1{
+
+		font-size: 2rem;		
+		text-align: center;
+		text-decoration: underline;
+		letter-spacing: 2px;
+		padding: 0.5rem;
+	}
 }
 
-.contact form{
 
-	background-color: $majorcolor;
-	border-radius: 1rem;
-	-webkit-box-shadow: 5px 10px 22px $farg-black;
-	box-shadow: 5px 10px 22px $farg-black;
-	color: $farg-black;
-	max-width: 40rem;
-	margin: 5rem auto;
-	font-weight: bold;
-	-webkit-box-flex: 1;
-	-ms-flex: 1;
-	flex: 1;
-
-}
-
-.contact h1{
-	
-	font-size: 2rem;		
-	text-align: center;
-	text-decoration: underline;
-	letter-spacing: 2px;
-	padding: 0.5rem;
-}
 
 .li-forms {
 
 	display: -webkit-box;
-
 	display: -ms-flexbox;
-
 	display: flex;
 	-ms-flex-direction: column;
 	-webkit-box-orient: vertical;
@@ -102,11 +100,11 @@
 	width: 70%;
 	margin: auto;
 
-}
-
-
-.contact-adress li{
+& li{
 
 	padding: 1rem;
 	margin: 1rem;
 }
+}
+
+

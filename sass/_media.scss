@@ -21,12 +21,12 @@
 	.wrapper{
 
 		margin: 3rem;
+		& p{
+
+			padding: 0 1rem;
+		}
 	}
 
-	.wrapper p{
-
-		padding: 0 1rem;
-	}
 	
 	.omossnav{
 		
@@ -84,16 +84,6 @@
 	}
 
 
-	.mobile-nav, span{
-
-		display: block;
-		cursor: pointer;
-		position: fixed;
-		top: 0;
-		right: 0;
-		z-index: 1;
-
-	}
 
 	.mobile-nav {
 
@@ -113,28 +103,38 @@
 		padding-top: 2.5rem;
 		cursor: default;
 
+		& span{
 
+			display: block;
+			cursor: pointer;
+			position: fixed;
+			top: 0;
+			right: 0;
+			z-index: 1;
+
+		}
+		& li{
+
+			margin-top: 1.5rem;
+		}
+
+
+		& a {
+
+			padding: 0.8rem;
+			text-decoration: none;
+			font-size: 16px;
+			color: $farg-white;
+			display: block;
+			-webkit-transition: 0.3s;
+			-o-transition: 0.3s;
+			transition: 0.3s;
+			border-bottom: 1px solid $farg-grey;
+			cursor: pointer;
+			text-transform: uppercase;
+		}
 	}
 
-	.mobile-nav li{
-
-		margin-top: 1.5rem;
-	}
-
-	.mobile-nav a {
-
-		padding: 0.8rem;
-		text-decoration: none;
-		font-size: 16px;
-		color: $farg-white;
-		display: block;
-		-webkit-transition: 0.3s;
-		-o-transition: 0.3s;
-		transition: 0.3s;
-		border-bottom: 1px solid $farg-grey;
-		cursor: pointer;
-		text-transform: uppercase;
-	}
 
 	.nav-item a:hover{
 		
@@ -143,13 +143,13 @@
 		
 	}
 
-	.mobile-nav .closebtn {
+	.mobile-nav .closebtn {    // KAN MAN LÄGGA IHOP DEN MED EN & ?? 
 
 		position: absolute;
 		top: 0;
 		left: 0;
 		font-size: 37px;
-		border: none;
+		border: none;      
 	}
 	
 	footer{		
@@ -166,23 +166,23 @@
 		margin: 0;
 		padding: 0.5rem;
 		
-	}
-	
-	.adress li{
+	& li{
 
 		margin: 0.5rem;
 	}
+	}
+	
 	
 	
 	.media-icons{
 		
 		padding: 1rem;
-	}
-
-	.media-icons li{
+	& li{
 		
 		margin: 1rem;
 	}
+	}
+
 	
 	.uppdrag-container{
 
