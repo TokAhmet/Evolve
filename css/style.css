@@ -925,14 +925,13 @@ footer{
 	.slogan h1,.uppdrag-text h1{
 
 		font-size: 2rem;
-		padding: 8px;
 
 	}
 
 	.wrapper p ,.uppdrag-text p{
 
 		font-size: 14px;
-		padding: 1rem;
+		padding: 1rem 0;
 
 	}
 
