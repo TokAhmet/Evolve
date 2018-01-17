@@ -850,6 +850,7 @@ footer{
 		    -ms-flex-direction: column;
 
 		        flex-direction: column;
+		        margin-bottom: 1rem;
 	}
 
 	.wrapper{
