@@ -1,7 +1,9 @@
 
 *{
 
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+
+	        box-sizing: border-box;
 	list-style: none;
 	text-decoration: none;
 
@@ -10,7 +12,10 @@
 body,html{
 	
 
-	animation: fadein 1.5s;
+	-webkit-animation: fadein 1.5s;
+	
+
+	        animation: fadein 1.5s;
 	background: -webkit-linear-gradient(-45deg, rgba(246,248,249,1) 35%,rgba(215,222,227,1) 65%,rgba(215,222,227,1) 70%,rgba(215,222,227,1) 70%,rgba(215,222,227,1) 75%,rgba(215,222,227,1) 77%,rgba(215,222,227,1) 79%,rgba(215,222,227,1) 90%,rgba(215,222,227,1) 95%,rgba(215,222,227,1) 99%,rgba(215,222,227,1) 100%,rgba(245,247,249,1) 100%);
 	font-family: 'Open Sans', sans-serif;
 	line-height: 1.5;
@@ -34,9 +39,18 @@ main,.uppdrag,.omoss,.tjänster,.kontakt{
 
 header{
 
+	display: -webkit-box;
+
+	display: -ms-flexbox;
+
 	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-between;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-flow: row wrap;
+	        flex-flow: row wrap;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	max-height: 5rem;	
 	width: 100%;
 	text-shadow: 5px 10px 10px #0d0d0d;
@@ -52,7 +66,9 @@ header img{
 
 .zoom-nav{
 
-	animation: zoomIn 1s;
+	-webkit-animation: zoomIn 1s;
+
+	        animation: zoomIn 1s;
 }
 
 .navbar{
@@ -106,8 +122,13 @@ main{
 
 	background: url(../img/startbild.jpg) no-repeat center center;
 	background-size: 100% 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-flow: row wrap;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-flow: row wrap;
+	        flex-flow: row wrap;
 
 }
 
@@ -124,14 +145,17 @@ main{
 	font-size: 6rem;
 	color: orange;
 	font-family: 'Lobster', cursive;
-	animation: jackInTheBox 2s;
+	-webkit-animation: jackInTheBox 2s;
+	        animation: jackInTheBox 2s;
 }
 
 /* OM OSS */
 
 .omossnav{
 
-	box-shadow: 5px 10px 11px #0d0d0d;
+	-webkit-box-shadow: 5px 10px 11px #0d0d0d;
+
+	        box-shadow: 5px 10px 11px #0d0d0d;
 	background-color: #d6c5b7;
 	margin: 5rem;
 	min-width: 35%;
@@ -170,8 +194,12 @@ main{
 
 .omosstext{
 	
-	animation: fadein 1s;
-	flex: 1;
+	-webkit-animation: fadein 1s;
+	
+	        animation: fadein 1s;
+	-webkit-box-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
 	padding: 8rem;
 	margin: auto;
 }
@@ -205,18 +233,25 @@ main{
 	display: flex;
 	-ms-flex-pack: distribute;
 	justify-content: space-around;
-	flex-flow: row wrap;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-flow: row wrap;
+	        flex-flow: row wrap;
 	margin: 1rem auto auto;
 }
 
 
 .wrapper{
 	
-	box-shadow: 5px 10px 11px #0d0d0d;
+	-webkit-box-shadow: 5px 10px 11px #0d0d0d;
+	
+	        box-shadow: 5px 10px 11px #0d0d0d;
 	background-color: #fff;
 	color: #000;
-	flex-basis: 30%;
-	flex-wrap: wrap;
+	-ms-flex-preferred-size: 30%;
+	    flex-basis: 30%;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 	margin: 3rem 0;
 	font-weight: bold;
 
@@ -227,13 +262,20 @@ main{
 	cursor: pointer;
 	width: 100%;
 	height: 100%;
-	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+	        filter: grayscale(100%);
+	-webkit-transition: 0.5s ease-in-out;
+	-o-transition: 0.5s ease-in-out;
 	transition: 0.5s ease-in-out;
 }
 
 .wrapper img:hover{
 	
-	filter: grayscale(0%);
+	-webkit-filter: grayscale(0%);
+	
+	        filter: grayscale(0%);
+	-webkit-transition: 0.5s ease-in-out;
+	-o-transition: 0.5s ease-in-out;
 	transition: 0.5s ease-in-out;	
 }
 
@@ -257,9 +299,10 @@ main{
 	margin: auto;
 	padding: 0;
 	width: 50%;
-	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-	animation-name: animatetop;
-	animation-duration: 0.4s
+	-webkit-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+	        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+	-webkit-animation: fadein 0.8s;
+	        animation: fadein 0.8s;
 }
 
 #modal-span{
@@ -295,7 +338,8 @@ main{
 
 .modal-footer button{
 	float: right;
-	box-shadow: 0 5px #666;
+	-webkit-box-shadow: 0 5px #666;
+	        box-shadow: 0 5px #666;
 	background-color: #000;
 	color: #fff;
 	border: 0;
@@ -310,29 +354,45 @@ main{
 
 .modal-footer button:active {
 
-	box-shadow: 0 5px #666;
-	transform: translateY(2px);
+	-webkit-box-shadow: 0 5px #666;
+
+	        box-shadow: 0 5px #666;
+	-webkit-transform: translateY(2px);
+	    -ms-transform: translateY(2px);
+	        transform: translateY(2px);
 }
 
 /* KONTAKT */
 
 .contact{
 
+	display: -webkit-box;
+
+	display: -ms-flexbox;
+
 	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-between;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-flow: row wrap;
+	        flex-flow: row wrap;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 }
 
 .contact form{
 
 	background-color: #d6c5b7;
 	border-radius: 1rem;
-	box-shadow: 5px 10px 22px #0d0d0d;
+	-webkit-box-shadow: 5px 10px 22px #0d0d0d;
+	        box-shadow: 5px 10px 22px #0d0d0d;
 	color: #000;
 	max-width: 40rem;
 	margin: 5rem auto;
 	font-weight: bold;
-	flex: 1;
+	-webkit-box-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
 
 }
 
@@ -347,9 +407,15 @@ main{
 
 .li-forms {
 
+	display: -webkit-box;
+
+	display: -ms-flexbox;
+
 	display: flex;
 	-ms-flex-direction: column;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	        flex-direction: column;
 	margin: auto;
 	padding: 0.7rem;
 }
@@ -365,7 +431,9 @@ main{
 
 .li-forms button {
 	
-	box-shadow: 0 8px #666;
+	-webkit-box-shadow: 0 8px #666;
+	
+	        box-shadow: 0 8px #666;
 	background-color: #fff;
 	border: 0;
 	border-radius: 20px;
@@ -381,8 +449,12 @@ main{
 
 .li-forms button:active {
 
-	box-shadow: 0 5px #666;
-	transform: translateY(2px);
+	-webkit-box-shadow: 0 5px #666;
+
+	        box-shadow: 0 5px #666;
+	-webkit-transform: translateY(2px);
+	    -ms-transform: translateY(2px);
+	        transform: translateY(2px);
 }
 
 .contact-wrapper{
@@ -393,7 +465,9 @@ main{
 
 #map{
 	
-	box-shadow: 5px 10px 22px #0d0d0d;
+	-webkit-box-shadow: 5px 10px 22px #0d0d0d;
+	
+	        box-shadow: 5px 10px 22px #0d0d0d;
 	height: 20rem;
 	width: 40rem;
 	margin: 10rem auto 5rem auto;
@@ -405,7 +479,8 @@ main{
 
 	background-color: #d6c5b7;
 	border-radius: 1rem;
-	box-shadow: 5px 10px 22px #0d0d0d;
+	-webkit-box-shadow: 5px 10px 22px #0d0d0d;
+	        box-shadow: 5px 10px 22px #0d0d0d;
 	font-weight: bold;
 	width: 70%;
 	margin: auto;
@@ -425,9 +500,16 @@ main{
 footer{
 
 	background-color: #d6c5b7;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-between;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-flow: row wrap;
+	        flex-flow: row wrap;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	min-height: 9rem;
 }
 
@@ -457,6 +539,16 @@ footer{
 
 /* ANIMATIONS */
 
+@-webkit-keyframes fadein { 
+
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}	  
+}
+
 @keyframes fadein { 
 
 	from {
@@ -465,6 +557,18 @@ footer{
 	to {
 		opacity: 1;
 	}	  
+}
+
+@-webkit-keyframes zoomIn {
+	from {
+		opacity: 0;
+		-webkit-transform: scale3d(.3, .3, .3);
+		transform: scale3d(.3, .3, .3);
+	}
+
+	50% {
+		opacity: 1;
+	}
 }
 
 @keyframes zoomIn {
@@ -479,29 +583,65 @@ footer{
 	}
 }
 
+@-webkit-keyframes animatetop {
+	from {top:-500px; opacity:0}
+	to {top:0; opacity:1}
+}
+
 @keyframes animatetop {
 	from {top:-500px; opacity:0}
 	to {top:0; opacity:1}
 }
 
-@keyframes jackInTheBox {
+@-webkit-keyframes jackInTheBox {
 	from {
 		opacity: 0;
-		transform: scale(0.1) rotate(30deg);
-		transform-origin: center bottom;
+		-webkit-transform: scale(0.1) rotate(30deg);
+		        transform: scale(0.1) rotate(30deg);
+		-webkit-transform-origin: center bottom;
+		        transform-origin: center bottom;
 	}
 
 	50% {
-		transform: rotate(-10deg);
+		-webkit-transform: rotate(-10deg);
+		        transform: rotate(-10deg);
 	}
 
 	70% {
-		transform: rotate(3deg);
+		-webkit-transform: rotate(3deg);
+		        transform: rotate(3deg);
 	}
 
 	to {
 		opacity: 1;
-		transform: scale(1);
+		-webkit-transform: scale(1);
+		        transform: scale(1);
+	}
+}
+
+@keyframes jackInTheBox {
+	from {
+		opacity: 0;
+		-webkit-transform: scale(0.1) rotate(30deg);
+		        transform: scale(0.1) rotate(30deg);
+		-webkit-transform-origin: center bottom;
+		        transform-origin: center bottom;
+	}
+
+	50% {
+		-webkit-transform: rotate(-10deg);
+		        transform: rotate(-10deg);
+	}
+
+	70% {
+		-webkit-transform: rotate(3deg);
+		        transform: rotate(3deg);
+	}
+
+	to {
+		opacity: 1;
+		-webkit-transform: scale(1);
+		        transform: scale(1);
 	}
 }
 
@@ -512,9 +652,14 @@ footer{
 	.omoss-container{
 
 		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		justify-content: space-around;
-		flex-flow: row wrap;
+		-ms-flex-pack: distribute;
+		    justify-content: space-around;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-flow: row wrap;
+		        flex-flow: row wrap;
 
 	}
 
@@ -529,7 +674,9 @@ footer{
 
 	.wrapper img{
 
-		filter: grayscale(0%);
+		-webkit-filter: grayscale(0%);
+
+		        filter: grayscale(0%);
 	}
 
 	.wrapper p{
@@ -616,6 +763,8 @@ footer{
 		background-color: black;
 		opacity: 0.7;
 		overflow-x: hidden;
+		-webkit-transition: 0.5s;
+		-o-transition: 0.5s;
 		transition: 0.5s;
 		text-align: center;
 		padding-top: 2.5rem;
@@ -636,6 +785,8 @@ footer{
 		font-size: 16px;
 		color: #ffffff;
 		display: block;
+		-webkit-transition: 0.3s;
+		-o-transition: 0.3s;
 		transition: 0.3s;
 		border-bottom: 1px solid gray;
 		cursor: pointer;
@@ -660,7 +811,11 @@ footer{
 	
 	footer{		
 
-		justify-content: center;		
+		-webkit-box-pack: center;		
+
+		    -ms-flex-pack: center;		
+
+		        justify-content: center;		
 	}
 	
 	.adress {
@@ -688,7 +843,13 @@ footer{
 	
 	.uppdrag-container{
 
-		display: block;
+		-webkit-box-orient: vertical;
+
+		-webkit-box-direction: normal;
+
+		    -ms-flex-direction: column;
+
+		        flex-direction: column;
 	}
 
 	.wrapper{
