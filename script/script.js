@@ -76,6 +76,27 @@ function initMap() {
 	  });
 }
 
+function openPage(pageName, elmnt) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+		tabcontent[i].style.display = "none";
+	}
+	
+    tablinks = document.getElementsByClassName("tablink");
+	for (i = 0; i < tablinks.length; i++) {
+		tablinks[i].className = "tablink";
+    }
+
+	document.getElementById(pageName).style.display = "block";
+	elmnt.className += " tablinkactive";
+}
+
+window.onload = function()
+{
+	document.getElementById("BeforeButton").click();
+}
+
 var modal = document.getElementById('myModal');
 var modal2 = document.getElementById('myModal2');
 var modal3 = document.getElementById('myModal3');
@@ -134,3 +155,4 @@ window.onclick = function(event) {
    	 	modal6.style.display = "none";
     }
 };
+

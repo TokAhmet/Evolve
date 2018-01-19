@@ -196,6 +196,99 @@ main{
 
  /* TJÄNSTER */
 
+ .tjanstercontainer
+ {
+	 width: 100%;
+	 display: flex;
+	 align-items: center;
+	 flex-direction: column;
+ }
+
+ .tjanster 
+ {
+	 width: 80%;
+	 height: auto;
+	 display: flex;
+	 justify-content: space-between;
+	 padding-top: 3em;
+ }
+
+ .tjanstervanster
+ {
+	background-color: #ACA796;
+	width: 40%;	
+	height: auto;
+	/*float: left;*/
+	padding: 1em 2em 2em 2em;
+ }
+
+ .tjansterhoger
+ {
+	background-color: #ACA796;
+	width: 40%;	
+	height: auto;
+	/*float: right; */
+	padding: 1em 2em 2em 2em;
+ }
+
+ .tjanster img{
+	width: 100%;
+	height: auto;
+}
+
+.tjanstermobil{
+	width: 80%;
+	height: auto;
+	background-color: #ACA796;
+}
+
+.tjanstermobil img{
+	width: 100%;
+	height: auto;
+}
+
+.tjanstertext{
+	width: 80%;
+	padding: 1em 1em;
+}
+
+.tablink{
+	background-color: #000000;
+	color: white;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 1em 1em;
+	width: 50%;
+}
+
+.tablinkactive{
+	background-color: #ACA796;
+}
+  
+.tablink:hover{
+	background-color: #777;
+}
+
+.tabcontent{
+	color: white;
+	display: none;
+	padding: 2em 1em;
+	height: 100%;
+}
+
+@media screen and (min-width: 701px){
+	.tjanstermobil{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 700px){
+	.tjanstermobil{
+		display: block;
+	}
+}
 
  /* UPPDRAG */
 
