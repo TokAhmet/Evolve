@@ -927,10 +927,6 @@ footer{
 	    flex-basis: 90%;
 		margin: 3rem 1rem;
 	}
-
-	.uppdrag-text img{
-		width: 100%;
-	}
 	
 	.contact form{
 		
@@ -963,7 +959,7 @@ footer{
 	
 }
 
-@media screen and (max-width: 440px){
+@media screen and (max-width: 550px){
 
 	.slogan h1,.uppdrag-text h1{
 		font-size: 2rem;
