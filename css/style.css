@@ -151,7 +151,7 @@ main{
 
 /* OM OSS */
 
-.header-img{
+.omoss-img{
 
 	background: url(../img/office1.jpg) no-repeat center center;
 	background-size: 100% 100%;
@@ -193,6 +193,7 @@ main{
 .omossnav a:hover{
 
 	text-decoration: underline;
+	cursor: pointer;
 }
 
 .border-li{
@@ -207,8 +208,8 @@ main{
 	-webkit-box-flex: 1;
 	    -ms-flex: 1;
 	        flex: 1;
-	padding: 8rem;
 	margin: auto;
+	padding: 8rem;
 }
 
 .omosstext p{
@@ -756,7 +757,7 @@ footer{
 
 	.omosstext{
 
-		padding: 0 10rem 2rem 10rem;		
+		padding: 0 10rem 2rem 10rem;	
 	}
 
 	.contact form{
@@ -912,12 +913,12 @@ footer{
 	.omossnav{
 
 		width: 90%;
-		margin: 6rem auto auto;
+		margin: 3rem auto;
 	}
 
 	.omosstext{
 		
-		padding: 2rem;
+		padding: 0 2rem 2rem;
 	}
 	
 	.wrapper{
