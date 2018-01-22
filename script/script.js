@@ -1,11 +1,18 @@
 
+
+// Mobile nav
+
 function openNav() {
     document.getElementById("mySidenav").style.width = "50%";
+    document.getElementById("nav-span").style.display = "none";
 }
 
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("nav-span").style.display = "block";
 }
+
+//Länka till sidorna när man klickar på button
 
 function framtiden(){
 
@@ -43,6 +50,8 @@ function tele2(){
 
 }
 
+// ändra Omoss texten när man klickar på nav'en
+
 function evolveText () {
 
 	var evolve = document.getElementById("text").className = "omosstext";
@@ -64,6 +73,8 @@ function plattformText () {
 	var plattform = document.getElementById("text3").className = "omosstext ";
 }
 
+// ändra bild på tjänstersidan
+
 function openPage(pageName, elmnt) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
@@ -83,8 +94,9 @@ function openPage(pageName, elmnt) {
 window.onload = function()
 {
 	document.getElementById("BeforeButton").click();
-}
+};
 
+// Stäng popup-modellen
 
 function closeModal () {
 	modal.style.display = "none";
@@ -108,6 +120,8 @@ var popup3 = document.getElementById("skane");
 var popup4 = document.getElementById("mq");
 var popup5 = document.getElementById("gevalia");
 var popup6 = document.getElementById("tele2");
+
+// Visa popup-modellen när man klickar på företagen
  
 popup.onclick = function() {
     modal.style.display = "block";
@@ -127,6 +141,9 @@ popup5.onclick = function() {
 popup6.onclick = function() {
     modal6.style.display = "block";
 };
+
+
+// Stäng modellen när man klickar utanför boxen
 
 window.onclick = function(event) {
     if (event.target == modal) {
@@ -153,6 +170,8 @@ window.onclick = function(event) {
    	 	modal6.style.display = "none";
     }
 };
+
+// GoogleMap positionen 
 
 function initMap() {
 	  var uluru = {lat: 59.345283, lng: 18.0223358};

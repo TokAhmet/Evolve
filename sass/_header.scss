@@ -1,0 +1,23 @@
+header{
+
+ 	display: -webkit-box;
+	display: -ms-flexbox;
+ 	display: flex;
+ 	-webkit-box-orient: horizontal;
+ 	-webkit-box-direction: normal;
+ 	-ms-flex-flow: row wrap;
+ 	flex-flow: row wrap;
+ 	-webkit-box-pack: justify;
+ 	-ms-flex-pack: justify;
+ 	justify-content: space-between;
+ 	max-height: 5rem;	
+ 	width: 100%;
+ 	text-shadow: 5px 10px 10px $farg-black;
+ & img{
+
+ 	width: 200px;
+ 	padding: 1rem;
+	 }
+ }
+
+
