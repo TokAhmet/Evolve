@@ -64,17 +64,27 @@ function plattformText () {
 	var plattform = document.getElementById("text3").className = "omosstext ";
 }
 
-function initMap() {
-	  var uluru = {lat: 59.345283, lng: 18.0223358};
-	  var map = new google.maps.Map(document.getElementById('map'), {
-		zoom: 17,
-		center: uluru
-	  });
-	  var marker = new google.maps.Marker({
-		position: uluru,
-		map: map
-	  });
+function openPage(pageName, elmnt) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+		tabcontent[i].style.display = "none";
+	}
+	
+    tablinks = document.getElementsByClassName("tablink");
+	for (i = 0; i < tablinks.length; i++) {
+		tablinks[i].className = "tablink";
+    }
+
+	document.getElementById(pageName).style.display = "block";
+	elmnt.className += " tablinkactive";
 }
+
+window.onload = function()
+{
+	document.getElementById("BeforeButton").click();
+}
+
 
 function closeModal () {
 	modal.style.display = "none";
@@ -92,14 +102,14 @@ var modal4 = document.getElementById('myModal4');
 var modal5 = document.getElementById('myModal5');
 var modal6 = document.getElementById('myModal6');
 
-var popup1 = document.getElementById("framtiden");
+var popup = document.getElementById("framtiden");
 var popup2 = document.getElementById("loxy");
 var popup3 = document.getElementById("skane");
 var popup4 = document.getElementById("mq");
 var popup5 = document.getElementById("gevalia");
 var popup6 = document.getElementById("tele2");
  
-popup1.onclick = function() {
+popup.onclick = function() {
     modal.style.display = "block";
 };
 popup2.onclick = function() {
@@ -143,3 +153,15 @@ window.onclick = function(event) {
    	 	modal6.style.display = "none";
     }
 };
+
+function initMap() {
+	  var uluru = {lat: 59.345283, lng: 18.0223358};
+	  var map = new google.maps.Map(document.getElementById('map'), {
+		zoom: 17,
+		center: uluru
+	  });
+	  var marker = new google.maps.Marker({
+		position: uluru,
+		map: map
+	  });
+}

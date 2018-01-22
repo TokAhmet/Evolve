@@ -11,10 +11,7 @@
 
 body,html{
 	
-
 	-webkit-animation: fadein 1.5s;
-	
-
 	        animation: fadein 1.5s;
 	background: -webkit-linear-gradient(-45deg, rgba(246,248,249,1) 35%,rgba(215,222,227,1) 65%,rgba(215,222,227,1) 70%,rgba(215,222,227,1) 70%,rgba(215,222,227,1) 75%,rgba(215,222,227,1) 77%,rgba(215,222,227,1) 79%,rgba(215,222,227,1) 90%,rgba(215,222,227,1) 95%,rgba(215,222,227,1) 99%,rgba(215,222,227,1) 100%,rgba(245,247,249,1) 100%);
 	font-family: 'Open Sans', sans-serif;
@@ -34,6 +31,10 @@ main,.uppdrag,.omoss,.tjänster,.kontakt{
 	min-height: 100vh;
 }
 
+.hide{
+
+	display: none;
+}
 
 /* HEADER */
 
@@ -144,7 +145,7 @@ main{
 	text-align: center;
 	font-size: 6rem;
 	color: orange;
-	font-family: 'Lobster', cursive;
+	font-family: 'Archivo Black', sans-serif;
 	-webkit-animation: jackInTheBox 2s;
 	        animation: jackInTheBox 2s;
 }
@@ -224,13 +225,100 @@ main{
 	border-bottom: 3px solid black;
 }
 
-.hide{
-
-	display: none;
-}
-
 /* TJÄNSTER */
 
+ .tjanster-container
+ {
+	 width: 100%;
+	 display: flex;
+	 align-items: center;
+	 flex-direction: column;
+ }
+
+ .tjanster 
+ {
+	 width: 80%;
+	 height: auto;
+	 display: flex;
+	 justify-content: space-between;
+	 padding-top: 3em;
+	 text-align: center;
+ }
+
+ .tjanster-vanster{
+
+	background-color: #d6c5b7;
+	width: 40%;	
+	height: auto;
+	/*float: left;*/
+	padding: 1em 2em 2em 2em;
+ }
+
+ .tjanster-hoger {
+
+	background-color: #d6c5b7;
+	width: 40%;	
+	height: auto;
+	/*float: right; */
+	padding: 1em 2em 2em 2em;
+ }
+
+ .tjanster img{
+
+	width: 100%;
+	height: auto;
+}
+
+.tjanster-mobil{
+
+	display: none;
+	width: 80%;
+	height: auto;
+	background-color: #d6c5b7;
+}
+
+.tjanster-mobil img{
+
+	width: 100%;
+	height: auto;
+}
+
+.tjanster-text{
+	
+	font-weight: bold;
+	width: 80%;
+	padding: 2rem;
+}
+
+.tablink{
+
+	background-color: #d6c5b7;
+	color: white;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 1em 1em;
+	width: 50%;
+}
+
+.tablinkactive{
+
+	background-color: #000;
+}
+  
+.tablink:hover{
+
+	background-color: #777;
+}
+
+.tabcontent{
+
+	color: white;
+	display: none;
+	padding: 2em 1em;
+	height: 100%;
+}
 
 /* UPPDRAG */
 
@@ -838,7 +926,7 @@ footer{
 
 	.mobile-nav li{
 
-		margin-top: 1rem;
+		margin-top: 1.2rem;
 	}
 
 	.mobile-nav a {
@@ -904,12 +992,6 @@ footer{
 		margin: 1rem;
 	}
 
-
-	.modal-content{
-
-		width: 90%;
-	}
-
 	.omossnav{
 
 		width: 90%;
@@ -920,6 +1002,11 @@ footer{
 		
 		padding: 0 2rem 2rem;
 	}
+
+	.tjanster-mobil{
+		
+		display: block;
+	}
 	
 	.wrapper{
 		
@@ -928,6 +1015,11 @@ footer{
 		margin: 3rem 1rem;
 	}
 	
+	.modal-content{
+
+		width: 90%;
+	}
+
 	.contact form{
 		
 		animation-name: none;
