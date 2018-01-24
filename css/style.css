@@ -253,6 +253,8 @@ main{
 	width: 40%;	
 	height: auto;
 	padding: 1em 2em 2em 2em;
+	-webkit-box-shadow: 5px 10px 22px #0d0d0d;
+	        box-shadow: 5px 10px 22px #0d0d0d;
  }
 
  .tjanster-hoger {
@@ -261,12 +263,15 @@ main{
 	width: 40%;	
 	height: auto;
 	padding: 1em 2em 2em 2em;
+	-webkit-box-shadow: 5px 10px 22px #0d0d0d;
+	        box-shadow: 5px 10px 22px #0d0d0d;
  }
 
  .tjanster img{
 
 	width: 100%;
 	height: auto;
+	padding-top: 1.5em;
 }
 
 .tjanster-mobil{
@@ -279,6 +284,7 @@ main{
 
 .tjanster-mobil img{
 
+	padding-top: 1em;
 	width: 100%;
 	height: auto;
 }
@@ -288,6 +294,17 @@ main{
 	font-weight: bold;
 	width: 80%;
 	padding: 2rem;
+}
+
+.tjanster-text h1{
+	
+	font-size: 3rem;
+	border-bottom: 3px solid black;
+}
+
+.tjanster-li
+{
+	line-height: 1em;
 }
 
 .tablink{
@@ -300,6 +317,9 @@ main{
 	cursor: pointer;
 	padding: 1em 1em;
 	width: 50%;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1em;
+	font-weight: 700;
 }
 
 .tablinkactive{
@@ -314,7 +334,7 @@ main{
 
 .tabcontent{
 
-	color: white;
+	color: #000;
 	display: none;
 	padding: 2em 1em;
 	height: 100%;
@@ -328,8 +348,99 @@ main{
 	text-align: center;
 	font-weight: bold;
 }
+/*
+ .tjanstercontainer
+ {
+	 width: 100%;
+	 display: flex;
+	 align-items: center;
+	 flex-direction: column;
+ }
 
+ .tjanster 
+ {
+	 width: 80%;
+	 height: auto;
+	 display: flex;
+	 justify-content: space-between;
+	 padding-top: 3em;
+ }
 
+ .tjanstervanster
+ {
+	background-color: #ACA796;
+	width: 40%;	
+	height: auto;
+	padding: 1em 2em 2em 2em;
+ }
+
+ .tjansterhoger
+ {
+	background-color: #ACA796;
+	width: 40%;	
+	height: auto;
+	padding: 1em 2em 2em 2em;
+ }
+
+ .tjanster img{
+	width: 100%;
+	height: auto;
+}
+
+.tjanstermobil{
+	width: 80%;
+	height: auto;
+	background-color: #ACA796;
+}
+
+.tjanstermobil img{
+	width: 100%;
+	height: auto;
+}
+
+.tjanstertext{
+	width: 80%;
+	padding: 1em 1em;
+}
+
+.tablink{
+	background-color: #000000;
+	color: white;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 1em 1em;
+	width: 50%;
+}
+
+.tablinkactive{
+	background-color: #ACA796;
+}
+  
+.tablink:hover{
+	background-color: #777;
+}
+
+.tabcontent{
+	color: white;
+	display: none;
+	padding: 2em 1em;
+	height: 100%;
+}
+
+@media screen and (min-width: 701px){
+	.tjanstermobil{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 700px){
+	.tjanstermobil{
+		display: block;
+	}
+}
+*/
 
 .uppdrag-container{
 
@@ -1042,6 +1153,10 @@ footer{
 	.omosstext{
 		
 		padding: 0 2rem 2rem;
+	}
+
+	.tjanster{
+		display: none;
 	}
 
 	.tjanster-mobil{
