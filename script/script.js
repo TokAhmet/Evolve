@@ -93,7 +93,11 @@ function openPage(pageName, elmnt) {
 
 window.onload = function()
 {
-	document.getElementById("BeforeButton").click();
+	var beforeButton = document.getElementById("BeforeButton");
+	if (beforeButton != null)
+	{
+		beforeButton.click();		
+	}
 };
 
 // Stäng popup-modellen
