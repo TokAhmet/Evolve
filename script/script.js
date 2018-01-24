@@ -1,5 +1,4 @@
 
-
 // Mobile nav
 
 function openNav() {
@@ -142,6 +141,7 @@ var popup5 = document.getElementById("gevalia");
 var popup6 = document.getElementById("tele2");
 
 // Visa popup-modellen när man klickar på företagen
+
 if (popup != null) {
   popup.onclick = function() {
     modal.style.display = "block";
