@@ -90,7 +90,7 @@ header img{
 	
 	color: black;
 	font-size: 16px;
-	font-style: italic;
+	font-family: 'Merriweather Sans', sans-serif;
 	font-weight: bold;
 	text-decoration: none;
 
@@ -233,17 +233,28 @@ main{
  .tjanster-container{
 
 	 width: 100%;
+	 display: -webkit-box;
+	 display: -ms-flexbox;
 	 display: flex;
-	 align-items: center;
-	 flex-direction: column;
+	 -webkit-box-align: center;
+	     -ms-flex-align: center;
+	         align-items: center;
+	 -webkit-box-orient: vertical;
+	 -webkit-box-direction: normal;
+	     -ms-flex-direction: column;
+	         flex-direction: column;
  }
 
  .tjanster{
 
 	 width: 80%;
 	 height: auto;
+	 display: -webkit-box;
+	 display: -ms-flexbox;
 	 display: flex;
-	 justify-content: space-between;
+	 -webkit-box-pack: justify;
+	     -ms-flex-pack: justify;
+	         justify-content: space-between;
 	 padding-top: 3em;
 	 text-align: center;
  }
@@ -352,6 +363,7 @@ main{
 
 /* UPPDRAG */
 
+
 .uppdrag-text{
 
 	padding: 3rem 1rem 0 1rem;
@@ -359,6 +371,11 @@ main{
 	font-weight: bold;
 }
 
+.uppdrag-text h1{
+
+	font-size: 37px;
+	text-decoration: underline;
+}
 
 
 .uppdrag-container{
@@ -567,7 +584,9 @@ main{
 
 .contact form{
 	
-	animation: slideInLeft 1s;
+	-webkit-animation: slideInLeft 1s;
+	
+	        animation: slideInLeft 1s;
 	background-color: #d6c5b7;
 	-webkit-box-shadow: 5px 10px 22px #0d0d0d;
 	        box-shadow: 5px 10px 22px #0d0d0d;
@@ -647,7 +666,9 @@ main{
 
 #map{
 	
-	animation: slideInRight 1s;
+	-webkit-animation: slideInRight 1s;
+	
+	        animation: slideInRight 1s;
 	-webkit-box-shadow: 5px 10px 22px #0d0d0d;
 	
 	        box-shadow: 5px 10px 22px #0d0d0d;
@@ -661,7 +682,10 @@ main{
 .contact-adress{
 	
 
-	animation: slideInUp 1s;
+	-webkit-animation: slideInUp 1s;
+	
+
+	        animation: slideInUp 1s;
 	background-color: #d6c5b7;
 	-webkit-box-shadow: 5px 10px 22px #0d0d0d;
 	        box-shadow: 5px 10px 22px #0d0d0d;
@@ -835,37 +859,83 @@ footer{
 	}
 }
 
-@keyframes slideInLeft {
+@-webkit-keyframes slideInLeft {
   from {
-    transform: translate3d(-100%, 0, 0);
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
     visibility: visible;
   }
 
   to {
-    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+
+@-webkit-keyframes slideInRight {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
   }
 }
 
 
 @keyframes slideInRight {
   from {
-    transform: translate3d(100%, 0, 0);
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
     visibility: visible;
   }
 
   to {
-    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+@-webkit-keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
   }
 }
 
 @keyframes slideInUp {
   from {
-    transform: translate3d(0, 100%, 0);
+    -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
     visibility: visible;
   }
 
   to {
-    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
   }
 }
 
@@ -1111,7 +1181,9 @@ footer{
 
 	.contact form{
 		
-		animation-name: none;
+		-webkit-animation-name: none;
+		
+		        animation-name: none;
 		margin: 5rem auto 3rem auto;
 		width: 90%;
 	}
@@ -1122,7 +1194,9 @@ footer{
 
 	.contact #map{
 		
-		animation-name: none;
+		-webkit-animation-name: none;
+		
+		        animation-name: none;
 		width: 81vw;
 		margin: auto;
 	}
