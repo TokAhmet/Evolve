@@ -1,69 +1,78 @@
+/* OM OSS */
+
+.omoss-img{
+
+	background: url(../img/office1.jpg) no-repeat center center;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 80vh;
+}	
+
 .omossnav{
 
-	-webkit-box-shadow: 5px 10px 11px $farg-black;
+	-webkit-box-shadow: 5px 10px 11px #0d0d0d;
 
-	box-shadow: 5px 10px 11px $farg-black;
-	background-color: $majorcolor;
+	        box-shadow: 5px 10px 11px #0d0d0d;
+	background-color: #d6c5b7;
 	margin: 5rem;
 	min-width: 35%;
 	height: 10%;
 
-	& li{
+& li{
 
-		padding: 0.5rem;
-		margin: 1rem;
+	padding: 0.5rem;
+	margin: 1rem;
 
-		& :before{
+& :before{
 
-			content: "> "
-		}
-	}
-	& a{
-
-		color: $farg-black;
-		font-size: 16px;
-		font-weight: bold;
-		text-decoration: none;
-		& :hover{
-
-			text-decoration: underline;
-		}
-	}
+	content: "> "
+}
 
 }
 
+& a{
+	
+	color: black;
+	font-size: 16px;
+	font-weight: bold;
+	text-decoration: none;
 
+& :hover{
 
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+}
+
+}
 
 
 .border-li{
-	border-bottom: 10px solid $farg-white;
+	border-bottom: 10px solid #fff;
 }
 
 .omosstext{
-
+	
+	-webkit-animation: fadein 1s;
+	
+	        animation: fadein 1s;
 	-webkit-box-flex: 1;
-	-ms-flex: 1;
-	flex: 1;
-	padding: 8rem;
+	    -ms-flex: 1;
+	        flex: 1;
 	margin: auto;
-	& p{
+	padding: 8rem;
 
-		font-weight: bold;
-		line-height: 1.5;
-	}
-	& h1{
+& p{
 
-		font-size: 3rem;
-		$border-bott
-		letter-spacing: 2px;
+	font-weight: bold;
+	line-height: 1.5;
+}
+& h1{
 
-	}
+	font-size: 3rem;
+	border-bottom: 3px solid black;
+}
 }
 
 
-
-.hide{
-
-	display: none;
-}

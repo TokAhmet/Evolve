@@ -1,3 +1,20 @@
+/* UPPDRAG */
+
+
+.uppdrag-text{
+
+	padding: 3rem 1rem 0 1rem;
+	text-align: center;
+	font-weight: bold;	
+
+	& h1{
+
+		font-size: 37px;
+		text-decoration: underline;
+	}
+
+}
+
 .uppdrag-container{
 
 	display: -webkit-box;
@@ -15,23 +32,170 @@
 
 .wrapper{
 	
-	-webkit-box-shadow: 5px 10px 11px $farg-black;
+	-webkit-box-shadow: 5px 10px 11px #0d0d0d;
 	
-	box-shadow: 5px 10px 11px $farg-black;
-	background-color: $border-li;
+	box-shadow: 5px 10px 11px #0d0d0d;
+	background-color: #fff;
 	color: #000;
 	-ms-flex-preferred-size: 30%;
 	flex-basis: 30%;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
-	margin: 2rem 0;
-	text-align: center;
+	margin: 3rem 0;
 	font-weight: bold;
 
 	& img{
 		
 		cursor: pointer;
 		width: 100%;
+		height: 100%;
+		-webkit-filter: grayscale(60%);
+		filter: grayscale(60%);
+		-webkit-transition: 0.5s ease-in-out;
+		-o-transition: 0.5s ease-in-out;
+		transition: 0.5s ease-in-out;
+		&:hover{
+			
+			-webkit-filter: grayscale(0%);
+			
+			filter: grayscale(0%);
+			-webkit-transition: 0.5s ease-in-out;
+			-o-transition: 0.5s ease-in-out;
+			transition: 0.5s ease-in-out;	
+		}
 	}
 }
+
+
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 100px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+
+	background: -webkit-linear-gradient(-45deg, rgba(246,248,249,1) 35%,rgba(215,222,227,1) 65%,rgba(215,222,227,1) 70%,rgba(215,222,227,1) 70%,rgba(215,222,227,1) 75%,rgba(215,222,227,1) 77%,rgba(215,222,227,1) 79%,rgba(215,222,227,1) 90%,rgba(215,222,227,1) 95%,rgba(215,222,227,1) 99%,rgba(215,222,227,1) 100%,rgba(245,247,249,1) 100%);
+	position: relative;
+	background-color: #fefefe;
+	margin: auto;
+	padding: 0;
+	width: 40%;
+	border: 3px solid black;
+	-webkit-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+	-webkit-animation: fadein 0.8s;
+	animation: fadein 0.8s;
+}
+
+#modal-span{
+
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+	&:hover,&:focus{
+
+		cursor: pointer;
+	}
+}
+
+
+.modal-header-framtiden{
+	padding: 2px 16px;
+	min-height: 9rem;
+	background: url(../img/framtiden.png) no-repeat center center;
+	background-size: cover;
+	border-bottom: 1px solid black;
+	color: #000;
+}
+
+.modal-header-loxy{
+	padding: 2px 16px;
+	min-height: 9rem;
+	background: url(../img/loxy.jpg) no-repeat center center;
+	background-size: cover;
+	border-bottom: 1px solid black;
+	color: #000;
+}
+
+.modal-header-skane{
+	padding: 2px 16px;
+	min-height: 9rem;
+	background: url(../img/skanetrafiken.png) no-repeat center center;
+	background-size: cover;
+	border-bottom: 1px solid black;
+	color: #000;
+}
+
+.modal-header-mq{
+	padding: 2px 16px;
+	min-height: 9rem;
+	background: url(../img/mq.png) no-repeat center center;
+	background-size: 100% 100%;
+	border-bottom: 1px solid black;
+	color: #000;
+}
+
+.modal-header-gevalia{
+	padding: 2px 16px;
+	min-height: 9rem;
+	background: url(../img/gevalia.png) no-repeat center center;
+	background-size: 100% 100%;
+	border-bottom: 1px solid black;
+	color: #000;
+}
+
+.modal-header-tele2{
+	padding: 2px 16px;
+	min-height: 9rem;
+	background: url(../img/tele2.jpg) no-repeat center center;
+	background-size: 100% 100%;
+	border-bottom: 1px solid black;
+	color: #000;
+}
+
+.modal-body {
+	
+	padding: 2px 16px;
+	text-align: center;
+}
+
+.modal-footer {
+	padding: 2px 16px;
+	color: white;
+	min-height: 3rem;
+	& button{
+		float: right;
+		-webkit-box-shadow: 0 3px #666;
+		box-shadow: 0 3px #666;
+		background-color: #000;
+		color: #fff;
+		border: 0;
+		border-radius: 10px;
+		font-weight: bold;
+		&:hover{
+
+			cursor: pointer;
+		}
+		&:active {
+
+			-webkit-box-shadow: 0 2px #666;
+
+			box-shadow: 0 2px #666;
+			-webkit-transform: translateY(2px);
+			-ms-transform: translateY(2px);
+			transform: translateY(2px);
+		}
+	}
+}
+
+
 

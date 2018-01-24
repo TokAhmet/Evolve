@@ -1,3 +1,5 @@
+/* MEDIA QUERIES */
+
 @media screen and (min-width: 1025px){
 
 	.omoss-container{
@@ -11,25 +13,30 @@
 		-webkit-box-direction: normal;
 		-ms-flex-flow: row wrap;
 		flex-flow: row wrap;
-
 	}
 
 }
 
 @media screen and (max-width: 1024px){
-	
+
 	.wrapper{
 
 		margin: 3rem;
+		& img{
+
+			-webkit-filter: grayscale(0%);
+
+			filter: grayscale(0%);
+		}
 		& p{
 
-			padding: 0 1rem;
+			padding: 0.5rem;
 		}
+
 	}
 
-	
 	.omossnav{
-		
+
 		width: 60%;
 		margin: 5rem auto;
 		padding: 0.5rem;
@@ -37,18 +44,17 @@
 
 	.omosstext{
 
-		padding: 0 10rem 2rem 10rem;		
+		padding: 0 10rem 2rem 10rem;	
 	}
 
 	.contact form{
 
 		margin: 3rem;
-		width: 60%;
 
 	}
 	#map{
 
-		width: 20rem;
+		width: 40vw;
 		margin: 3rem auto 5rem auto;
 		padding: 2rem;
 	}
@@ -64,7 +70,12 @@
 }
 
 
-@media screen and (max-width: 650px){
+@media screen and (max-width: 710px){
+
+	main{
+
+		background-size: 100% 100%;
+	}
 
 	.navbar{
 
@@ -73,17 +84,28 @@
 
 	.slogan h1{
 
-		font-size: 5rem;
+		font-size: 3rem;
 		padding: 0.5rem;
 	}	
 	
-	span{
+	#nav-span{
 		
 		margin: 1.2rem;
-		font-size: 2rem;	
+		font-size: 2rem;
+		cursor: pointer;	
 	}
 
 
+	.mobile-nav, #nav-span{
+
+		display: block;
+		cursor: pointer;
+		position: fixed;
+		top: 0;
+		right: 0;
+		z-index: 1;
+
+	}
 
 	.mobile-nav {
 
@@ -93,7 +115,7 @@
 		z-index: 2;
 		top: 0;
 		right: 0;
-		background-color: $farg-black;
+		background-color: black;
 		opacity: 0.7;
 		overflow-x: hidden;
 		-webkit-transition: 0.5s;
@@ -103,38 +125,27 @@
 		padding-top: 2.5rem;
 		cursor: default;
 
-		& span{
 
-			display: block;
-			cursor: pointer;
-			position: fixed;
-			top: 0;
-			right: 0;
-			z-index: 1;
-
-		}
 		& li{
 
-			margin-top: 1.5rem;
+			margin-top: 1.2rem;
 		}
-
-
 		& a {
 
 			padding: 0.8rem;
 			text-decoration: none;
 			font-size: 16px;
-			color: $farg-white;
+			color: #ffffff;
 			display: block;
 			-webkit-transition: 0.3s;
 			-o-transition: 0.3s;
 			transition: 0.3s;
-			border-bottom: 1px solid $farg-grey;
+			border-bottom: 1px solid gray;
 			cursor: pointer;
 			text-transform: uppercase;
 		}
-	}
 
+	}
 
 	.nav-item a:hover{
 		
@@ -143,13 +154,13 @@
 		
 	}
 
-	.mobile-nav .closebtn {    // KAN MAN LÄGGA IHOP DEN MED EN & ?? 
+	.mobile-nav .closebtn {
 
 		position: absolute;
 		top: 0;
 		left: 0;
 		font-size: 37px;
-		border: none;      
+		border: none;
 	}
 	
 	footer{		
@@ -166,55 +177,89 @@
 		margin: 0;
 		padding: 0.5rem;
 		
-	& li{
+		& li{
 
-		margin: 0.5rem;
+			margin: 0.5rem;
+		}
+
 	}
-	}
-	
-	
 	
 	.media-icons{
 		
 		padding: 1rem;
-	& li{
 		
-		margin: 1rem;
-	}
-	}
-
-	
-	.uppdrag-container{
-
-		display: block;
-	}
-
-	.wrapper{
-
-		margin: 6.5rem auto;
-		width: 90%;
+		& li{
+			
+			margin: 1rem;
+		}
 
 	}
+
 
 	.omossnav{
 
 		width: 90%;
-		margin: 6rem auto auto;
+		margin: 3rem auto;
 	}
 
 	.omosstext{
+		
+		padding: 0 2rem 2rem;
+	}
 
-		padding: 2rem;
+	.tjanster{
+		display: none;
+	}
+
+	.tjanster-mobil{
+		
+		display: block;
+	}
+
+	.tjanster-container{
+		padding-top: 3rem;
+	}
+
+	.tjanster-text h1{
+
+		font-size: 3rem;
+	}
+
+	.wrapper{
+		
+		-ms-flex-preferred-size: 90%;	
+		flex-basis: 90%;
+		margin: 3rem 1rem;
 	}
 	
+	.modal{
+
+		padding-top: 50px;
+	}
+
+	.modal-content{
+
+		width: 90%;
+	}
+
 	.contact form{
 		
+		-webkit-animation-name: none;
+		
+		animation-name: none;
 		margin: 5rem auto 3rem auto;
-		max-width: 90%;
+		width: 90%;
+	}
+
+	.contact button{
+		width: 100%;
 	}
 
 	.contact #map{
 		
+		-webkit-animation-name: none;
+		
+		animation-name: none;
 		width: 81vw;
 		margin: auto;
 	}
@@ -229,24 +274,24 @@
 		display: none;
 	}	
 	
+	
 }
 
-@media screen and (max-width: 440px){
+@media screen and (max-width: 550px){
 
 	.slogan h1{
-
-		font-size: 2rem;
-		padding: 8px;
+		font-size: 1.5rem;
 
 	}
 
-	.wrapper p{
+	.wrapper p ,.uppdrag-text p{
 
-		font-size: 12px;
-		padding: 1rem;
+		font-size: 14px;
+		padding: 1rem 0;
+
 	}
 
-	.omosstext h1{
+	.omosstext h1,.tjanster-text h1{
 
 		font-size: 1.5rem;
 

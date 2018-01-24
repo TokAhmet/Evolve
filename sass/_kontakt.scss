@@ -1,3 +1,5 @@
+/* KONTAKT */
+
 .contact{
 
 	display: -webkit-box;
@@ -13,26 +15,25 @@
 	-ms-flex-pack: justify;
 	justify-content: space-between;
 	& form{
-
-		background-color: $majorcolor;
-		border-radius: 1rem;
-		-webkit-box-shadow: 5px 10px 22px $farg-black;
-		box-shadow: 5px 10px 22px $farg-black;
-		color: $farg-black;
-		max-width: 40rem;
-		margin: 5rem auto;
+		
+		-webkit-animation: slideInLeft 1s;
+		
+		animation: slideInLeft 1s;
+		background-color: #d6c5b7;
+		-webkit-box-shadow: 5px 10px 22px #0d0d0d;
+		box-shadow: 5px 10px 22px #0d0d0d;
+		color: #000;
+		min-width: 40vw;
+		margin: 5rem 1rem 5rem 5rem;
 		font-weight: bold;
-		-webkit-box-flex: 1;
-		-ms-flex: 1;
-		flex: 1;
 
 	}
 	& h1{
-
-		font-size: 2rem;		
+		
+		font-size: 2rem;	
 		text-align: center;
 		text-decoration: underline;
-		letter-spacing: 2px;
+		letter-spacing: 1px;
 		padding: 0.5rem;
 	}
 }
@@ -42,7 +43,9 @@
 .li-forms {
 
 	display: -webkit-box;
+
 	display: -ms-flexbox;
+
 	display: flex;
 	-ms-flex-direction: column;
 	-webkit-box-orient: vertical;
@@ -50,29 +53,44 @@
 	flex-direction: column;
 	margin: auto;
 	padding: 0.7rem;
-}
+	& button {
+		
+		-webkit-box-shadow: 0 4px #666;
+		
+		box-shadow: 0 4px #666;
+		background-color: #fff;
+		border: 0;
+		border-radius: 20px;
+		font-weight: bold;
+		width: 50%;
+		margin: auto;
 
-.li-forms input, button, label {
-	padding: 0.6rem;
-}
+		& :hover{
 
-.li-forms input:focus, textarea:focus{
+			cursor: pointer;
+		}
 
-	outline: 2px solid $farg-black;
-}
+		& :active {
 
-.li-forms button {
-	
-	background-color: $farg-white;
-	border: 0;
-	border-radius: 10px;
-	font-weight: bold;
-	width: 100%;
-}
+			-webkit-box-shadow: 0 3px #666;
 
-.li-forms button:hover{
+			box-shadow: 0 3px #666;
+			-webkit-transform: translateY(2px);
+			-ms-transform: translateY(2px);
+			transform: translateY(2px);
+		}
+	}
 
-	cursor: pointer;
+	& input, button, label {
+		padding: 0.6rem;
+
+		& input:focus, textarea:focus{
+
+			outline: 2px solid #000;
+		}
+
+	}
+
 }
 
 .contact-wrapper{
@@ -82,29 +100,40 @@
 
 
 #map{
-
+	
+	-webkit-animation: slideInRight 1s;
+	
+	animation: slideInRight 1s;
+	-webkit-box-shadow: 5px 10px 22px #0d0d0d;
+	
+	box-shadow: 5px 10px 22px #0d0d0d;
 	height: 20rem;
-	width: 40rem;
-	margin: 10rem auto 5rem auto;
+	width: 40vw;
+	margin: 5rem auto 5rem auto;
 	padding: 2rem;
 }
 
 
 .contact-adress{
+	
 
-	background-color: $majorcolor;
-	border-radius: 1rem;
-	-webkit-box-shadow: 5px 10px 22px $farg-black;
-	box-shadow: 5px 10px 22px $farg-black;
+	-webkit-animation: slideInUp 1s;
+	
+
+	animation: slideInUp 1s;
+	background-color: #d6c5b7;
+	-webkit-box-shadow: 5px 10px 22px #0d0d0d;
+	box-shadow: 5px 10px 22px #0d0d0d;
 	font-weight: bold;
 	width: 70%;
 	margin: auto;
 
-& li{
+	& li{
 
-	padding: 1rem;
-	margin: 1rem;
+		padding: 1rem;
+		margin: 1rem;
+	}
 }
-}
+
 
 

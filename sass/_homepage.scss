@@ -1,31 +1,34 @@
+/* HOMEPAGE */
+
 main{
 
- 	background: url(../img/startbild.jpg) no-repeat center center;
- 	background-size: 100% 100%;
- 	display: -webkit-box;
- 	display: -ms-flexbox;
- 	display: flex;
- 	-webkit-box-orient: horizontal;
- 	-webkit-box-direction: normal;
- 	-ms-flex-flow: row wrap;
- 	flex-flow: row wrap;
+	background: url(../img/startbild.jpg) no-repeat center center;
+	background-size: cover;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-flow: row wrap;
+	        flex-flow: row wrap;
 
- }
- 
- .slogan{
- 	
- 	width: 100%;
- & h1{
+}
 
- 	margin: auto;
- 	text-align: center;
- 	font-size: 6rem;
- 	color: $slogan;
- 	font-family: 'Lobster', cursive;
- 	-webkit-animation: jackInTheBox 2s;
- 	animation: jackInTheBox 2s;
- }
- }
+.slogan{
+	
+	width: 100%;
 
+& h1{
+	
+	margin: auto;
+	width: 50%;
+	text-align: center;
+	font-size: 4rem;
+	color: #000;
+	border: 10px solid black;
+	font-family: 'Archivo Black', sans-serif;
+	-webkit-animation: jackInTheBox 2s;
+	        animation: jackInTheBox 2s;
+}
 
-
+}
