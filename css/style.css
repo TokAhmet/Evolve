@@ -282,6 +282,7 @@ main{
 
 .tjanster-mobil img{
 
+	padding-top: 1em;
 	width: 100%;
 	height: auto;
 }
@@ -314,6 +315,9 @@ main{
 	cursor: pointer;
 	padding: 1em 1em;
 	width: 50%;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1em;
+	font-weight: 700;
 }
 
 .tablinkactive{
@@ -328,7 +332,7 @@ main{
 
 .tabcontent{
 
-	color: white;
+	color: #000;
 	display: none;
 	padding: 2em 1em;
 	height: 100%;
@@ -342,7 +346,7 @@ main{
 	text-align: center;
 	font-weight: bold;
 }
-
+/*
  .tjanstercontainer
  {
 	 width: 100%;
@@ -365,7 +369,6 @@ main{
 	background-color: #ACA796;
 	width: 40%;	
 	height: auto;
-	/*float: left;*/
 	padding: 1em 2em 2em 2em;
  }
 
@@ -374,7 +377,6 @@ main{
 	background-color: #ACA796;
 	width: 40%;	
 	height: auto;
-	/*float: right; */
 	padding: 1em 2em 2em 2em;
  }
 
@@ -436,7 +438,7 @@ main{
 		display: block;
 	}
 }
-
+*/
 
 .uppdrag-container{
 
