@@ -1,0 +1,69 @@
+.omossnav{
+
+	-webkit-box-shadow: 5px 10px 11px $farg-black;
+
+	box-shadow: 5px 10px 11px $farg-black;
+	background-color: $majorcolor;
+	margin: 5rem;
+	min-width: 35%;
+	height: 10%;
+
+	& li{
+
+		padding: 0.5rem;
+		margin: 1rem;
+
+		& :before{
+
+			content: "> "
+		}
+	}
+	& a{
+
+		color: $farg-black;
+		font-size: 16px;
+		font-weight: bold;
+		text-decoration: none;
+		& :hover{
+
+			text-decoration: underline;
+		}
+	}
+
+}
+
+
+
+
+
+.border-li{
+	border-bottom: 10px solid $farg-white;
+}
+
+.omosstext{
+
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	padding: 8rem;
+	margin: auto;
+	& p{
+
+		font-weight: bold;
+		line-height: 1.5;
+	}
+	& h1{
+
+		font-size: 3rem;
+		$border-bott
+		letter-spacing: 2px;
+
+	}
+}
+
+
+
+.hide{
+
+	display: none;
+}
