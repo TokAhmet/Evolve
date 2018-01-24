@@ -161,7 +161,7 @@ main {
 }
 
 /* line 26, C:/Users/Ahmet/Documents/Evolve/sass/_omOss.scss */
-.omossnav li :before {
+.omossnav li:before {
   content: "> ";
 }
 
@@ -174,7 +174,7 @@ main {
 }
 
 /* line 40, C:/Users/Ahmet/Documents/Evolve/sass/_omOss.scss */
-.omossnav a :hover {
+.omossnav a:hover {
   text-decoration: underline;
   cursor: pointer;
 }
@@ -319,7 +319,7 @@ main {
 
 /* line 112, C:/Users/Ahmet/Documents/Evolve/sass/_tjanster.scss */
 .tablinkactive {
-  background-color: #000;
+  background-color: #fff;
 }
 
 /* line 118, C:/Users/Ahmet/Documents/Evolve/sass/_tjanster.scss */
@@ -526,15 +526,16 @@ main {
   color: #fff;
   border: 0;
   border-radius: 10px;
+  padding: 6px;
   font-weight: bold;
 }
 
-/* line 184, C:/Users/Ahmet/Documents/Evolve/sass/_uppdrag.scss */
+/* line 185, C:/Users/Ahmet/Documents/Evolve/sass/_uppdrag.scss */
 .modal-footer button:hover {
   cursor: pointer;
 }
 
-/* line 188, C:/Users/Ahmet/Documents/Evolve/sass/_uppdrag.scss */
+/* line 189, C:/Users/Ahmet/Documents/Evolve/sass/_uppdrag.scss */
 .modal-footer button:active {
   -webkit-box-shadow: 0 2px #666;
   box-shadow: 0 2px #666;
@@ -606,12 +607,12 @@ main {
 }
 
 /* line 68, C:/Users/Ahmet/Documents/Evolve/sass/_kontakt.scss */
-.li-forms button :hover {
+.li-forms button:hover {
   cursor: pointer;
 }
 
 /* line 73, C:/Users/Ahmet/Documents/Evolve/sass/_kontakt.scss */
-.li-forms button :active {
+.li-forms button:active {
   -webkit-box-shadow: 0 3px #666;
   box-shadow: 0 3px #666;
   -webkit-transform: translateY(2px);
@@ -1049,84 +1050,89 @@ footer {
   .media-icons li {
     margin: 1rem;
   }
-  /* line 199, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
+  /* line 198, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
+  .omoss-img {
+    background-size: 100% 100%;
+    background-attachment: fixed;
+  }
+  /* line 204, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
   .omossnav {
     width: 90%;
     margin: 3rem auto;
   }
-  /* line 205, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
+  /* line 210, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
   .omosstext {
     padding: 0 2rem 2rem;
   }
-  /* line 210, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
+  /* line 215, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
   .tjanster {
     display: none;
   }
-  /* line 214, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
+  /* line 219, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
   .tjanster-mobil {
     display: block;
   }
-  /* line 219, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
+  /* line 224, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
   .tjanster-container {
     padding-top: 3rem;
   }
-  /* line 223, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
+  /* line 228, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
   .tjanster-text h1 {
     font-size: 3rem;
   }
-  /* line 228, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
+  /* line 233, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
   .wrapper {
     -ms-flex-preferred-size: 90%;
     flex-basis: 90%;
     margin: 3rem 1rem;
   }
-  /* line 235, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
-  .modal {
-    padding-top: 50px;
-  }
   /* line 240, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
+  .modal {
+    padding-top: 25px;
+  }
+  /* line 245, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
   .modal-content {
     width: 90%;
   }
-  /* line 245, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
+  /* line 250, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
   .contact form {
     -webkit-animation-name: none;
     animation-name: none;
     margin: 5rem auto 3rem auto;
     width: 90%;
   }
-  /* line 254, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
+  /* line 259, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
   .contact button {
     width: 100%;
   }
-  /* line 258, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
+  /* line 263, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
   .contact #map {
     -webkit-animation-name: none;
     animation-name: none;
     width: 81vw;
     margin: auto;
   }
-  /* line 267, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
+  /* line 272, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
   #map span {
     display: none;
   }
-  /* line 272, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
+  /* line 277, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
   .contact-adress {
     display: none;
   }
 }
 
 @media screen and (max-width: 550px) {
-  /* line 282, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
+  /* line 287, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
   .slogan h1 {
     font-size: 1.5rem;
   }
-  /* line 287, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
+  /* line 292, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
   .wrapper p, .uppdrag-text p {
     font-size: 14px;
     padding: 1rem 0;
   }
-  /* line 294, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
+  /* line 299, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
   .omosstext h1, .tjanster-text h1 {
     font-size: 1.5rem;
   }

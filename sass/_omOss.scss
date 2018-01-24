@@ -23,7 +23,7 @@
 	padding: 0.5rem;
 	margin: 1rem;
 
-& :before{
+&:before{
 
 	content: "> "
 }
@@ -37,7 +37,7 @@
 	font-weight: bold;
 	text-decoration: none;
 
-& :hover{
+&:hover{
 
 	text-decoration: underline;
 	cursor: pointer;
