@@ -127,11 +127,6 @@ function openPage(pageName, elmnt) {
 	elmnt.className += " tablinkactive";
 }
 
-window.onload = function()
-{
-	document.getElementById("BeforeButton").click();
-}
-
 var modal = document.getElementById('myModal');
 var modal2 = document.getElementById('myModal2');
 var modal3 = document.getElementById('myModal3');
@@ -147,25 +142,39 @@ var popup5 = document.getElementById("gevalia");
 var popup6 = document.getElementById("tele2");
 
 // Visa popup-modellen när man klickar på företagen
- 
-popup.onclick = function() {
+if (popup != null) {
+  popup.onclick = function() {
     modal.style.display = "block";
-};
-popup2.onclick = function() {
+  };
+}
+
+if (popup2 != null) {
+  popup2.onclick = function() {
     modal2.style.display = "block";
-};
-popup3.onclick = function() {
+  };
+}
+if (popup3 != null) {
+  popup3.onclick = function() {
     modal3.style.display = "block";
-};
-popup4.onclick = function() {
+  };
+}
+if (popup4 != null) {
+  popup4.onclick = function() {
     modal4.style.display = "block";
-};
-popup5.onclick = function() {
+  };
+}
+
+if (popup5 != null) {
+  popup5.onclick = function() {
     modal5.style.display = "block";
-};
-popup6.onclick = function() {
+  };
+}
+
+if (popup6 != null) {
+  popup6.onclick = function() {
     modal6.style.display = "block";
-};
+  };
+}
 
 
 // Stäng modellen när man klickar utanför boxen
