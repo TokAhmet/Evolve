@@ -15,7 +15,7 @@
 
 		& :before{
 
-			content: "> "
+			content: ">"
 		}
 	}
 	& a{
@@ -55,7 +55,7 @@
 	& h1{
 
 		font-size: 3rem;
-		$border-bott
+		border-bottom: 3px solid black;
 		letter-spacing: 2px;
 
 	}

@@ -50,29 +50,26 @@
 	flex-direction: column;
 	margin: auto;
 	padding: 0.7rem;
-}
 
-.li-forms input, button, label {
-	padding: 0.6rem;
-}
+	&button {
 
-.li-forms input:focus, textarea:focus{
+		background-color: $farg-white;
+		border: 0;
+		border-radius: 10px;
+		font-weight: bold;
+		width: 100%;
+		&:hover{
+
+			cursor: pointer;
+		}
+	} 
+	& input, button, label {
+		padding: 0.6rem;
+	}
+	& input:focus, textarea:focus{
 
 	outline: 2px solid $farg-black;
-}
-
-.li-forms button {
-	
-	background-color: $farg-white;
-	border: 0;
-	border-radius: 10px;
-	font-weight: bold;
-	width: 100%;
-}
-
-.li-forms button:hover{
-
-	cursor: pointer;
+	}
 }
 
 .contact-wrapper{
@@ -100,11 +97,11 @@
 	width: 70%;
 	margin: auto;
 
-& li{
+	& li{
 
-	padding: 1rem;
-	margin: 1rem;
-}
+		padding: 1rem;
+		margin: 1rem;
+	}
 }
 
 
