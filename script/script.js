@@ -196,8 +196,6 @@ window.onclick = function(event) {
     }
 };
 
-<<<<<<< HEAD
-=======
 // GoogleMap positionen 
 
 function initMap() {
@@ -211,4 +209,3 @@ function initMap() {
 		map: map
 	  });
 }
->>>>>>> master
