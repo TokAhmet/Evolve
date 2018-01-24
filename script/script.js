@@ -1,5 +1,4 @@
 
-
 // Mobile nav
 
 function openNav() {
@@ -111,6 +110,22 @@ function closeModal () {
 	modal6.style.display = "none";
 }
 
+function openPage(pageName, elmnt) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+		tabcontent[i].style.display = "none";
+	}
+	
+    tablinks = document.getElementsByClassName("tablink");
+	for (i = 0; i < tablinks.length; i++) {
+		tablinks[i].className = "tablink";
+    }
+
+	document.getElementById(pageName).style.display = "block";
+	elmnt.className += " tablinkactive";
+}
+
 var modal = document.getElementById('myModal');
 var modal2 = document.getElementById('myModal2');
 var modal3 = document.getElementById('myModal3');
@@ -126,25 +141,40 @@ var popup5 = document.getElementById("gevalia");
 var popup6 = document.getElementById("tele2");
 
 // Visa popup-modellen när man klickar på företagen
- 
-popup.onclick = function() {
+
+if (popup != null) {
+  popup.onclick = function() {
     modal.style.display = "block";
-};
-popup2.onclick = function() {
+  };
+}
+
+if (popup2 != null) {
+  popup2.onclick = function() {
     modal2.style.display = "block";
-};
-popup3.onclick = function() {
+  };
+}
+if (popup3 != null) {
+  popup3.onclick = function() {
     modal3.style.display = "block";
-};
-popup4.onclick = function() {
+  };
+}
+if (popup4 != null) {
+  popup4.onclick = function() {
     modal4.style.display = "block";
-};
-popup5.onclick = function() {
+  };
+}
+
+if (popup5 != null) {
+  popup5.onclick = function() {
     modal5.style.display = "block";
-};
-popup6.onclick = function() {
+  };
+}
+
+if (popup6 != null) {
+  popup6.onclick = function() {
     modal6.style.display = "block";
-};
+  };
+}
 
 
 // Stäng modellen när man klickar utanför boxen
