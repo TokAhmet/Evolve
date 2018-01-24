@@ -122,7 +122,7 @@ header img{
 main{
 
 	background: url(../img/startbild.jpg) no-repeat center center;
-	background-size: 100% 100%;
+	background-size: cover;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -140,11 +140,13 @@ main{
 
 
 .slogan h1{
-
+	
 	margin: auto;
+	width: 50%;
 	text-align: center;
-	font-size: 6rem;
-	color: orange;
+	font-size: 4rem;
+	color: #000;
+	border: 10px solid black;
 	font-family: 'Archivo Black', sans-serif;
 	-webkit-animation: jackInTheBox 2s;
 	        animation: jackInTheBox 2s;
@@ -155,7 +157,7 @@ main{
 .omoss-img{
 
 	background: url(../img/office1.jpg) no-repeat center center;
-	background-size: 100% 100%;
+	background-size: cover;
 	height: 50vh;
 }	
 
@@ -403,7 +405,7 @@ main{
 	background-color: #fefefe;
 	margin: auto;
 	padding: 0;
-	width: 50%;
+	width: 40%;
 	border: 3px solid black;
 	-webkit-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 	        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
@@ -423,10 +425,56 @@ main{
 	cursor: pointer;
 }
 
-.modal-header {
+.modal-header-framtiden{
 	padding: 2px 16px;
-	min-height: 3rem;
-	background-color: #d6c5b7;
+	min-height: 9rem;
+	background: url(../img/framtiden.png) no-repeat center center;
+	background-size: cover;
+	border-bottom: 1px solid black;
+	color: #000;
+}
+
+.modal-header-loxy{
+	padding: 2px 16px;
+	min-height: 9rem;
+	background: url(../img/loxy.jpg) no-repeat center center;
+	background-size: cover;
+	border-bottom: 1px solid black;
+	color: #000;
+}
+
+.modal-header-skane{
+	padding: 2px 16px;
+	min-height: 9rem;
+	background: url(../img/skanetrafiken.png) no-repeat center center;
+	background-size: cover;
+	border-bottom: 1px solid black;
+	color: #000;
+}
+
+.modal-header-mq{
+	padding: 2px 16px;
+	min-height: 9rem;
+	background: url(../img/mq.png) no-repeat center center;
+	background-size: 100% 100%;
+	border-bottom: 1px solid black;
+	color: #000;
+}
+
+.modal-header-gevalia{
+	padding: 2px 16px;
+	min-height: 9rem;
+	background: url(../img/gevalia.png) no-repeat center center;
+	background-size: 100% 100%;
+	border-bottom: 1px solid black;
+	color: #000;
+}
+
+.modal-header-tele2{
+	padding: 2px 16px;
+	min-height: 9rem;
+	background: url(../img/tele2.jpg) no-repeat center center;
+	background-size: 100% 100%;
 	border-bottom: 1px solid black;
 	color: #000;
 }
@@ -445,8 +493,8 @@ main{
 
 .modal-footer button{
 	float: right;
-	-webkit-box-shadow: 0 5px #666;
-	        box-shadow: 0 5px #666;
+	-webkit-box-shadow: 0 3px #666;
+	        box-shadow: 0 3px #666;
 	background-color: #000;
 	color: #fff;
 	border: 0;
@@ -461,9 +509,9 @@ main{
 
 .modal-footer button:active {
 
-	-webkit-box-shadow: 0 5px #666;
+	-webkit-box-shadow: 0 2px #666;
 
-	        box-shadow: 0 5px #666;
+	        box-shadow: 0 2px #666;
 	-webkit-transform: translateY(2px);
 	    -ms-transform: translateY(2px);
 	        transform: translateY(2px);
@@ -491,7 +539,6 @@ main{
 	
 	animation: slideInLeft 1s;
 	background-color: #d6c5b7;
-	border-radius: 1rem;
 	-webkit-box-shadow: 5px 10px 22px #0d0d0d;
 	        box-shadow: 5px 10px 22px #0d0d0d;
 	color: #000;
@@ -503,8 +550,7 @@ main{
 
 .contact h1{
 	
-	font-size: 2rem;
-	font-style: italic;		
+	font-size: 2rem;	
 	text-align: center;
 	text-decoration: underline;
 	letter-spacing: 1px;
@@ -537,9 +583,9 @@ main{
 
 .li-forms button {
 	
-	-webkit-box-shadow: 0 8px #666;
+	-webkit-box-shadow: 0 4px #666;
 	
-	        box-shadow: 0 8px #666;
+	        box-shadow: 0 4px #666;
 	background-color: #fff;
 	border: 0;
 	border-radius: 20px;
@@ -555,9 +601,9 @@ main{
 
 .li-forms button:active {
 
-	-webkit-box-shadow: 0 5px #666;
+	-webkit-box-shadow: 0 3px #666;
 
-	        box-shadow: 0 5px #666;
+	        box-shadow: 0 3px #666;
 	-webkit-transform: translateY(2px);
 	    -ms-transform: translateY(2px);
 	        transform: translateY(2px);
@@ -587,7 +633,6 @@ main{
 
 	animation: slideInUp 1s;
 	background-color: #d6c5b7;
-	border-radius: 1rem;
 	-webkit-box-shadow: 5px 10px 22px #0d0d0d;
 	        box-shadow: 5px 10px 22px #0d0d0d;
 	font-weight: bold;
@@ -604,7 +649,6 @@ main{
 }
 
 /* FOOTER */
-
 
 footer{
 
@@ -642,8 +686,7 @@ footer{
 .media-icons h2{
 
 	margin: 0.5rem 1rem 1rem;
-	font-style: italic;
-	border-bottom: 3px solid black;
+	border-bottom: 10px solid #fff;
 	text-align: center;
 }
 
@@ -878,7 +921,7 @@ footer{
 
 	.slogan h1{
 
-		font-size: 5rem;
+		font-size: 3rem;
 		padding: 0.5rem;
 	}	
 	
