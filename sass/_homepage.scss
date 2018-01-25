@@ -24,8 +24,8 @@ main{
 	width: 50%;
 	text-align: center;
 	font-size: 4rem;
-	color: #000;
-	border: 10px solid black;
+	color: $color-black;
+	border: 10px solid $color-black;
 	font-family: 'Archivo Black', sans-serif;
 	-webkit-animation: jackInTheBox 2s;
 	        animation: jackInTheBox 2s;

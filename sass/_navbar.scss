@@ -22,7 +22,7 @@
 
 	& a{
 		
-		color: black;
+		color: $color-black;
 		font-size: 16px;
 		font-family: 'Merriweather Sans', sans-serif;
 		font-weight: bold;
@@ -34,7 +34,7 @@
 
 .navbar li>.current a , .navbar a:hover{
 
-	border-bottom: 3px solid black;
+	border-bottom: 3px solid $color-black;
 	padding-bottom: 2px; 
 
 }
@@ -46,7 +46,7 @@
 
 .active{
 	
-	border-bottom: 3px solid black;
+	border-bottom: 3px solid $color-black;
 	padding-bottom: 2px; 
 
 

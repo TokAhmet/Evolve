@@ -2,7 +2,7 @@
 
 footer{
 
-	background-color: #d6c5b7;
+	background-color: $color-standard;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -35,7 +35,7 @@ footer{
 	& h2{
 
 		margin: 0.5rem 1rem 1rem;
-		border-bottom: 10px solid #fff;
+		border-bottom: 10px solid $color-white;
 		text-align: center;
 	}
 	& li{

@@ -115,7 +115,7 @@
 		z-index: 2;
 		top: 0;
 		right: 0;
-		background-color: black;
+		background-color: $color-black;
 		opacity: 0.7;
 		overflow-x: hidden;
 		-webkit-transition: 0.5s;
@@ -135,12 +135,12 @@
 			padding: 0.8rem;
 			text-decoration: none;
 			font-size: 16px;
-			color: #ffffff;
+			color: $color-white;
 			display: block;
 			-webkit-transition: 0.3s;
 			-o-transition: 0.3s;
 			transition: 0.3s;
-			border-bottom: 1px solid gray;
+			border-bottom: 1px solid $color-grey;
 			cursor: pointer;
 			text-transform: uppercase;
 		}

@@ -32,11 +32,11 @@
 
 .wrapper{
 	
-	-webkit-box-shadow: 5px 10px 11px #0d0d0d;
+	-webkit-box-shadow: 5px 10px 11px $color-black;
 	
-	box-shadow: 5px 10px 11px #0d0d0d;
-	background-color: #fff;
-	color: #000;
+	box-shadow: 5px 10px 11px $color-black;
+	background-color: $color-white;
+	color: $color-black;
 	-ms-flex-preferred-size: 30%;
 	flex-basis: 30%;
 	-ms-flex-wrap: wrap;
@@ -89,7 +89,7 @@
 	margin: auto;
 	padding: 0;
 	width: 40%;
-	border: 3px solid black;
+	border: 3px solid $color-black;
 	-webkit-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 	-webkit-animation: fadein 0.8s;
@@ -113,8 +113,8 @@
 	min-height: 9rem;
 	background: url(../img/framtiden.png) no-repeat center center;
 	background-size: cover;
-	border-bottom: 1px solid black;
-	color: #000;
+	border-bottom: 1px solid $color-black;
+	color: $color-black;
 }
 
 .modal-header-loxy{
@@ -122,8 +122,8 @@
 	min-height: 9rem;
 	background: url(../img/loxy.jpg) no-repeat center center;
 	background-size: cover;
-	border-bottom: 1px solid black;
-	color: #000;
+	border-bottom: 1px solid black;$color-black
+	color: $color-black;
 }
 
 .modal-header-skane{
@@ -131,8 +131,8 @@
 	min-height: 9rem;
 	background: url(../img/skanetrafiken.png) no-repeat center center;
 	background-size: cover;
-	border-bottom: 1px solid black;
-	color: #000;
+	border-bottom: 1px solid $color-black;
+	color: $color-black;
 }
 
 .modal-header-mq{
@@ -140,8 +140,8 @@
 	min-height: 9rem;
 	background: url(../img/mq.png) no-repeat center center;
 	background-size: 100% 100%;
-	border-bottom: 1px solid black;
-	color: #000;
+	border-bottom: 1px solid $color-black;
+	color: $color-black;
 }
 
 .modal-header-gevalia{
@@ -149,8 +149,8 @@
 	min-height: 9rem;
 	background: url(../img/gevalia.png) no-repeat center center;
 	background-size: 100% 100%;
-	border-bottom: 1px solid black;
-	color: #000;
+	border-bottom: 1px solid $color-black;
+	color: $color-black;
 }
 
 .modal-header-tele2{
@@ -158,8 +158,8 @@
 	min-height: 9rem;
 	background: url(../img/tele2.jpg) no-repeat center center;
 	background-size: 100% 100%;
-	border-bottom: 1px solid black;
-	color: #000;
+	border-bottom: 1px solid $color-black;
+	color: $color-black;
 }
 
 .modal-body {
@@ -170,14 +170,14 @@
 
 .modal-footer {
 	padding: 2px 16px;
-	color: white;
+	color:$color-white;
 	min-height: 3rem;
 	& button{
 		float: right;
-		-webkit-box-shadow: 0 3px #666;
-		box-shadow: 0 3px #666;
-		background-color: #000;
-		color: #fff;
+		-webkit-box-shadow: 0 3px $color-grey;
+		box-shadow: 0 3px $color-grey;
+		background-color: $color-black;
+		color: $color-white;
 		border: 0;
 		border-radius: 10px;
 		font-weight: bold;
@@ -187,9 +187,9 @@
 		}
 		&:active {
 
-			-webkit-box-shadow: 0 2px #666;
+			-webkit-box-shadow: 0 2px $color-grey;
 
-			box-shadow: 0 2px #666;
+			box-shadow: 0 2px $color-grey;
 			-webkit-transform: translateY(2px);
 			-ms-transform: translateY(2px);
 			transform: translateY(2px);
