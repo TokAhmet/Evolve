@@ -54,22 +54,33 @@ function tele2(){
 function evolveText () {
 
 	var evolve = document.getElementById("text").className = "omosstext";
+	var evolveNav = document.getElementById("evolvenav").style.textDecoration = 'underline';
 	var vision = document.getElementById("text2").className = "hide";
+	var visionNav = document.getElementById("visionnav").style.textDecoration = 'none';
 	var plattform = document.getElementById("text3").className = "hide";
+	var plattformNav = document.getElementById("plattformnav").style.textDecoration = 'none';
 }
 
 function visionText () {
 
 	var evolve = document.getElementById("text").className = "hide";
+	var evolveNav = document.getElementById("evolvenav").style.textDecoration = 'none';
 	var vision = document.getElementById("text2").className = "omosstext";
+	var visionNav = document.getElementById("visionnav").style.textDecoration = 'underline';
 	var plattform = document.getElementById("text3").className = "hide";
+	var plattformNav = document.getElementById("plattformnav").style.textDecoration = 'none';
+
 }
 
 function plattformText () {
 
 	var evolve = document.getElementById("text").className = "hide";
+	var evolveNav = document.getElementById("evolvenav").style.textDecoration = 'none';	
 	var vision = document.getElementById("text2").className = "hide";
+	var visionNav = document.getElementById("visionnav").style.textDecoration = 'none';	
 	var plattform = document.getElementById("text3").className = "omosstext ";
+	var plattformNav = document.getElementById("plattformnav").style.textDecoration = 'underline';
+
 }
 
 // ändra bild på tjänstersidan
