@@ -199,9 +199,10 @@ main {
 .omosstext p {
   font-weight: bold;
   line-height: 1.5;
+  padding-bottom: 1rem;
 }
 
-/* line 71, C:/Users/Ahmet/Documents/Evolve/sass/_omOss.scss */
+/* line 72, C:/Users/Ahmet/Documents/Evolve/sass/_omOss.scss */
 .omosstext h1 {
   font-size: 3rem;
   border-bottom: 3px solid black;
