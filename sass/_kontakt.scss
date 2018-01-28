@@ -1,5 +1,4 @@
 /* KONTAKT */
-
 .contact{
 
 	@include flex;
@@ -22,6 +21,7 @@
 		min-width: 40vw;
 		margin: 5rem 1rem 5rem 5rem;
 		font-weight: bold;
+		float: left; // fallback för IE 7 8 9
 
 	}
 	& h1{
@@ -88,6 +88,8 @@
 .contact-wrapper{
 
 	margin: 2rem;
+	display: inline-block; // fallback för IE 7 8 9
+	float: right // fallback för IE 7 8 9
 }
 
 
@@ -119,7 +121,6 @@
 	font-weight: bold;
 	width: 70%;
 	margin: auto;
-
 	& li{
 
 		padding: 1rem;

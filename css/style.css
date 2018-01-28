@@ -70,15 +70,16 @@ header img {
   margin: 2rem;
   text-align: center;
   text-transform: uppercase;
+  float: right;
 }
 
-/* line 16, C:/Users/Ahmet/Documents/Evolve/sass/_navbar.scss */
+/* line 17, C:/Users/Ahmet/Documents/Evolve/sass/_navbar.scss */
 .navbar li {
   display: inline;
   margin: 1rem;
 }
 
-/* line 23, C:/Users/Ahmet/Documents/Evolve/sass/_navbar.scss */
+/* line 24, C:/Users/Ahmet/Documents/Evolve/sass/_navbar.scss */
 .navbar a {
   color: #000;
   font-size: 16px;
@@ -87,18 +88,18 @@ header img {
   text-decoration: none;
 }
 
-/* line 35, C:/Users/Ahmet/Documents/Evolve/sass/_navbar.scss */
+/* line 34, C:/Users/Ahmet/Documents/Evolve/sass/_navbar.scss */
 .navbar li > .current a, .navbar a:hover {
   border-bottom: 3px solid #000;
   padding-bottom: 2px;
 }
 
-/* line 42, C:/Users/Ahmet/Documents/Evolve/sass/_navbar.scss */
+/* line 41, C:/Users/Ahmet/Documents/Evolve/sass/_navbar.scss */
 .mobile-nav, #nav-span {
-  display: none;
+  display: none !important;
 }
 
-/* line 47, C:/Users/Ahmet/Documents/Evolve/sass/_navbar.scss */
+/* line 46, C:/Users/Ahmet/Documents/Evolve/sass/_navbar.scss */
 .active {
   border-bottom: 3px solid #000;
   padding-bottom: 2px;
@@ -122,9 +123,10 @@ main {
 /* line 15, C:/Users/Ahmet/Documents/Evolve/sass/_homepage.scss */
 .slogan {
   width: 100%;
+  padding-top: 10%;
 }
 
-/* line 19, C:/Users/Ahmet/Documents/Evolve/sass/_homepage.scss */
+/* line 20, C:/Users/Ahmet/Documents/Evolve/sass/_homepage.scss */
 .slogan h1 {
   margin: auto;
   width: 50%;
@@ -257,9 +259,10 @@ main {
   padding: 1em 2em 2em 2em;
   -webkit-box-shadow: 5px 10px 22px #0d0d0d;
   box-shadow: 5px 10px 22px #0d0d0d;
+  float: right;
 }
 
-/* line 44, C:/Users/Ahmet/Documents/Evolve/sass/_tjanster.scss */
+/* line 45, C:/Users/Ahmet/Documents/Evolve/sass/_tjanster.scss */
 .tjanster-hoger {
   background-color: #d6c5b7;
   width: 40%;
@@ -267,9 +270,10 @@ main {
   padding: 1em 2em 2em 2em;
   -webkit-box-shadow: 5px 10px 22px #0d0d0d;
   box-shadow: 5px 10px 22px #0d0d0d;
+  float: right;
 }
 
-/* line 55, C:/Users/Ahmet/Documents/Evolve/sass/_tjanster.scss */
+/* line 57, C:/Users/Ahmet/Documents/Evolve/sass/_tjanster.scss */
 .tjanster-mobil {
   display: none;
   width: 80%;
@@ -277,32 +281,33 @@ main {
   background-color: #d6c5b7;
 }
 
-/* line 62, C:/Users/Ahmet/Documents/Evolve/sass/_tjanster.scss */
+/* line 64, C:/Users/Ahmet/Documents/Evolve/sass/_tjanster.scss */
 .tjanster-mobil img {
   padding-top: 1em;
   width: 100%;
   height: auto;
 }
 
-/* line 71, C:/Users/Ahmet/Documents/Evolve/sass/_tjanster.scss */
+/* line 73, C:/Users/Ahmet/Documents/Evolve/sass/_tjanster.scss */
 .tjanster-text {
   font-weight: bold;
   width: 80%;
   padding: 2rem;
 }
 
-/* line 76, C:/Users/Ahmet/Documents/Evolve/sass/_tjanster.scss */
+/* line 78, C:/Users/Ahmet/Documents/Evolve/sass/_tjanster.scss */
 .tjanster-text h1 {
   font-size: 3rem;
   border-bottom: 3px solid #000;
+  clear: both;
 }
 
-/* line 84, C:/Users/Ahmet/Documents/Evolve/sass/_tjanster.scss */
+/* line 87, C:/Users/Ahmet/Documents/Evolve/sass/_tjanster.scss */
 .tjanster-li {
   line-height: 1em;
 }
 
-/* line 89, C:/Users/Ahmet/Documents/Evolve/sass/_tjanster.scss */
+/* line 92, C:/Users/Ahmet/Documents/Evolve/sass/_tjanster.scss */
 .tablink {
   background-color: #d6c5b7;
   color: white;
@@ -317,17 +322,17 @@ main {
   font-weight: 700;
 }
 
-/* line 102, C:/Users/Ahmet/Documents/Evolve/sass/_tjanster.scss */
+/* line 105, C:/Users/Ahmet/Documents/Evolve/sass/_tjanster.scss */
 .tablink :hover {
   background-color: #777;
 }
 
-/* line 108, C:/Users/Ahmet/Documents/Evolve/sass/_tjanster.scss */
+/* line 111, C:/Users/Ahmet/Documents/Evolve/sass/_tjanster.scss */
 .tablinkactive {
   background-color: #000;
 }
 
-/* line 114, C:/Users/Ahmet/Documents/Evolve/sass/_tjanster.scss */
+/* line 117, C:/Users/Ahmet/Documents/Evolve/sass/_tjanster.scss */
 .tabcontent {
   color: #000;
   display: none;
@@ -376,9 +381,10 @@ main {
   flex-wrap: wrap;
   margin: 3rem 0;
   font-weight: bold;
+  display: inline-block;
 }
 
-/* line 45, C:/Users/Ahmet/Documents/Evolve/sass/_uppdrag.scss */
+/* line 46, C:/Users/Ahmet/Documents/Evolve/sass/_uppdrag.scss */
 .wrapper img {
   cursor: pointer;
   width: 100%;
@@ -390,7 +396,7 @@ main {
   transition: 0.5s ease-in-out;
 }
 
-/* line 55, C:/Users/Ahmet/Documents/Evolve/sass/_uppdrag.scss */
+/* line 56, C:/Users/Ahmet/Documents/Evolve/sass/_uppdrag.scss */
 .wrapper img:hover {
   -webkit-filter: grayscale(0%);
   filter: grayscale(0%);
@@ -399,7 +405,7 @@ main {
   transition: 0.5s ease-in-out;
 }
 
-/* line 68, C:/Users/Ahmet/Documents/Evolve/sass/_uppdrag.scss */
+/* line 69, C:/Users/Ahmet/Documents/Evolve/sass/_uppdrag.scss */
 .modal {
   display: none;
   /* Hidden by default */
@@ -423,7 +429,7 @@ main {
   /* Black w/ opacity */
 }
 
-/* line 82, C:/Users/Ahmet/Documents/Evolve/sass/_uppdrag.scss */
+/* line 83, C:/Users/Ahmet/Documents/Evolve/sass/_uppdrag.scss */
 .modal-content {
   background: -webkit-linear-gradient(-45deg, #f6f8f9 35%, #d7dee3 65%, #d7dee3 70%, #d7dee3 70%, #d7dee3 75%, #d7dee3 77%, #d7dee3 79%, #d7dee3 90%, #d7dee3 95%, #d7dee3 99%, #d7dee3 100%, #f5f7f9 100%);
   position: relative;
@@ -438,19 +444,19 @@ main {
   animation: fadein 0.8s;
 }
 
-/* line 97, C:/Users/Ahmet/Documents/Evolve/sass/_uppdrag.scss */
+/* line 98, C:/Users/Ahmet/Documents/Evolve/sass/_uppdrag.scss */
 #modal-span {
   float: right;
   font-size: 28px;
   font-weight: bold;
 }
 
-/* line 102, C:/Users/Ahmet/Documents/Evolve/sass/_uppdrag.scss */
+/* line 103, C:/Users/Ahmet/Documents/Evolve/sass/_uppdrag.scss */
 #modal-span:hover, #modal-span:focus {
   cursor: pointer;
 }
 
-/* line 109, C:/Users/Ahmet/Documents/Evolve/sass/_uppdrag.scss */
+/* line 110, C:/Users/Ahmet/Documents/Evolve/sass/_uppdrag.scss */
 .modal-header-framtiden {
   padding: 2px 16px;
   min-height: 9rem;
@@ -460,7 +466,7 @@ main {
   background-size: cover;
 }
 
-/* line 115, C:/Users/Ahmet/Documents/Evolve/sass/_uppdrag.scss */
+/* line 116, C:/Users/Ahmet/Documents/Evolve/sass/_uppdrag.scss */
 .modal-header-loxy {
   padding: 2px 16px;
   min-height: 9rem;
@@ -470,7 +476,7 @@ main {
   background-size: cover;
 }
 
-/* line 121, C:/Users/Ahmet/Documents/Evolve/sass/_uppdrag.scss */
+/* line 122, C:/Users/Ahmet/Documents/Evolve/sass/_uppdrag.scss */
 .modal-header-skane {
   padding: 2px 16px;
   min-height: 9rem;
@@ -480,7 +486,7 @@ main {
   background-size: cover;
 }
 
-/* line 127, C:/Users/Ahmet/Documents/Evolve/sass/_uppdrag.scss */
+/* line 128, C:/Users/Ahmet/Documents/Evolve/sass/_uppdrag.scss */
 .modal-header-mq {
   padding: 2px 16px;
   min-height: 9rem;
@@ -490,7 +496,7 @@ main {
   background-size: 100% 100%;
 }
 
-/* line 133, C:/Users/Ahmet/Documents/Evolve/sass/_uppdrag.scss */
+/* line 134, C:/Users/Ahmet/Documents/Evolve/sass/_uppdrag.scss */
 .modal-header-gevalia {
   padding: 2px 16px;
   min-height: 9rem;
@@ -500,7 +506,7 @@ main {
   background-size: 100% 100%;
 }
 
-/* line 139, C:/Users/Ahmet/Documents/Evolve/sass/_uppdrag.scss */
+/* line 140, C:/Users/Ahmet/Documents/Evolve/sass/_uppdrag.scss */
 .modal-header-tele2 {
   padding: 2px 16px;
   min-height: 9rem;
@@ -510,20 +516,20 @@ main {
   background-size: 100% 100%;
 }
 
-/* line 145, C:/Users/Ahmet/Documents/Evolve/sass/_uppdrag.scss */
+/* line 146, C:/Users/Ahmet/Documents/Evolve/sass/_uppdrag.scss */
 .modal-body {
   padding: 2px 16px;
   text-align: center;
 }
 
-/* line 151, C:/Users/Ahmet/Documents/Evolve/sass/_uppdrag.scss */
+/* line 152, C:/Users/Ahmet/Documents/Evolve/sass/_uppdrag.scss */
 .modal-footer {
   padding: 2px 16px;
   color: white;
   min-height: 3rem;
 }
 
-/* line 155, C:/Users/Ahmet/Documents/Evolve/sass/_uppdrag.scss */
+/* line 156, C:/Users/Ahmet/Documents/Evolve/sass/_uppdrag.scss */
 .modal-footer button {
   float: right;
   -webkit-box-shadow: 0 3px #666;
@@ -536,12 +542,12 @@ main {
   font-weight: bold;
 }
 
-/* line 165, C:/Users/Ahmet/Documents/Evolve/sass/_uppdrag.scss */
+/* line 166, C:/Users/Ahmet/Documents/Evolve/sass/_uppdrag.scss */
 .modal-footer button:hover {
   cursor: pointer;
 }
 
-/* line 169, C:/Users/Ahmet/Documents/Evolve/sass/_uppdrag.scss */
+/* line 170, C:/Users/Ahmet/Documents/Evolve/sass/_uppdrag.scss */
 .modal-footer button:active {
   -webkit-box-shadow: 0 2px #666;
   box-shadow: 0 2px #666;
@@ -551,7 +557,7 @@ main {
 }
 
 /* KONTAKT */
-/* line 3, C:/Users/Ahmet/Documents/Evolve/sass/_kontakt.scss */
+/* line 2, C:/Users/Ahmet/Documents/Evolve/sass/_kontakt.scss */
 .contact {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -566,7 +572,7 @@ main {
   justify-content: space-between;
 }
 
-/* line 13, C:/Users/Ahmet/Documents/Evolve/sass/_kontakt.scss */
+/* line 12, C:/Users/Ahmet/Documents/Evolve/sass/_kontakt.scss */
 .contact form {
   -webkit-animation: slideInLeft 1s;
   animation: slideInLeft 1s;
@@ -577,6 +583,7 @@ main {
   min-width: 40vw;
   margin: 5rem 1rem 5rem 5rem;
   font-weight: bold;
+  float: left;
 }
 
 /* line 27, C:/Users/Ahmet/Documents/Evolve/sass/_kontakt.scss */
@@ -641,9 +648,11 @@ main {
 /* line 88, C:/Users/Ahmet/Documents/Evolve/sass/_kontakt.scss */
 .contact-wrapper {
   margin: 2rem;
+  display: inline-block;
+  float: right;
 }
 
-/* line 94, C:/Users/Ahmet/Documents/Evolve/sass/_kontakt.scss */
+/* line 96, C:/Users/Ahmet/Documents/Evolve/sass/_kontakt.scss */
 #map {
   -webkit-animation: slideInRight 1s;
   animation: slideInRight 1s;
@@ -655,7 +664,7 @@ main {
   padding: 2rem;
 }
 
-/* line 109, C:/Users/Ahmet/Documents/Evolve/sass/_kontakt.scss */
+/* line 111, C:/Users/Ahmet/Documents/Evolve/sass/_kontakt.scss */
 .contact-adress {
   -webkit-animation: slideInUp 1s;
   animation: slideInUp 1s;
@@ -667,7 +676,7 @@ main {
   margin: auto;
 }
 
-/* line 123, C:/Users/Ahmet/Documents/Evolve/sass/_kontakt.scss */
+/* line 124, C:/Users/Ahmet/Documents/Evolve/sass/_kontakt.scss */
 .contact-adress li {
   padding: 1rem;
   margin: 1rem;
@@ -689,32 +698,33 @@ footer {
   -ms-flex-pack: justify;
   justify-content: space-between;
   min-height: 9rem;
+  clear: both;
 }
 
-/* line 17, C:/Users/Ahmet/Documents/Evolve/sass/_footer.scss */
+/* line 19, C:/Users/Ahmet/Documents/Evolve/sass/_footer.scss */
 .adress {
   list-style: none;
   margin: 1rem;
 }
 
-/* line 21, C:/Users/Ahmet/Documents/Evolve/sass/_footer.scss */
+/* line 23, C:/Users/Ahmet/Documents/Evolve/sass/_footer.scss */
 .adress li {
   margin: 0.5rem;
 }
 
-/* line 29, C:/Users/Ahmet/Documents/Evolve/sass/_footer.scss */
+/* line 31, C:/Users/Ahmet/Documents/Evolve/sass/_footer.scss */
 .media-icons {
   padding: 0.5rem;
 }
 
-/* line 33, C:/Users/Ahmet/Documents/Evolve/sass/_footer.scss */
+/* line 35, C:/Users/Ahmet/Documents/Evolve/sass/_footer.scss */
 .media-icons h2 {
   margin: 0.5rem 1rem 1rem;
   border-bottom: 10px solid #fff;
   text-align: center;
 }
 
-/* line 39, C:/Users/Ahmet/Documents/Evolve/sass/_footer.scss */
+/* line 41, C:/Users/Ahmet/Documents/Evolve/sass/_footer.scss */
 .media-icons li {
   display: inline;
   margin: 1rem;
@@ -959,7 +969,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 710px) {
+@media screen and (max-width: 720px) {
   /* line 73, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
   main {
     background-size: 100% 100%;
@@ -981,7 +991,7 @@ footer {
   }
   /* line 97, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
   .mobile-nav, #nav-span {
-    display: block;
+    display: block !important;
     cursor: pointer;
     position: fixed;
     top: 0;
@@ -1140,9 +1150,13 @@ footer {
   /* line 290, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
   .wrapper p, .uppdrag-text p {
     font-size: 14px;
-    padding: 1rem 0;
+    padding: 0 1rem;
   }
   /* line 297, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
+  .tjanster-text p {
+    font-size: 14px;
+  }
+  /* line 302, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
   .omosstext h1, .tjanster-text h1 {
     font-size: 1.5rem;
   }

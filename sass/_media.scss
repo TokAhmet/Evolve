@@ -96,7 +96,7 @@
 
 	.mobile-nav, #nav-span{
 
-		display: block;
+		display: block !important;
 		cursor: pointer;
 		position: fixed;
 		top: 0;
@@ -287,11 +287,16 @@
 
 	}
 
-	.wrapper p ,.uppdrag-text p{
+	.wrapper p ,.uppdrag-text p,{
 
 		font-size: 14px;
-		padding: 1rem 0;
+		padding: 0 1rem;
 
+	}
+
+	.tjanster-text p{
+
+		font-size: 14px;
 	}
 
 	.omosstext h1,.tjanster-text h1{

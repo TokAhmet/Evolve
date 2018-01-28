@@ -41,6 +41,7 @@
 	flex-wrap: wrap;
 	margin: 3rem 0;
 	font-weight: bold;
+	display: inline-block; // fallback för IE 7 8 9
 
 	& img{
 		
