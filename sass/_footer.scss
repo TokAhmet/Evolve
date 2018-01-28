@@ -1,11 +1,9 @@
 /* FOOTER */
 
 footer{
-
-	background-color: #d6c5b7;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
+	
+	@include flex;
+	background-color: $main-color;
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
 	-ms-flex-flow: row wrap;
@@ -33,9 +31,9 @@ footer{
 	padding: 0.5rem;
 
 	& h2{
-
+		
 		margin: 0.5rem 1rem 1rem;
-		border-bottom: 10px solid #fff;
+		border-bottom: 10px solid $white-color;
 		text-align: center;
 	}
 	& li{

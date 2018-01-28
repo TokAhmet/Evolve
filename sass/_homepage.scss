@@ -4,9 +4,7 @@ main{
 
 	background: url(../img/startbild.jpg) no-repeat center center;
 	background-size: cover;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
+	@include flex;
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
 	    -ms-flex-flow: row wrap;
@@ -24,8 +22,8 @@ main{
 	width: 50%;
 	text-align: center;
 	font-size: 4rem;
-	color: #000;
-	border: 10px solid black;
+	color: $black-color;
+	border: 10px solid $black-color;
 	font-family: 'Archivo Black', sans-serif;
 	-webkit-animation: jackInTheBox 2s;
 	        animation: jackInTheBox 2s;

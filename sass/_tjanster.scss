@@ -1,59 +1,55 @@
 /* TJÄNSTER */
 
- .tjanster-container{
-
-	 width: 100%;
-	 display: -webkit-box;
-	 display: -ms-flexbox;
-	 display: flex;
-	 -webkit-box-align: center;
-	     -ms-flex-align: center;
-	         align-items: center;
-	 -webkit-box-orient: vertical;
-	 -webkit-box-direction: normal;
-	     -ms-flex-direction: column;
-	         flex-direction: column;
- }
-
- .tjanster{
-
-	 width: 80%;
-	 height: auto;
-	 display: -webkit-box;
-	 display: -ms-flexbox;
-	 display: flex;
-	 -webkit-box-pack: justify;
-	     -ms-flex-pack: justify;
-	         justify-content: space-between;
-	 padding-top: 3em;
-	 text-align: center;
-& img{
+.tjanster-container{
 
 	width: 100%;
-	height: auto;
-	padding-top: 1.5em;
+	@include flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
 }
- }
 
- .tjanster-vanster{
+.tjanster{
 
-	background-color: #d6c5b7;
+	width: 80%;
+	height: auto;
+	@include flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	padding-top: 3em;
+	text-align: center;
+	& img{
+
+		width: 100%;
+		height: auto;
+		padding-top: 1.5em;
+	}
+}
+
+.tjanster-vanster{
+
+	background-color: $main-color;
 	width: 40%;	
 	height: auto;
 	padding: 1em 2em 2em 2em;
 	-webkit-box-shadow: 5px 10px 22px #0d0d0d;
-	        box-shadow: 5px 10px 22px #0d0d0d;
- }
+	box-shadow: 5px 10px 22px #0d0d0d;
+}
 
- .tjanster-hoger {
+.tjanster-hoger {
 
-	background-color: #d6c5b7;
+	background-color: $main-color;
 	width: 40%;	
 	height: auto;
 	padding: 1em 2em 2em 2em;
 	-webkit-box-shadow: 5px 10px 22px #0d0d0d;
-	        box-shadow: 5px 10px 22px #0d0d0d;
- }
+	box-shadow: 5px 10px 22px #0d0d0d;
+}
 
 
 .tjanster-mobil{
@@ -61,14 +57,14 @@
 	display: none;
 	width: 80%;
 	height: auto;
-	background-color: #d6c5b7;
+	background-color: $main-color;
 
-& img{
+	& img{
 
-	padding-top: 1em;
-	width: 100%;
-	height: auto;
-}
+		padding-top: 1em;
+		width: 100%;
+		height: auto;
+	}
 }
 
 
@@ -77,11 +73,11 @@
 	font-weight: bold;
 	width: 80%;
 	padding: 2rem;
-& h1{
-	
-	font-size: 3rem;
-	border-bottom: 3px solid black;
-}
+	& h1{
+
+		font-size: 3rem;
+		border-bottom: 3px solid $black-color;
+	}
 }
 
 
@@ -92,7 +88,7 @@
 
 .tablink{
 
-	background-color: #d6c5b7;
+	background-color: $main-color;
 	color: white;
 	float: left;
 	border: none;
@@ -103,21 +99,21 @@
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1em;
 	font-weight: 700;
-& :hover{
+	& :hover{
 
-	background-color: #777;
-}
+		background-color: #777;
+	}
 }
 
 .tablinkactive{
 
-	background-color: #000;
+	background-color: $black-color;
 }
-  
+
 
 .tabcontent{
 
-	color: #000;
+	color: $black-color;
 	display: none;
 	padding: 2em 1em;
 	height: 100%;
