@@ -13,7 +13,7 @@
 body, html {
   -webkit-animation: fadein 1.5s;
   animation: fadein 1.5s;
-  background: -webkit-linear-gradient(-45deg, #f6f8f9 35%, #d7dee3 65%, #d7dee3 70%, #d7dee3 70%, #d7dee3 75%, #d7dee3 77%, #d7dee3 79%, #d7dee3 90%, #d7dee3 95%, #d7dee3 99%, #d7dee3 100%, #f5f7f9 100%);
+  background-color: lightgray;
   font-family: 'Open Sans', sans-serif;
   line-height: 1.5;
   margin: auto;
@@ -23,11 +23,6 @@ body, html {
 ul {
   margin: 0;
   padding: 0;
-}
-
-/* line 28, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_global.scss */
-main, .uppdrag, .omoss, .tjänster, .kontakt {
-  min-height: 100vh;
 }
 
 /* line 33, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_global.scss */
@@ -55,16 +50,12 @@ header {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  max-height: 5rem;
+  max-height: 80px;
   width: 100%;
   text-shadow: 5px 10px 10px #0d0d0d;
 }
 
 /* line 17, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_header.scss */
-header img {
-  width: 200px;
-  padding: 1rem;
-}
 
 /* NAVBAR */
 /* line 3, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_navbar.scss */
@@ -84,7 +75,7 @@ header img {
 /* line 17, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_navbar.scss */
 .navbar li {
   display: inline;
-  margin: 1rem;
+  margin: 16px;
 }
 
 /* line 24, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_navbar.scss */
@@ -115,23 +106,26 @@ header img {
 
 /* HOMEPAGE */
 /* line 3, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_homepage.scss */
-main {
-  background: url(../img/startbild.jpg) no-repeat center center;
-  background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-flow: row wrap;
-  flex-flow: row wrap;
+main{
+  position: relative;
+  background: none;
+  min-height: 700px;
+}
+
+.home-image {
+  background-repeat: no-repeat;
+   position:absolute;
+    z-index: 0;
+    top:0;
+    left:0;
+    width:100%; /* alternative: right:0; */
+    height:100%; /* alternative: bottom:0; */
+
 }
 
 /* line 15, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_homepage.scss */
 .slogan {
   width: 100%;
-  margin-top: 10%;
 }
 
 /* line 20, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_homepage.scss */
@@ -139,7 +133,7 @@ main {
   margin: auto;
   width: 50%;
   text-align: center;
-  font-size: 4rem;
+  font-size: 50px;
   color: #000;
   border: 10px solid #000;
   font-family: 'Archivo Black', sans-serif;
@@ -153,7 +147,7 @@ main {
   background: url(../img/office1.jpg) no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
-  height: 50vh;
+  height: 500px;
 }
 
 /* line 11, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_omOss.scss */
@@ -161,15 +155,15 @@ main {
   -webkit-box-shadow: 5px 10px 11px #0d0d0d;
   box-shadow: 5px 10px 11px #0d0d0d;
   background-color: #d6c5b7;
-  margin: 5rem;
+  margin: 100px;
   min-width: 35%;
-  height: 10%;
+
 }
 
 /* line 21, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_omOss.scss */
 .omossnav li {
-  padding: 0.5rem;
-  margin: 1rem;
+  padding: 8px;
+  margin: 16px;
 }
 
 /* line 26, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_omOss.scss */
@@ -204,19 +198,19 @@ main {
   -ms-flex: 1;
   flex: 1;
   margin: auto;
-  padding: 8rem;
+  padding: 50px 100px;
 }
 
 /* line 66, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_omOss.scss */
 .omosstext p {
   font-weight: bold;
   line-height: 1.5;
-  padding-bottom: 1rem;
+  padding-bottom: 16px;
 }
 
 /* line 72, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_omOss.scss */
 .omosstext h1 {
-  font-size: 3rem;
+  font-size: 48px;
   border-bottom: 3px solid #000;
 }
 
@@ -224,10 +218,6 @@ main {
 /* line 3, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_tjanster.scss */
 .tjanster-container {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -248,7 +238,7 @@ main {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding-top: 3em;
+  margin-left: 150px;
   text-align: center;
 }
 
@@ -256,7 +246,7 @@ main {
 .tjanster img {
   width: 100%;
   height: auto;
-  padding-top: 1.5em;
+  padding-top: 16px;
 }
 
 /* line 34, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_tjanster.scss */
@@ -264,10 +254,11 @@ main {
   background-color: #d6c5b7;
   width: 40%;
   height: auto;
-  padding: 1em 2em 2em 2em;
+  padding: 8px 16px 16px 16px;
   -webkit-box-shadow: 5px 10px 22px #0d0d0d;
   box-shadow: 5px 10px 22px #0d0d0d;
-  float: right;
+  float: left;
+  margin:48px;
 }
 
 /* line 45, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_tjanster.scss */
@@ -275,10 +266,12 @@ main {
   background-color: #d6c5b7;
   width: 40%;
   height: auto;
-  padding: 1em 2em 2em 2em;
+  padding: 8px 16px 16px 16px;
   -webkit-box-shadow: 5px 10px 22px #0d0d0d;
   box-shadow: 5px 10px 22px #0d0d0d;
   float: right;
+  margin: 48px;
+ 
 }
 
 /* line 57, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_tjanster.scss */
@@ -300,19 +293,21 @@ main {
 .tjanster-text {
   font-weight: bold;
   width: 80%;
-  padding: 2rem;
+  padding: 32px;
+  text-align: center;
+  margin-left: 150px;
+
 }
 
 /* line 78, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_tjanster.scss */
 .tjanster-text h1 {
-  font-size: 3rem;
+  font-size: 48px;
   border-bottom: 3px solid #000;
-  clear: both;
 }
 
 /* line 87, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_tjanster.scss */
 .tjanster-li {
-  line-height: 1em;
+  line-height: 1.5;
 }
 
 /* line 92, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_tjanster.scss */
@@ -351,7 +346,7 @@ main {
 /* UPPDRAG */
 /* line 4, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_uppdrag.scss */
 .uppdrag-text {
-  padding: 3rem 1rem 0 1rem;
+  padding: 48px 16px 0 16px;
   text-align: center;
   font-weight: bold;
 }
@@ -374,7 +369,7 @@ main {
   -webkit-box-direction: normal;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
-  margin: 1rem auto auto;
+  margin: 16px auto auto;
 }
 
 /* line 31, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_uppdrag.scss */
@@ -387,9 +382,8 @@ main {
   flex-basis: 30%;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin: 3rem 0;
+  margin: 70px;
   font-weight: bold;
-  display: inline-block;
 }
 
 /* line 46, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_uppdrag.scss */
@@ -430,26 +424,20 @@ main {
   height: 100%;
   /* Full height */
   overflow: auto;
-  /* Enable scroll if needed */
-  background-color: black;
-  /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4);
-  /* Black w/ opacity */
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+
+
 }
 
 /* line 83, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_uppdrag.scss */
 .modal-content {
-  background: -webkit-linear-gradient(-45deg, #f6f8f9 35%, #d7dee3 65%, #d7dee3 70%, #d7dee3 70%, #d7dee3 75%, #d7dee3 77%, #d7dee3 79%, #d7dee3 90%, #d7dee3 95%, #d7dee3 99%, #d7dee3 100%, #f5f7f9 100%);
   position: relative;
-  background-color: #fefefe;
   margin: auto;
   padding: 0;
   width: 40%;
   border: 3px solid #000;
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  -webkit-animation: fadein 0.8s;
   animation: fadein 0.8s;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 
 /* line 98, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_uppdrag.scss */
@@ -467,7 +455,7 @@ main {
 /* line 110, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_uppdrag.scss */
 .modal-header-framtiden {
   padding: 2px 16px;
-  min-height: 9rem;
+  min-height: 144px;
   border-bottom: 1px solid #000;
   color: #000;
   background: url(../img/framtiden.png) no-repeat center center;
@@ -477,7 +465,7 @@ main {
 /* line 116, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_uppdrag.scss */
 .modal-header-loxy {
   padding: 2px 16px;
-  min-height: 9rem;
+  min-height: 144px;
   border-bottom: 1px solid #000;
   color: #000;
   background: url(../img/loxy.jpg) no-repeat center center;
@@ -487,7 +475,7 @@ main {
 /* line 122, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_uppdrag.scss */
 .modal-header-skane {
   padding: 2px 16px;
-  min-height: 9rem;
+  min-height: 144px;
   border-bottom: 1px solid #000;
   color: #000;
   background: url(../img/skanetrafiken.png) no-repeat center center;
@@ -497,7 +485,7 @@ main {
 /* line 128, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_uppdrag.scss */
 .modal-header-mq {
   padding: 2px 16px;
-  min-height: 9rem;
+  min-height: 144px;
   border-bottom: 1px solid #000;
   color: #000;
   background: url(../img/mq.png) no-repeat center center;
@@ -507,7 +495,7 @@ main {
 /* line 134, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_uppdrag.scss */
 .modal-header-gevalia {
   padding: 2px 16px;
-  min-height: 9rem;
+  min-height: 144px;
   border-bottom: 1px solid #000;
   color: #000;
   background: url(../img/gevalia.png) no-repeat center center;
@@ -517,7 +505,7 @@ main {
 /* line 140, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_uppdrag.scss */
 .modal-header-tele2 {
   padding: 2px 16px;
-  min-height: 9rem;
+  min-height: 144px;
   border-bottom: 1px solid #000;
   color: #000;
   background: url(../img/tele2.jpg) no-repeat center center;
@@ -534,7 +522,7 @@ main {
 .modal-footer {
   padding: 2px 16px;
   color: white;
-  min-height: 3rem;
+  min-height: 48px;
 }
 
 /* line 156, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_uppdrag.scss */
@@ -588,19 +576,19 @@ main {
   -webkit-box-shadow: 5px 10px 22px #0d0d0d;
   box-shadow: 5px 10px 22px #0d0d0d;
   color: #000;
-  min-width: 40vw;
-  margin: 5rem 1rem 5rem 5rem;
+  min-width: 80px;
+  margin: 100px 20px 50px 50px;
+  padding: 20px;
   font-weight: bold;
-  float: left;
 }
 
 /* line 27, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_kontakt.scss */
 .contact h1 {
-  font-size: 2rem;
+  font-size: 32px;
   text-align: center;
   text-decoration: underline;
   letter-spacing: 1px;
-  padding: 0.5rem;
+  padding: 8px;
 }
 
 /* line 36, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_kontakt.scss */
@@ -619,7 +607,7 @@ main {
   -webkit-box-direction: normal;
   flex-direction: column;
   margin: auto;
-  padding: 0.7rem;
+  padding: 10px;
 }
 
 /* line 52, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_kontakt.scss */
@@ -630,7 +618,6 @@ main {
   border: 0;
   border-radius: 20px;
   font-weight: bold;
-  width: 50%;
   margin: auto;
 }
 
@@ -650,7 +637,8 @@ main {
 
 /* line 80, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_kontakt.scss */
 .li-forms input, .li-forms button, .li-forms label {
-  padding: 0.6rem;
+  padding: 10px;
+  width: 100%;
 }
 
 /* line 84, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_kontakt.scss */
@@ -660,22 +648,11 @@ main {
 
 /* line 92, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_kontakt.scss */
 .contact-wrapper {
-  margin: 2rem;
-  display: inline-block;
-  float: right;
+ margin: 100px 50px 50px 50px;
 }
 
 /* line 100, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_kontakt.scss */
-#map {
-  -webkit-animation: slideInRight 1s;
-  animation: slideInRight 1s;
-  -webkit-box-shadow: 5px 10px 22px #0d0d0d;
-  box-shadow: 5px 10px 22px #0d0d0d;
-  height: 20rem;
-  width: 40vw;
-  margin: 5rem auto 5rem auto;
-  padding: 2rem;
-}
+
 
 /* line 115, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_kontakt.scss */
 .contact-adress {
@@ -685,14 +662,17 @@ main {
   -webkit-box-shadow: 5px 10px 22px #0d0d0d;
   box-shadow: 5px 10px 22px #0d0d0d;
   font-weight: bold;
-  width: 70%;
-  margin: auto;
+  width: 100%;
+  padding: 50px;
+
 }
 
 /* line 128, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_kontakt.scss */
 .contact-adress li {
-  padding: 1rem;
-  margin: 1rem;
+
+  margin: 20px;
+  width: 100%;
+
 }
 
 /* FOOTER */
@@ -710,8 +690,7 @@ footer {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  min-height: 9rem;
-  clear: both;
+  height: 144px;
 }
 
 /* line 17, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_footer.scss */
@@ -727,30 +706,31 @@ footer a image
 /* line 24, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_footer.scss */
 .adress {
   list-style: none;
-  margin: 1rem;
+  margin: 16px;
+  float: left;
 }
 
 /* line 28, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_footer.scss */
 .adress li {
-  margin: 0.5rem;
+  margin: 8px;
 }
 
 /* line 36, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_footer.scss */
 .media-icons {
-  padding: 0.5rem;
+  padding: 8px;
+  float: right;
 }
 
 /* line 40, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_footer.scss */
 .media-icons h2 {
-  margin: 0.5rem 1rem 1rem;
-  border-bottom: 10px solid #fff;
-  text-align: center;
+  margin: 8px 16px 16px;
+   border-bottom: 10px solid #fff;
+
 }
 
 /* line 46, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_footer.scss */
 .media-icons li {
   display: inline;
-  margin: 1rem;
 }
 
 
@@ -956,7 +936,7 @@ footer a image
 @media screen and (max-width: 1024px) {
   /* line 20, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
   .wrapper {
-    margin: 3rem;
+    margin: 48px;
   }
   /* line 23, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
   .wrapper img {
@@ -965,27 +945,27 @@ footer a image
   }
   /* line 29, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
   .wrapper p {
-    padding: 0.5rem;
+    padding: 8px;
   }
   /* line 36, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
   .omossnav {
     width: 60%;
-    margin: 5rem auto;
-    padding: 0.5rem;
+    margin: 80px auto;
+    padding: 8px;
   }
   /* line 43, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
   .omosstext {
-    padding: 0 10rem 2rem 10rem;
+    padding: 0 160px 32px 160px;
   }
   /* line 48, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
   .contact form {
-    margin: 3rem;
+    margin: 48px;
   }
   /* line 53, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
   #map {
-    width: 40vw;
-    margin: 3rem auto 5rem auto;
-    padding: 2rem;
+    width: 40px;
+    margin: 48px auto 80px auto;
+    padding: 32px;
   }
   /* line 61, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
   .contact-adress {
@@ -1005,13 +985,13 @@ footer a image
   }
   /* line 83, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
   .slogan h1 {
-    font-size: 3rem;
-    padding: 0.5rem;
+    font-size: 48px;
+    padding: 8px;
   }
   /* line 89, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
   #nav-span {
-    margin: 1.2rem;
-    font-size: 2rem;
+    margin: 19px;
+    font-size: 32px;
     cursor: pointer;
   }
   /* line 97, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
@@ -1038,16 +1018,16 @@ footer a image
     -o-transition: 0.5s;
     transition: 0.5s;
     text-align: center;
-    padding-top: 2.5rem;
+    padding-top: 36px;
     cursor: default;
   }
   /* line 127, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
   .mobile-nav li {
-    margin-top: 1.2rem;
+    margin-top: 19px;
   }
   /* line 131, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
   .mobile-nav a {
-    padding: 0.8rem;
+    padding: 14px;
     text-decoration: none;
     font-size: 16px;
     color: #fff;
@@ -1081,19 +1061,19 @@ footer a image
   /* line 173, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
   .adress {
     margin: 0;
-    padding: 0.5rem;
+    padding: 8px;
   }
   /* line 178, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
   .adress li {
-    margin: 0.5rem;
+    margin: 8px;
   }
   /* line 185, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
   .media-icons {
-    padding: 1rem;
+    padding: 16px;
   }
   /* line 189, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
   .media-icons li {
-    margin: 1rem;
+    margin: 16px;
   }
   /* line 196, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
   .omoss-img {
@@ -1103,11 +1083,11 @@ footer a image
   /* line 202, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
   .omossnav {
     width: 90%;
-    margin: 3rem auto;
+    margin: 48px auto;
   }
   /* line 208, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
   .omosstext {
-    padding: 0 2rem 2rem;
+    padding: 0 32px 32px;
   }
   /* line 213, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
   .tjanster {
@@ -1119,17 +1099,17 @@ footer a image
   }
   /* line 222, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
   .tjanster-container {
-    padding-top: 3rem;
+    padding-top: 48px;
   }
   /* line 226, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
   .tjanster-text h1 {
-    font-size: 3rem;
+    font-size: 48px;
   }
   /* line 231, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
   .wrapper {
     -ms-flex-preferred-size: 90%;
     flex-basis: 90%;
-    margin: 3rem 1rem;
+    margin: 48px 16px;
   }
   /* line 238, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
   .modal {
@@ -1143,7 +1123,7 @@ footer a image
   .contact form {
     -webkit-animation-name: none;
     animation-name: none;
-    margin: 5rem auto 3rem auto;
+    margin: 80px auto 48px auto;
     width: 90%;
   }
   /* line 257, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
@@ -1154,7 +1134,7 @@ footer a image
   .contact #map {
     -webkit-animation-name: none;
     animation-name: none;
-    width: 81vw;
+    min-width: 150px;
     margin: auto;
   }
   /* line 270, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
@@ -1170,12 +1150,12 @@ footer a image
 @media screen and (max-width: 550px) {
   /* line 285, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
   .slogan h1 {
-    font-size: 1.5rem;
+    font-size: 24px;
   }
   /* line 290, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
   .wrapper p, .uppdrag-text p {
     font-size: 14px;
-    padding: 0 1rem;
+    padding: 0 16px;
   }
   /* line 297, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
   .tjanster-text p {
@@ -1183,7 +1163,7 @@ footer a image
   }
   /* line 302, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
   .omosstext h1, .tjanster-text h1 {
-    font-size: 1.5rem;
+    font-size: 24px;
   }
 }
 
