@@ -17,21 +17,11 @@
 
 @media screen and (max-width: $laptop){
 
-	.wrapper{
+	.tjanster-text h1{
 
-		margin: 3rem;
-		& img{
-
-			-webkit-filter: grayscale(0%);
-
-			filter: grayscale(0%);
-		}
-		& p{
-
-			padding: 0.5rem;
-		}
-
+		font-size: 2rem;
 	}
+
 
 	.omossnav{
 
@@ -45,11 +35,29 @@
 		padding: 0 10rem 2rem 10rem;	
 	}
 
+	.wrapper{
+
+		margin: 3rem;
+
+		& img{
+
+			-webkit-filter: grayscale(0%);
+
+			filter: grayscale(0%);
+		}
+		& p{
+
+			padding: 0.5rem;
+		}
+
+	}
+
 	.contact form{
 
 		margin: 3rem;
 
 	}
+
 	#map{
 
 		width: 40vw;
@@ -299,10 +307,14 @@
 		font-size: 14px;
 	}
 
-	.omosstext h1,.tjanster-text h1{
+	.omosstext h1{
 
 		font-size: 1.5rem;
 
 	}
+	
+	.tjanster-text h1{
 
+		font-size: 17px;
+	}
 }
