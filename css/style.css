@@ -143,7 +143,7 @@ main {
 /* line 3, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_omOss.scss */
 .omoss-img {
   background: url(../img/office1.jpg) no-repeat center center;
-  background-size: 100% 100%;
+  background-size: cover;
   background-attachment: fixed;
   height: 50vh;
 }
