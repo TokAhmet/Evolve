@@ -12,14 +12,20 @@
 	<script src="script/script.js" ></script> 
 	<!--[if lt IE 9]>
 		<script src="script/html5shiv.js"></script>
+	    <link rel="stylesheet" type="text/css" href="css/ie8-and-down.css" />
 	<![endif]-->
 	<!--[if IE]><link rel="shortcut icon" href="img/favicon.ico"><![endif]-->
 	<link rel="icon" href="img/favicon.png">
 </head>
 <body>
 	<section class="tjänster">
-		<header>
+		<header>				
+			<!--[if gte IE 9]><!-->
 			<a href="index.html"><img src="img/evolve.svg" alt="Logo"></a>
+			<!--<![endif]-->
+			<!--[if lte IE 8]>
+			<a href="index.html"><img src="img/evolve.png" class="logo" alt="Logo"></a>
+			<![endif]-->
 			<span id="nav-span" onclick="openNav()">&#9776;</span>
 			<div id="mySidenav" class="mobile-nav">
 				<ul>
@@ -31,7 +37,7 @@
 				</ul>
 			</div>
 			<nav class="navbar">
-				<ul>
+				<ul class="ulnav">
 					<li class="nav-item"><a href="omoss.html">Om Oss</a></li>
 					<li class="nav-item active"><a href="tjänster.html">Tjänster</a></li>
 					<li class="nav-item" ><a href="uppdrag.html">Uppdrag</a></li>
@@ -76,8 +82,9 @@
 			</div>
 		
 			<div class="tjanster-text">
-				<h1>Juice Generation</h1>
-				<p>Juice Generations gamla sida var inte responsiv alls. 
+				<h1>Hemsideuppgradering > Juice Generation</h1>
+				<p>Ett exempel på de tjänster vi utför är uppgraderingar av hemsidor och Juice Generation är ett av företagen som valt våra tjänster.
+					Deras gamla sida var inte responsiv alls.  
 					Med tanke på att de flesta av deras kunder är på språng och använder mobilen så var en mobile-first approach ett bra första steg för att göra det enklare att kolla på hemsidan, hitta närmaste affär och hjälpa kunden att hitta vad som Juice Generation att erbjuda. 
 					Bilderna var överallt på sidan och färgschemat som använts var “använd alla färger”. 
 					Så vi fortsatte även med att skapa en grafisk profil och färre och mer passande bilder för en mer stilistisk inriktning.</p>

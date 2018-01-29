@@ -1,0 +1,25 @@
+body, html {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.logo {
+    width: 200px;
+    padding: 30px;
+    border: 0;
+}
+
+/*
+.ulnav 
+{
+    float: right;
+}
+
+.ulnav li 
+{
+    color: red;
+}
+
+.ulnac li a
+{
+    color: black;
+}*/
