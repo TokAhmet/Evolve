@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* line 1, C:/Users/Ahmet/Documents/Evolve/sass/_global.scss */
+/* line 1, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_global.scss */
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -7,7 +7,7 @@
   text-decoration: none;
 }
 
-/* line 11, C:/Users/Ahmet/Documents/Evolve/sass/_global.scss */
+/* line 11, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_global.scss */
 body, html {
   -webkit-animation: fadein 1.5s;
   animation: fadein 1.5s;
@@ -17,24 +17,24 @@ body, html {
   margin: auto;
 }
 
-/* line 22, C:/Users/Ahmet/Documents/Evolve/sass/_global.scss */
+/* line 22, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_global.scss */
 ul {
   margin: 0;
   padding: 0;
 }
 
-/* line 28, C:/Users/Ahmet/Documents/Evolve/sass/_global.scss */
+/* line 28, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_global.scss */
 main, .uppdrag, .omoss, .tjänster, .kontakt {
   min-height: 100vh;
 }
 
-/* line 33, C:/Users/Ahmet/Documents/Evolve/sass/_global.scss */
+/* line 33, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_global.scss */
 .hide {
   display: none;
 }
 
 /* HEADER */
-/* line 3, C:/Users/Ahmet/Documents/Evolve/sass/_header.scss */
+/* line 3, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_header.scss */
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -52,20 +52,20 @@ header {
   text-shadow: 5px 10px 10px #0d0d0d;
 }
 
-/* line 17, C:/Users/Ahmet/Documents/Evolve/sass/_header.scss */
+/* line 17, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_header.scss */
 header img {
   width: 200px;
   padding: 1rem;
 }
 
 /* NAVBAR */
-/* line 3, C:/Users/Ahmet/Documents/Evolve/sass/_navbar.scss */
+/* line 3, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_navbar.scss */
 .zoom-nav {
   -webkit-animation: zoomIn 1s;
   animation: zoomIn 1s;
 }
 
-/* line 10, C:/Users/Ahmet/Documents/Evolve/sass/_navbar.scss */
+/* line 10, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_navbar.scss */
 .navbar {
   margin: 2rem;
   text-align: center;
@@ -73,13 +73,13 @@ header img {
   float: right;
 }
 
-/* line 17, C:/Users/Ahmet/Documents/Evolve/sass/_navbar.scss */
+/* line 17, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_navbar.scss */
 .navbar li {
   display: inline;
   margin: 1rem;
 }
 
-/* line 24, C:/Users/Ahmet/Documents/Evolve/sass/_navbar.scss */
+/* line 24, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_navbar.scss */
 .navbar a {
   color: #000;
   font-size: 16px;
@@ -88,25 +88,25 @@ header img {
   text-decoration: none;
 }
 
-/* line 34, C:/Users/Ahmet/Documents/Evolve/sass/_navbar.scss */
+/* line 34, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_navbar.scss */
 .navbar li > .current a, .navbar a:hover {
   border-bottom: 3px solid #000;
   padding-bottom: 2px;
 }
 
-/* line 41, C:/Users/Ahmet/Documents/Evolve/sass/_navbar.scss */
+/* line 41, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_navbar.scss */
 .mobile-nav, #nav-span {
   display: none;
 }
 
-/* line 46, C:/Users/Ahmet/Documents/Evolve/sass/_navbar.scss */
+/* line 46, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_navbar.scss */
 .active {
   border-bottom: 3px solid #000;
   padding-bottom: 2px;
 }
 
 /* HOMEPAGE */
-/* line 3, C:/Users/Ahmet/Documents/Evolve/sass/_homepage.scss */
+/* line 3, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_homepage.scss */
 main {
   background: url(../img/startbild.jpg) no-repeat center center;
   background-size: cover;
@@ -120,13 +120,13 @@ main {
   flex-flow: row wrap;
 }
 
-/* line 15, C:/Users/Ahmet/Documents/Evolve/sass/_homepage.scss */
+/* line 15, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_homepage.scss */
 .slogan {
   width: 100%;
   margin-top: 10%;
 }
 
-/* line 20, C:/Users/Ahmet/Documents/Evolve/sass/_homepage.scss */
+/* line 20, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_homepage.scss */
 .slogan h1 {
   margin: auto;
   width: 50%;
@@ -140,15 +140,15 @@ main {
 }
 
 /* OM OSS */
-/* line 3, C:/Users/Ahmet/Documents/Evolve/sass/_omOss.scss */
+/* line 3, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_omOss.scss */
 .omoss-img {
   background: url(../img/office1.jpg) no-repeat center center;
-  background-size: cover;
+  background-size: 100% 100%;
   background-attachment: fixed;
   height: 50vh;
 }
 
-/* line 11, C:/Users/Ahmet/Documents/Evolve/sass/_omOss.scss */
+/* line 11, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_omOss.scss */
 .omossnav {
   -webkit-box-shadow: 5px 10px 11px #0d0d0d;
   box-shadow: 5px 10px 11px #0d0d0d;
@@ -158,18 +158,18 @@ main {
   height: 10%;
 }
 
-/* line 21, C:/Users/Ahmet/Documents/Evolve/sass/_omOss.scss */
+/* line 21, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_omOss.scss */
 .omossnav li {
   padding: 0.5rem;
   margin: 1rem;
 }
 
-/* line 26, C:/Users/Ahmet/Documents/Evolve/sass/_omOss.scss */
+/* line 26, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_omOss.scss */
 .omossnav li:before {
   content: "> ";
 }
 
-/* line 33, C:/Users/Ahmet/Documents/Evolve/sass/_omOss.scss */
+/* line 33, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_omOss.scss */
 .omossnav a {
   color: #000;
   font-size: 16px;
@@ -177,18 +177,18 @@ main {
   text-decoration: none;
 }
 
-/* line 40, C:/Users/Ahmet/Documents/Evolve/sass/_omOss.scss */
+/* line 40, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_omOss.scss */
 .omossnav a:hover {
   text-decoration: underline;
   cursor: pointer;
 }
 
-/* line 51, C:/Users/Ahmet/Documents/Evolve/sass/_omOss.scss */
+/* line 51, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_omOss.scss */
 .border-li {
   border-bottom: 10px solid #fff;
 }
 
-/* line 55, C:/Users/Ahmet/Documents/Evolve/sass/_omOss.scss */
+/* line 55, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_omOss.scss */
 .omosstext {
   -webkit-animation: fadein 1s;
   animation: fadein 1s;
@@ -199,21 +199,21 @@ main {
   padding: 8rem;
 }
 
-/* line 66, C:/Users/Ahmet/Documents/Evolve/sass/_omOss.scss */
+/* line 66, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_omOss.scss */
 .omosstext p {
   font-weight: bold;
   line-height: 1.5;
   padding-bottom: 1rem;
 }
 
-/* line 72, C:/Users/Ahmet/Documents/Evolve/sass/_omOss.scss */
+/* line 72, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_omOss.scss */
 .omosstext h1 {
   font-size: 3rem;
   border-bottom: 3px solid #000;
 }
 
 /* TJÄNSTER */
-/* line 3, C:/Users/Ahmet/Documents/Evolve/sass/_tjanster.scss */
+/* line 3, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_tjanster.scss */
 .tjanster-container {
   width: 100%;
   display: -webkit-box;
@@ -229,7 +229,7 @@ main {
   flex-direction: column;
 }
 
-/* line 16, C:/Users/Ahmet/Documents/Evolve/sass/_tjanster.scss */
+/* line 16, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_tjanster.scss */
 .tjanster {
   width: 80%;
   height: auto;
@@ -244,14 +244,14 @@ main {
   text-align: center;
 }
 
-/* line 26, C:/Users/Ahmet/Documents/Evolve/sass/_tjanster.scss */
+/* line 26, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_tjanster.scss */
 .tjanster img {
   width: 100%;
   height: auto;
   padding-top: 1.5em;
 }
 
-/* line 34, C:/Users/Ahmet/Documents/Evolve/sass/_tjanster.scss */
+/* line 34, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_tjanster.scss */
 .tjanster-vanster {
   background-color: #d6c5b7;
   width: 40%;
@@ -262,7 +262,7 @@ main {
   float: right;
 }
 
-/* line 45, C:/Users/Ahmet/Documents/Evolve/sass/_tjanster.scss */
+/* line 45, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_tjanster.scss */
 .tjanster-hoger {
   background-color: #d6c5b7;
   width: 40%;
@@ -273,7 +273,7 @@ main {
   float: right;
 }
 
-/* line 57, C:/Users/Ahmet/Documents/Evolve/sass/_tjanster.scss */
+/* line 57, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_tjanster.scss */
 .tjanster-mobil {
   display: none;
   width: 80%;
@@ -281,33 +281,33 @@ main {
   background-color: #d6c5b7;
 }
 
-/* line 64, C:/Users/Ahmet/Documents/Evolve/sass/_tjanster.scss */
+/* line 64, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_tjanster.scss */
 .tjanster-mobil img {
   padding-top: 1em;
   width: 100%;
   height: auto;
 }
 
-/* line 73, C:/Users/Ahmet/Documents/Evolve/sass/_tjanster.scss */
+/* line 73, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_tjanster.scss */
 .tjanster-text {
   font-weight: bold;
   width: 80%;
   padding: 2rem;
 }
 
-/* line 79, C:/Users/Ahmet/Documents/Evolve/sass/_tjanster.scss */
+/* line 79, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_tjanster.scss */
 .tjanster-text h1 {
   font-size: 3rem;
   border-bottom: 3px solid #000;
   clear: both;
 }
 
-/* line 88, C:/Users/Ahmet/Documents/Evolve/sass/_tjanster.scss */
+/* line 88, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_tjanster.scss */
 .tjanster-li {
   line-height: 1em;
 }
 
-/* line 93, C:/Users/Ahmet/Documents/Evolve/sass/_tjanster.scss */
+/* line 93, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_tjanster.scss */
 .tablink {
   background-color: #d6c5b7;
   color: white;
@@ -322,17 +322,17 @@ main {
   font-weight: 700;
 }
 
-/* line 106, C:/Users/Ahmet/Documents/Evolve/sass/_tjanster.scss */
+/* line 106, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_tjanster.scss */
 .tablink :hover {
   background-color: #777;
 }
 
-/* line 112, C:/Users/Ahmet/Documents/Evolve/sass/_tjanster.scss */
+/* line 112, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_tjanster.scss */
 .tablinkactive {
   background-color: #000;
 }
 
-/* line 118, C:/Users/Ahmet/Documents/Evolve/sass/_tjanster.scss */
+/* line 118, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_tjanster.scss */
 .tabcontent {
   color: #000;
   display: none;
@@ -341,20 +341,20 @@ main {
 }
 
 /* UPPDRAG */
-/* line 4, C:/Users/Ahmet/Documents/Evolve/sass/_uppdrag.scss */
+/* line 4, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_uppdrag.scss */
 .uppdrag-text {
   padding: 3rem 1rem 0 1rem;
   text-align: center;
   font-weight: bold;
 }
 
-/* line 10, C:/Users/Ahmet/Documents/Evolve/sass/_uppdrag.scss */
+/* line 10, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_uppdrag.scss */
 .uppdrag-text h1 {
   font-size: 37px;
   text-decoration: underline;
 }
 
-/* line 18, C:/Users/Ahmet/Documents/Evolve/sass/_uppdrag.scss */
+/* line 18, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_uppdrag.scss */
 .uppdrag-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -369,7 +369,7 @@ main {
   margin: 1rem auto auto;
 }
 
-/* line 31, C:/Users/Ahmet/Documents/Evolve/sass/_uppdrag.scss */
+/* line 31, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_uppdrag.scss */
 .wrapper {
   -webkit-box-shadow: 5px 10px 11px #0d0d0d;
   box-shadow: 5px 10px 11px #0d0d0d;
@@ -384,7 +384,7 @@ main {
   display: inline-block;
 }
 
-/* line 46, C:/Users/Ahmet/Documents/Evolve/sass/_uppdrag.scss */
+/* line 46, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_uppdrag.scss */
 .wrapper img {
   cursor: pointer;
   width: 100%;
@@ -396,7 +396,7 @@ main {
   transition: 0.5s ease-in-out;
 }
 
-/* line 56, C:/Users/Ahmet/Documents/Evolve/sass/_uppdrag.scss */
+/* line 56, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_uppdrag.scss */
 .wrapper img:hover {
   -webkit-filter: grayscale(0%);
   filter: grayscale(0%);
@@ -405,7 +405,7 @@ main {
   transition: 0.5s ease-in-out;
 }
 
-/* line 69, C:/Users/Ahmet/Documents/Evolve/sass/_uppdrag.scss */
+/* line 69, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_uppdrag.scss */
 .modal {
   display: none;
   /* Hidden by default */
@@ -429,7 +429,7 @@ main {
   /* Black w/ opacity */
 }
 
-/* line 83, C:/Users/Ahmet/Documents/Evolve/sass/_uppdrag.scss */
+/* line 83, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_uppdrag.scss */
 .modal-content {
   background: -webkit-linear-gradient(-45deg, #f6f8f9 35%, #d7dee3 65%, #d7dee3 70%, #d7dee3 70%, #d7dee3 75%, #d7dee3 77%, #d7dee3 79%, #d7dee3 90%, #d7dee3 95%, #d7dee3 99%, #d7dee3 100%, #f5f7f9 100%);
   position: relative;
@@ -444,19 +444,19 @@ main {
   animation: fadein 0.8s;
 }
 
-/* line 98, C:/Users/Ahmet/Documents/Evolve/sass/_uppdrag.scss */
+/* line 98, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_uppdrag.scss */
 #modal-span {
   float: right;
   font-size: 28px;
   font-weight: bold;
 }
 
-/* line 103, C:/Users/Ahmet/Documents/Evolve/sass/_uppdrag.scss */
+/* line 103, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_uppdrag.scss */
 #modal-span:hover, #modal-span:focus {
   cursor: pointer;
 }
 
-/* line 110, C:/Users/Ahmet/Documents/Evolve/sass/_uppdrag.scss */
+/* line 110, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_uppdrag.scss */
 .modal-header-framtiden {
   padding: 2px 16px;
   min-height: 9rem;
@@ -466,7 +466,7 @@ main {
   background-size: cover;
 }
 
-/* line 116, C:/Users/Ahmet/Documents/Evolve/sass/_uppdrag.scss */
+/* line 116, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_uppdrag.scss */
 .modal-header-loxy {
   padding: 2px 16px;
   min-height: 9rem;
@@ -476,7 +476,7 @@ main {
   background-size: cover;
 }
 
-/* line 122, C:/Users/Ahmet/Documents/Evolve/sass/_uppdrag.scss */
+/* line 122, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_uppdrag.scss */
 .modal-header-skane {
   padding: 2px 16px;
   min-height: 9rem;
@@ -486,7 +486,7 @@ main {
   background-size: cover;
 }
 
-/* line 128, C:/Users/Ahmet/Documents/Evolve/sass/_uppdrag.scss */
+/* line 128, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_uppdrag.scss */
 .modal-header-mq {
   padding: 2px 16px;
   min-height: 9rem;
@@ -496,7 +496,7 @@ main {
   background-size: 100% 100%;
 }
 
-/* line 134, C:/Users/Ahmet/Documents/Evolve/sass/_uppdrag.scss */
+/* line 134, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_uppdrag.scss */
 .modal-header-gevalia {
   padding: 2px 16px;
   min-height: 9rem;
@@ -506,7 +506,7 @@ main {
   background-size: 100% 100%;
 }
 
-/* line 140, C:/Users/Ahmet/Documents/Evolve/sass/_uppdrag.scss */
+/* line 140, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_uppdrag.scss */
 .modal-header-tele2 {
   padding: 2px 16px;
   min-height: 9rem;
@@ -516,20 +516,20 @@ main {
   background-size: 100% 100%;
 }
 
-/* line 146, C:/Users/Ahmet/Documents/Evolve/sass/_uppdrag.scss */
+/* line 146, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_uppdrag.scss */
 .modal-body {
   padding: 2px 16px;
   text-align: center;
 }
 
-/* line 152, C:/Users/Ahmet/Documents/Evolve/sass/_uppdrag.scss */
+/* line 152, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_uppdrag.scss */
 .modal-footer {
   padding: 2px 16px;
   color: white;
   min-height: 3rem;
 }
 
-/* line 156, C:/Users/Ahmet/Documents/Evolve/sass/_uppdrag.scss */
+/* line 156, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_uppdrag.scss */
 .modal-footer button {
   float: right;
   -webkit-box-shadow: 0 3px #666;
@@ -542,12 +542,12 @@ main {
   font-weight: bold;
 }
 
-/* line 166, C:/Users/Ahmet/Documents/Evolve/sass/_uppdrag.scss */
+/* line 166, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_uppdrag.scss */
 .modal-footer button:hover {
   cursor: pointer;
 }
 
-/* line 170, C:/Users/Ahmet/Documents/Evolve/sass/_uppdrag.scss */
+/* line 170, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_uppdrag.scss */
 .modal-footer button:active {
   -webkit-box-shadow: 0 2px #666;
   box-shadow: 0 2px #666;
@@ -557,7 +557,7 @@ main {
 }
 
 /* KONTAKT */
-/* line 2, C:/Users/Ahmet/Documents/Evolve/sass/_kontakt.scss */
+/* line 2, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_kontakt.scss */
 .contact {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -572,7 +572,7 @@ main {
   justify-content: space-between;
 }
 
-/* line 12, C:/Users/Ahmet/Documents/Evolve/sass/_kontakt.scss */
+/* line 12, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_kontakt.scss */
 .contact form {
   -webkit-animation: slideInLeft 1s;
   animation: slideInLeft 1s;
@@ -586,7 +586,7 @@ main {
   float: left;
 }
 
-/* line 27, C:/Users/Ahmet/Documents/Evolve/sass/_kontakt.scss */
+/* line 27, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_kontakt.scss */
 .contact h1 {
   font-size: 2rem;
   text-align: center;
@@ -595,7 +595,12 @@ main {
   padding: 0.5rem;
 }
 
-/* line 39, C:/Users/Ahmet/Documents/Evolve/sass/_kontakt.scss */
+/* line 35, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_kontakt.scss */
+.contact a {
+  color: #000;
+}
+
+/* line 42, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_kontakt.scss */
 .li-forms {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -609,7 +614,7 @@ main {
   padding: 0.7rem;
 }
 
-/* line 48, C:/Users/Ahmet/Documents/Evolve/sass/_kontakt.scss */
+/* line 51, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_kontakt.scss */
 .li-forms button {
   -webkit-box-shadow: 0 4px #666;
   box-shadow: 0 4px #666;
@@ -621,12 +626,12 @@ main {
   margin: auto;
 }
 
-/* line 60, C:/Users/Ahmet/Documents/Evolve/sass/_kontakt.scss */
+/* line 63, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_kontakt.scss */
 .li-forms button:hover {
   cursor: pointer;
 }
 
-/* line 65, C:/Users/Ahmet/Documents/Evolve/sass/_kontakt.scss */
+/* line 68, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_kontakt.scss */
 .li-forms button:active {
   -webkit-box-shadow: 0 3px #666;
   box-shadow: 0 3px #666;
@@ -635,24 +640,24 @@ main {
   transform: translateY(2px);
 }
 
-/* line 76, C:/Users/Ahmet/Documents/Evolve/sass/_kontakt.scss */
+/* line 79, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_kontakt.scss */
 .li-forms input, .li-forms button, .li-forms label {
   padding: 0.6rem;
 }
 
-/* line 80, C:/Users/Ahmet/Documents/Evolve/sass/_kontakt.scss */
+/* line 83, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_kontakt.scss */
 .li-forms input:focus, .li-forms textarea:focus {
   outline: 2px solid #000;
 }
 
-/* line 88, C:/Users/Ahmet/Documents/Evolve/sass/_kontakt.scss */
+/* line 90, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_kontakt.scss */
 .contact-wrapper {
   margin: 2rem;
   display: inline-block;
   float: right;
 }
 
-/* line 96, C:/Users/Ahmet/Documents/Evolve/sass/_kontakt.scss */
+/* line 98, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_kontakt.scss */
 #map {
   -webkit-animation: slideInRight 1s;
   animation: slideInRight 1s;
@@ -664,7 +669,7 @@ main {
   padding: 2rem;
 }
 
-/* line 111, C:/Users/Ahmet/Documents/Evolve/sass/_kontakt.scss */
+/* line 113, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_kontakt.scss */
 .contact-adress {
   -webkit-animation: slideInUp 1s;
   animation: slideInUp 1s;
@@ -676,14 +681,14 @@ main {
   margin: auto;
 }
 
-/* line 124, C:/Users/Ahmet/Documents/Evolve/sass/_kontakt.scss */
+/* line 126, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_kontakt.scss */
 .contact-adress li {
   padding: 1rem;
   margin: 1rem;
 }
 
 /* FOOTER */
-/* line 3, C:/Users/Ahmet/Documents/Evolve/sass/_footer.scss */
+/* line 3, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_footer.scss */
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -701,30 +706,40 @@ footer {
   clear: both;
 }
 
-/* line 19, C:/Users/Ahmet/Documents/Evolve/sass/_footer.scss */
+/* line 17, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_footer.scss */
+footer a {
+  color: #000;
+}
+
+/* line 22, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_footer.scss */
 .adress {
   list-style: none;
   margin: 1rem;
 }
 
-/* line 23, C:/Users/Ahmet/Documents/Evolve/sass/_footer.scss */
+/* line 26, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_footer.scss */
 .adress li {
   margin: 0.5rem;
 }
 
-/* line 31, C:/Users/Ahmet/Documents/Evolve/sass/_footer.scss */
+/* line 31, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_footer.scss */
+.adress a {
+  color: #000;
+}
+
+/* line 38, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_footer.scss */
 .media-icons {
   padding: 0.5rem;
 }
 
-/* line 35, C:/Users/Ahmet/Documents/Evolve/sass/_footer.scss */
+/* line 42, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_footer.scss */
 .media-icons h2 {
   margin: 0.5rem 1rem 1rem;
   border-bottom: 10px solid #fff;
   text-align: center;
 }
 
-/* line 41, C:/Users/Ahmet/Documents/Evolve/sass/_footer.scss */
+/* line 48, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_footer.scss */
 .media-icons li {
   display: inline;
   margin: 1rem;
@@ -913,7 +928,7 @@ footer {
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 1025px) {
-  /* line 5, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
+  /* line 5, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
   .omoss-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -929,44 +944,44 @@ footer {
 }
 
 @media screen and (max-width: 1024px) {
-  /* line 20, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
+  /* line 20, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
   .tjanster-text h1 {
     font-size: 2rem;
   }
-  /* line 26, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
+  /* line 26, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
   .omossnav {
     width: 60%;
     margin: 5rem auto;
     padding: 0.5rem;
   }
-  /* line 33, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
+  /* line 33, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
   .omosstext {
     padding: 0 10rem 2rem 10rem;
   }
-  /* line 38, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
+  /* line 38, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
   .wrapper {
     margin: 3rem;
   }
-  /* line 42, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
+  /* line 42, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
   .wrapper img {
     -webkit-filter: grayscale(0%);
     filter: grayscale(0%);
   }
-  /* line 48, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
+  /* line 48, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
   .wrapper p {
     padding: 0.5rem;
   }
-  /* line 55, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
+  /* line 55, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
   .contact form {
     margin: 3rem;
   }
-  /* line 61, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
+  /* line 61, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
   #map {
     width: 40vw;
     margin: 3rem auto 5rem auto;
     padding: 2rem;
   }
-  /* line 69, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
+  /* line 69, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
   .contact-adress {
     margin: auto;
     width: 100%;
@@ -974,26 +989,26 @@ footer {
 }
 
 @media screen and (max-width: 720px) {
-  /* line 81, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
+  /* line 81, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
   main {
     background-size: auto 100%;
   }
-  /* line 86, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
+  /* line 86, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
   .navbar {
     display: none;
   }
-  /* line 91, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
+  /* line 91, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
   .slogan h1 {
     font-size: 3rem;
     padding: 0.5rem;
   }
-  /* line 97, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
+  /* line 97, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
   #nav-span {
     margin: 1.2rem;
     font-size: 2rem;
     cursor: pointer;
   }
-  /* line 105, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
+  /* line 105, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
   .mobile-nav, #nav-span {
     display: block;
     cursor: pointer;
@@ -1002,7 +1017,7 @@ footer {
     right: 0;
     z-index: 1;
   }
-  /* line 116, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
+  /* line 116, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
   .mobile-nav {
     height: 100vh;
     width: 0;
@@ -1020,11 +1035,11 @@ footer {
     padding-top: 2.5rem;
     cursor: default;
   }
-  /* line 135, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
+  /* line 135, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
   .mobile-nav li {
     margin-top: 1.2rem;
   }
-  /* line 139, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
+  /* line 139, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
   .mobile-nav a {
     padding: 0.8rem;
     text-decoration: none;
@@ -1038,12 +1053,12 @@ footer {
     cursor: pointer;
     text-transform: uppercase;
   }
-  /* line 156, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
+  /* line 156, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
   .nav-item a:hover {
     font-size: 18px;
     font-weight: bold;
   }
-  /* line 163, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
+  /* line 163, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
   .mobile-nav .closebtn {
     position: absolute;
     top: 0;
@@ -1051,120 +1066,120 @@ footer {
     font-size: 37px;
     border: none;
   }
-  /* line 172, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
+  /* line 172, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
   footer {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
   }
-  /* line 181, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
+  /* line 181, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
   .adress {
     margin: 0;
     padding: 0.5rem;
   }
-  /* line 186, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
+  /* line 186, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
   .adress li {
     margin: 0.5rem;
   }
-  /* line 193, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
+  /* line 193, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
   .media-icons {
     padding: 1rem;
   }
-  /* line 197, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
+  /* line 197, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
   .media-icons li {
     margin: 1rem;
   }
-  /* line 204, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
+  /* line 204, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
   .omoss-img {
     background-size: auto 100%;
     background-attachment: scroll;
   }
-  /* line 210, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
+  /* line 210, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
   .omossnav {
     width: 90%;
     margin: 3rem auto;
   }
-  /* line 216, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
+  /* line 216, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
   .omosstext {
     padding: 0 2rem 2rem;
   }
-  /* line 221, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
+  /* line 221, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
   .tjanster {
     display: none;
   }
-  /* line 225, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
+  /* line 225, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
   .tjanster-mobil {
     display: block;
   }
-  /* line 230, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
+  /* line 230, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
   .tjanster-container {
     padding-top: 3rem;
   }
-  /* line 234, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
+  /* line 234, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
   .tjanster-text h1 {
     font-size: 3rem;
   }
-  /* line 239, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
+  /* line 239, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
   .wrapper {
     -ms-flex-preferred-size: 90%;
     flex-basis: 90%;
     margin: 3rem 1rem;
   }
-  /* line 246, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
+  /* line 246, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
   .modal {
     padding-top: 25px;
   }
-  /* line 251, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
+  /* line 251, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
   .modal-content {
     width: 90%;
   }
-  /* line 256, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
+  /* line 256, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
   .contact form {
     -webkit-animation-name: none;
     animation-name: none;
     margin: 5rem auto 3rem auto;
     width: 90%;
   }
-  /* line 265, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
+  /* line 265, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
   .contact button {
     width: 100%;
   }
-  /* line 269, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
+  /* line 269, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
   .contact #map {
     -webkit-animation-name: none;
     animation-name: none;
     width: 81vw;
     margin: auto;
   }
-  /* line 278, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
+  /* line 278, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
   #map span {
     display: none;
   }
-  /* line 283, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
+  /* line 283, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
   .contact-adress {
     display: none;
   }
 }
 
 @media screen and (max-width: 550px) {
-  /* line 293, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
+  /* line 293, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
   .slogan h1 {
     font-size: 1.5rem;
   }
-  /* line 298, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
+  /* line 298, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
   .wrapper p, .uppdrag-text p {
     font-size: 14px;
     padding: 0 1rem;
   }
-  /* line 305, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
+  /* line 305, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
   .tjanster-text p {
     font-size: 14px;
   }
-  /* line 310, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
+  /* line 310, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
   .omosstext h1 {
     font-size: 1.5rem;
   }
-  /* line 316, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
+  /* line 316, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
   .tjanster-text h1 {
     font-size: 17px;
   }
