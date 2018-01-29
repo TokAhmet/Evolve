@@ -719,6 +719,11 @@ footer a {
   color: #000;
 }
 
+footer a image
+{
+  border: 0;
+}
+
 /* line 24, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_footer.scss */
 .adress {
   list-style: none;
@@ -747,6 +752,8 @@ footer a {
   display: inline;
   margin: 1rem;
 }
+
+
 
 /* ANIMATIONS */
 @-webkit-keyframes fadein {
