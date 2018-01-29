@@ -642,6 +642,11 @@ main{
   width: 100%;
 }
 
+.li-forms textarea
+{
+  width: 100%;
+}
+
 /* line 84, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_kontakt.scss */
 .li-forms input:focus, .li-forms textarea:focus {
   outline: 2px solid #000;
