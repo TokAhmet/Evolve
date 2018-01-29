@@ -424,7 +424,8 @@ main{
   height: 100%;
   /* Full height */
   overflow: auto;
-    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+  background: url(../img/refrensbakgrund-ie8.png);
+  
 
 
 }
