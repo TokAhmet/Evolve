@@ -698,11 +698,11 @@ footer a {
   color: #000;
 }
 
-footer img{
-
-  width: 100px;
-  height: 50px;
+footer a image
+{
+  border: 0;
 }
+
 /* line 24, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_footer.scss */
 .adress {
   list-style: none;
@@ -732,6 +732,8 @@ footer img{
 .media-icons li {
   display: inline;
 }
+
+
 
 /* ANIMATIONS */
 @-webkit-keyframes fadein {

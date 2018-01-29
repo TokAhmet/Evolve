@@ -13,8 +13,11 @@ footer{
 	justify-content: space-between;
 	min-height: 9rem;
 	clear: both; // fallback för IE 7 8 9
-}
 
+	& a{
+		color: $black-color;
+	}
+}
 
 .adress{
 
@@ -23,6 +26,10 @@ footer{
 	& li{
 
 		margin: 0.5rem;
+	}
+
+	& a{
+		color: $black-color;
 	}
 
 }
