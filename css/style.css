@@ -38,6 +38,7 @@ main, .uppdrag, .omoss, .tjänster, .kontakt {
 header {
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -111,6 +112,7 @@ main {
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -216,6 +218,7 @@ main {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -232,6 +235,7 @@ main {
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
@@ -354,6 +358,7 @@ main {
 .uppdrag-container {
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   -ms-flex-pack: distribute;
   justify-content: space-around;
@@ -556,6 +561,7 @@ main {
 .contact {
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -598,6 +604,7 @@ main {
 .li-forms {
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   -ms-flex-direction: column;
   -webkit-box-orient: vertical;
@@ -685,6 +692,7 @@ main {
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   background-color: #d6c5b7;
   -webkit-box-orient: horizontal;
@@ -924,6 +932,7 @@ footer a {
   .omoss-container {
     display: -webkit-box;
     display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     -ms-flex-pack: distribute;
     justify-content: space-around;
@@ -1082,7 +1091,7 @@ footer a {
   }
   /* line 204, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
   .omoss-img {
-    background-size: auto 100%;
+    background-size: cover;
     background-attachment: scroll;
   }
   /* line 210, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
@@ -1175,4 +1184,5 @@ footer a {
     font-size: 17px;
   }
 }
+
 /*# sourceMappingURL=../css/style.map */
