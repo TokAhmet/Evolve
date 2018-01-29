@@ -96,7 +96,7 @@ header img {
 
 /* line 41, C:/Users/Ahmet/Documents/Evolve/sass/_navbar.scss */
 .mobile-nav, #nav-span {
-  display: none !important;
+  display: none;
 }
 
 /* line 46, C:/Users/Ahmet/Documents/Evolve/sass/_navbar.scss */
@@ -123,7 +123,7 @@ main {
 /* line 15, C:/Users/Ahmet/Documents/Evolve/sass/_homepage.scss */
 .slogan {
   width: 100%;
-  padding-top: 10%;
+  margin-top: 10%;
 }
 
 /* line 20, C:/Users/Ahmet/Documents/Evolve/sass/_homepage.scss */
@@ -145,7 +145,7 @@ main {
   background: url(../img/office1.jpg) no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
-  height: 80vh;
+  height: 50vh;
 }
 
 /* line 11, C:/Users/Ahmet/Documents/Evolve/sass/_omOss.scss */
@@ -972,7 +972,7 @@ footer {
 @media screen and (max-width: 720px) {
   /* line 73, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
   main {
-    background-size: 100% 100%;
+    background-size: auto 100%;
   }
   /* line 78, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
   .navbar {
@@ -991,7 +991,7 @@ footer {
   }
   /* line 97, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
   .mobile-nav, #nav-span {
-    display: block !important;
+    display: block;
     cursor: pointer;
     position: fixed;
     top: 0;
@@ -1072,7 +1072,7 @@ footer {
   }
   /* line 196, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */
   .omoss-img {
-    background-size: 100% 100%;
+    background-size: auto 100%;
     background-attachment: scroll;
   }
   /* line 202, C:/Users/Ahmet/Documents/Evolve/sass/_media.scss */

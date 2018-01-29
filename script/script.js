@@ -2,13 +2,11 @@
 // Mobile nav
 
 function openNav() {
-    document.getElementById("mySidenav").style.width = "50%";
-    document.getElementById("nav-span").style.display = "none";
+    document.getElementById("mySidenav").style.width = "45%";
 }
 
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("nav-span").style.display = "block";
 }
 
 //Länka till sidorna när man klickar på button
