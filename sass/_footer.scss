@@ -1,9 +1,9 @@
+/* FOOTER */
+ 
 footer{
-
-	background-color: $majorcolor;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
+	
+	@include flex;
+	background-color: $main-color;
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
 	-ms-flex-flow: row wrap;
@@ -12,29 +12,37 @@ footer{
 	-ms-flex-pack: justify;
 	justify-content: space-between;
 	min-height: 9rem;
+	clear: both; // fallback för IE 7 8 9
 }
+
 
 .adress{
 
 	list-style: none;
 	margin: 1rem;
+	& li{
 
-& li{
-
-	margin: 0.5rem;
+		margin: 0.5rem;
 	}
+
 }
 
 
 .media-icons{
 
-	padding: 2.5rem;
+	padding: 0.5rem;
 
-& li{
+	& h2{
+		
+		margin: 0.5rem 1rem 1rem;
+		border-bottom: 10px solid $white-color;
+		text-align: center;
+	}
+	& li{
 
-	display: inline;
-	margin: 1rem;
+		display: inline;
+		margin: 1rem;
 
-}
+	}
 }
 
