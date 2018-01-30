@@ -154,6 +154,7 @@ main{
 .omossnav {
   -webkit-box-shadow: 5px 10px 11px #0d0d0d;
   box-shadow: 5px 10px 11px #0d0d0d;
+   border-collapse: separate;
   background-color: #d6c5b7;
   margin: 100px;
   min-width: 35%;
@@ -257,6 +258,7 @@ main{
   padding: 8px 16px 16px 16px;
   -webkit-box-shadow: 5px 10px 22px #0d0d0d;
   box-shadow: 5px 10px 22px #0d0d0d;
+   border-collapse: separate;
   float: left;
   margin:48px;
 }
@@ -269,6 +271,7 @@ main{
   padding: 8px 16px 16px 16px;
   -webkit-box-shadow: 5px 10px 22px #0d0d0d;
   box-shadow: 5px 10px 22px #0d0d0d;
+   border-collapse: separate;
   float: right;
   margin: 48px;
  
@@ -376,6 +379,7 @@ main{
 .wrapper {
   -webkit-box-shadow: 5px 10px 11px #0d0d0d;
   box-shadow: 5px 10px 11px #0d0d0d;
+  border-collapse: separate;
   background-color: #fff;
   color: #000;
   -ms-flex-preferred-size: 30%;
@@ -576,6 +580,7 @@ main{
   background-color: #d6c5b7;
   -webkit-box-shadow: 5px 10px 22px #0d0d0d;
   box-shadow: 5px 10px 22px #0d0d0d;
+   border-collapse: separate;
   color: #000;
   min-width: 80px;
   margin: 100px 20px 50px 50px;
@@ -615,6 +620,7 @@ main{
 .li-forms button {
   -webkit-box-shadow: 0 4px #666;
   box-shadow: 0 4px #666;
+   border-collapse: separate;
   background-color: #fff;
   border: 0;
   border-radius: 20px;
@@ -631,6 +637,7 @@ main{
 .li-forms button:active {
   -webkit-box-shadow: 0 3px #666;
   box-shadow: 0 3px #666;
+   border-collapse: separate;
   -webkit-transform: translateY(2px);
   -ms-transform: translateY(2px);
   transform: translateY(2px);
@@ -666,6 +673,7 @@ main{
   animation: slideInUp 1s;
   background-color: #d6c5b7;
   -webkit-box-shadow: 5px 10px 22px #0d0d0d;
+   border-collapse: separate;
   box-shadow: 5px 10px 22px #0d0d0d;
   font-weight: bold;
   width: 100%;
@@ -706,7 +714,7 @@ footer a {
 
 footer a image
 {
-  border: 0px;
+  border: 0;
   margin: 0 10px;
 }
 
