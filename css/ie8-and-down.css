@@ -33,7 +33,7 @@ ul {
 .logo {
     width: 200px;
     padding: 30px;
-    border: 0;
+    border: 0px;
 }
 
 /* HEADER */
@@ -706,7 +706,8 @@ footer a {
 
 footer a image
 {
-  border: 0;
+  border: 0px;
+  margin: 0 10px;
 }
 
 /* line 24, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_footer.scss */
