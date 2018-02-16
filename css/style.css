@@ -978,7 +978,7 @@ footer a {
   }
   /* line 61, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
   #map {
-    width: 40vw;
+    width: 30vw;
     margin: 3rem auto 5rem auto;
     padding: 2rem;
   }
@@ -989,7 +989,7 @@ footer a {
   }
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 730px) {
   /* line 81, C:/Users/Ahmet/Documents/GitHub/Evolve/sass/_media.scss */
   main {
     background-size: auto 100%;
